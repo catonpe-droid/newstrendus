@@ -7,12 +7,13 @@ from email.utils import parsedate_to_datetime
 import json, pathlib, re, html, hashlib
 BASE = pathlib.Path(__file__).resolve().parents[1]
 FEEDS = {
-    "US": ["https://feeds.npr.org/1001/rss.xml","https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"],
+    "US": ["https://feeds.npr.org/1001/rss.xml","https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml","https://www.voanews.com/api/zqboml-vomx-tpeivmy"],
     "Technology": ["https://feeds.arstechnica.com/arstechnica/index","https://www.theverge.com/rss/index.xml"],
     "Gaming": ["https://www.ign.com/rss/v2/articles/feed","https://www.gamespot.com/feeds/mashup/"],
     "Sports": ["https://www.cbssports.com/rss/headlines/","https://www.espn.com/espn/rss/nfl/news","https://www.espn.com/espn/rss/nba/news","https://feeds.bbci.co.uk/sport/rss.xml"],
     "Business": ["https://feeds.bbci.co.uk/news/business/rss.xml"],
-    "Science": ["https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"],
+    "Science": ["https://feeds.bbci.co.uk/news/science_and_environment/rss.xml","https://www.nasa.gov/news-release/feed/"],
+    "Health": ["https://kffhealthnews.org/feed/"],
     "Entertainment": ["https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"],
     "World": ["https://feeds.bbci.co.uk/news/world/rss.xml"],
 }
@@ -51,7 +52,7 @@ for category, urls in FEEDS.items():
                 if not title or not link.startswith("https://") or link in seen: continue
                 seen.add(link)
                 items.append({"id":hashlib.sha256(link.encode("utf-8")).hexdigest()[:16],
-                 "title":title,"url":link,"category":category,"summary":excerpt(node),
+                 "title":title,"url":link,"category":category,"summary":excerpt(node),"author":val("{http://purl.org/dc/elements/1.1/}creator") or val("author"),
                  "source":urlparse(link).netloc.replace("www.",""),"date":published(val("pubDate") or val("published") or val("updated"))})
             successes+=1
         except Exception as exc: print("Feed unavailable",category,url,str(exc)[:100])
@@ -73,6 +74,10 @@ for article in items:
     cached = prior.get(article["url"], {})
     if isinstance(cached.get("brief"), list):
         article["brief"] = cached["brief"]
+    # Keep licensed texts rather than downloading on every scheduled build.
+    for key in ("full_html", "license_type", "full_source", "rights_notice"):
+        if cached.get(key):
+            article[key] = cached[key]
 
 
 trends=[]
