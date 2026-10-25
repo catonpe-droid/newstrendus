@@ -29,14 +29,22 @@ CATEGORY_WEIGHTS = {
     "Entertainment": 48, "World": 15,
 }
 US_SIGNALS = re.compile(
-    r"\b(?:U\.?S\.?A?\.?|United States|Americans?|American|Washington|"
-    r"California|Texas|New York|Florida|Oregon|Chicago|Los Angeles|"
-    r"New Jersey|Colorado|Arizona|Nevada|Ohio|Pennsylvania|"
-    r"Michigan|Illinois|Georgia|Virginia|North Carolina|"
+    r"\b(?:U\.?S\.?A?\.?|United States|Americans?|American|"
+    r"Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|"
+    r"Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|"
+    r"Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|"
+    r"Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|"
+    r"New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|"
+    r"Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|"
+    r"Virginia|Washington|West Virginia|Wisconsin|Wyoming|"
+    r"Chicago|Los Angeles|Milwaukee|Miami|Atlanta|Houston|Dallas|Boston|"
     r"White House|Congress|Federal Reserve|Supreme Court|"
+    r"NIH|Medicare|Medicaid|Obamacare|ACA plan|midterms?|"
     r"NASA|NFL|NBA|MLB|NHL|Super Bowl|World Series)\b",
     flags=re.IGNORECASE,
 )
+US_ANCHOR_CATEGORIES = frozenset({"US", "World", "Business", "Sports"})
+
 UNSUITABLE = re.compile(
     r"\b(?:sponsored by|advertisement|newsletter|weekly roundup|"
     r"daily puzzle|horoscope|rumou?rs?|unconfirmed|spoiler)\b",
@@ -248,6 +256,10 @@ def build() -> None:
                 or not (timedelta(0) <= now - date < MAX_STORY_AGE)
                 or parsed_url.scheme != "https" or not parsed_url.netloc
                 or UNSUITABLE.search(title)
+                or (
+                    item.get("category") in US_ANCHOR_CATEGORIES
+                    and not US_SIGNALS.search(title + " " + str(item.get("summary") or ""))
+                )
                 or is_duplicate_topic(title, recent)
             ):
                 continue
