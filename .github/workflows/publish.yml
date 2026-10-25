@@ -29,6 +29,8 @@ jobs:
         run: python scripts/update.py
       - name: Enrich explicitly licensed full-text articles and prioritize US search trends
         run: python scripts/enrich.py
+      - name: Select only 45 strong US and trending headlines
+        run: python scripts/curate.py
       - name: Prepare curated X-sharing RSS feed
         run: python scripts/build_x_feed.py
       - name: Save headline snapshot and optional X feed
