@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://newstrendus.com/</loc><changefreq>hourly</changefreq></url>
-<url><loc>https://newstrendus.com/editorial.html</loc><changefreq>monthly</changefreq></url>
-<url><loc>https://newstrendus.com/guides/gta-6-source-check.html</loc><changefreq>monthly</changefreq></url>
-<url><loc>https://newstrendus.com/guides/google-trends-us-explained.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/</loc><changefreq>hourly</changefreq></url>
+  <url><loc>https://newstrendus.com/about.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/contact.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/editorial.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/privacy.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/guides/gta-6-source-check.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/guides/google-trends-us-explained.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/guides/verify-breaking-news.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/guides/understanding-us-news-feeds.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://newstrendus.com/guides/gaming-announcements-checklist.html</loc><changefreq>monthly</changefreq></url>
 </urlset>
