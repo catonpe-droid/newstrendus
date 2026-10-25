@@ -1,7 +1,7 @@
 'use strict';
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 const escapeHTML=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const cover=i=>'assets/'+(['US','Gaming','Technology','Business','Science','Entertainment','World','Sports','Health','Trending'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
+const cover=i=>'assets/'+(i.category==='Health'?'science':i.category==='Trending'?'us':['US','Gaming','Technology','Business','Science','Entertainment','World','Sports'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
 const day=d=>{if(!d)return 'Latest';const x=new Date(d);return isNaN(x)?'Latest':x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})};
 const link=i=>'story.html?id='+encodeURIComponent(i.id||'');
 const shot=i=>window.NewsTrendusPhotos?.forStory(i)||null;
@@ -36,8 +36,8 @@ return '<article class="card"><a href="'+link(item)+'" aria-label="Read news bri
 }
 function render(){
 const t=search.toLowerCase(),list=articles.filter(i=>(activeCat==='All'||i.category===activeCat)&&(!t||(i.title+' '+i.category+' '+(i.summary||'')).toLowerCase().includes(t)));
-$('#count').textContent=list.length+' headlines';
-$('#listTitle').textContent=activeCat==='All'?'Latest Stories':activeCat+' News';
+$('#count').textContent=list.length+' carefully selected headlines';
+$('#listTitle').textContent=activeCat==='All'?'Top '+articles.length+' Curated Stories':activeCat+' News';
 $('#lead').innerHTML=list.length?feature(list[0]):'<div class="empty">No recent headlines match this filter.</div>';
 $('#sideleads').innerHTML=list.slice(1,3).map(i=>feature(i,true)).join('');
 $('#feed').innerHTML=list.slice(3,3+limit).map(card).join('')||'<div class="empty">Explore more topics, or try a different search.</div>';
