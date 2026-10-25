@@ -55,3 +55,37 @@
 .nt-list{padding-top:28px}
 @media(max-width:940px){#latest-news-articles .feedgrid,.nt-list .feedgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:590px){#latest-news-articles .feedgrid,.nt-list .feedgrid{grid-template-columns:minmax(0,1fr);gap:15px}#latest-news-articles .card h3,.nt-list .card h3{font-size:19px}#latest-news-articles .card .in,.nt-list .card .in{padding:16px}}
+
+/* NewsTrendus external-CDN article hero: consistent cropping and space without local image storage */
+
+.article-main img.nt-hero, .ntmain img.nthimg {
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:420px;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  object-position:center center;
+  background:#e8edf3;
+  border:0;
+}
+.article-main .nt-figcaption, .ntmain .ntcaption {
+  font-size:11px;
+  line-height:1.55;
+  color:#627388;
+  overflow-wrap:anywhere;
+}
+#latest-news-articles .card>a img, .nt-list .card>a img {
+  width:100%;
+  height:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  object-position:center;
+}
+@media(max-width:640px){
+  .article-main img.nt-hero, .ntmain img.nthimg{
+    max-height:none;
+    aspect-ratio:16 / 9;
+    object-fit:cover;
+  }
+}
