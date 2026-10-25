@@ -139,7 +139,7 @@ def collect_trend_coverage(items, trends):
                 "title":headline[:240],"url":url,"category":"Trending",
                 "source":host.replace("www.",""),
                 "summary":snippet[:320],
-                "date":datetime.now(timezone.utc).isoformat(),
+                "date":(parsedate_to_datetime(trend.findtext("pubDate")).astimezone(timezone.utc).isoformat() if trend.findtext("pubDate") else None),
                 "trend_seed":term,
                 "trend_matches":[term],
             }
@@ -148,6 +148,7 @@ def collect_trend_coverage(items, trends):
                 row["related_title"]=headline[:170]
                 row["related_url"]=url
                 row["related_source"]=item["source"]
+                row["related_id"]=item["id"]
             break
         if count>=10:break
     return count
