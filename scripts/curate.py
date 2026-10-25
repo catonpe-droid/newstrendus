@@ -20,16 +20,16 @@ TARGET=45
 MIN_TARGET=40
 CAP={
     "Trending":10, "US":11, "Gaming":7, "Sports":6,
-    "Technology":6,"Business":5,"Health":8,"Science":5,
+    "Technology":6,"Business":5,"Health":6,"Science":4,
     "Entertainment":5,"World":4
 }
 # These are desired variety targets, not requirements to invent a story.
 CATEGORY_FLOOR={
-    "US":7,"Gaming":5,"Sports":4,"Technology":3,
-    "Business":2,"Health":3,"Science":2,
-    "Entertainment":2,"World":2
+    "US":7,"World":2,"Entertainment":2,"Gaming":5,
+    "Sports":4,"Technology":3,"Business":2,
+    "Health":3,"Science":2
 }
-SOURCE_CAP=10
+SOURCE_CAP=12
 KEYWORDS={
     "Gaming":("gta 6","gta vi","grand theft auto","rockstar","playstation","xbox","nintendo","game release","trailer"),
     "Technology":("ai","artificial intelligence","apple","google","microsoft","chip","cyber","security","iphone","openai","robot"),
