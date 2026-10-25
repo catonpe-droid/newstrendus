@@ -1,38 +1,35 @@
 # NewsTrendus.com
 
-USA-focused trending news discovery site: RSS sources, Google Trends US, GTA 6/gaming and SEO-friendly category pages. Published via GitHub Actions to GitHub Pages.
+NewsTrendus is a US-focused news discovery and attributed editorial website on GitHub Pages. **Google Trends US is the primary subject-discovery signal** for the scheduled editorial assistant; a search trend is never proof that a story is true. Every publishable story requires independent factual checks, source links and meaningful original context.
 
-This repository is maintained with ChatGPT assistance. The site credits original publishers and does not reproduce full news articles. Automated publishing does not guarantee Google rankings or AdSense eligibility.
+## Permanent photo policy: link only, no image uploads
 
-## Setup
+For **every news article published now or in the future**:
 
-Once `.github/workflows/publish.yml` is present, open **Settings > Pages**, select **GitHub Actions** as the source, then run the workflow in **Actions**. Add `newstrendus.com` as a custom domain only after you control it and have set GitHub Pages DNS records.
+- Use a real, suitable, lawfully reusable professional **photograph**, not AI event impersonation, an SVG news poster, or a flat category illustration.
+- Prefer `https://images.pexels.com/photos/...` **direct external JPEG URLs**. HTML, JSON and NewsArticle schema contain only the URL; **never download or commit a photo, image binary, generated image or editorial SVG** to this repository, ChatGPT Library, Drive or any local image library.
+- Record `news:photo_artist` and `news:photo_credit_url` metadata. Show the proper credit and original Pexels photo-page link beside the displayed image. Mark generic imagery **representative**, not an actual photograph of the reported event.
+- Use `<img class="nt-hero" width="1600" height="900" src="https://images.pexels.com/...">` for news heroes (the legacy F1 article uses class `nthimg`). Use 16:9, center-cropped `object-fit:cover`, at most about 420 px tall on desktop, responsive on mobile. The same credited image appears in the homepage cards, corresponding category, article directory and its article page.
+- Existing identity files (e.g. the site's small logo and icons) are not news photographs and may remain locally hosted; the restriction covers **editorial news images**.
 
-## X (Twitter) completely free automatic sharing
+The GitHub Actions deployment gate runs `scripts/editorial_catalog.py` and **`scripts/validate_editorial_images.py`** before SEO/deployment. It blocks pages with missing/wrong external CDN URLs, inappropriate local/SVG hero references, invalid 16:9 sizing or absent photo credits. New article images must always pass this validation. The catalogue `editorial-news.json` ensures every news article is shown among **Top Stories** and in its correct category; retain the familiar sitewide navigation.
 
-NewsTrendus has an RSS generator and GitHub Actions automation that can publish selected news to X through **Buffer Free**, with no paid IFTTT, no paid X developer API, and no server hosting cost. Personal setup of the connected social account is still required.
+### Storage model
 
-### One-time account-owner setup (never paste an API key into chat or a GitHub file)
+**CDN photo server → article HTML/JSON URL → visitor browser**.
 
-1. Create/login to a **Buffer Free** account at https://buffer.com/ and connect only the intended NewsTrendus **X (Twitter)** account at https://publish.buffer.com/settings/channels. Do not start a paid trial or enter billing details.
-2. Open https://publish.buffer.com/settings/api → **Personal Access** → **New Key**; give it a name such as `NewsTrendus GitHub`. Grant the minimum required scopes for organization/channel read, post read and post creation. Copy the generated key privately.
-3. Open https://github.com/catonpe-droid/newstrendus/settings/secrets/actions and create a **repository secret** named `BUFFER_API_KEY`. Paste the Buffer key as its value. Never add the key to a source file, commit, issue, or chat.
-4. If Buffer holds **more than one X channel**, set GitHub **Settings → Secrets and variables → Actions → Variables** `BUFFER_CHANNEL_ID` to the intended X channel ID. For exactly one X channel this is unnecessary.
-5. Open https://github.com/catonpe-droid/newstrendus/actions/workflows/post-x-free.yml and click **Run workflow** once. Inspect its logs and then verify the post directly on your X profile. The workflow also runs hourly, but only shares a *new eligible* article queued by the RSS generator.
+Only small HTML/CSS/JavaScript/JSON metadata and publisher-credit links are added to the repo. News-image bytes remain on Pexels or another explicitly authorized third-party photo host, not in the GitHub repo or user Library. This saves repository image storage; actual photo download bandwidth, third-party availability and caching still depend on the CDN and visitor browser.
 
-### What is automated
+## Scheduling and deployment
 
-- The existing publishing workflow refreshes `https://newstrendus.com/x-feed.xml` and prepares a NewsTrendus article landing page with publisher attribution.
-- `scripts/build_x_feed.py` chooses **at most one fresh source-attributed brief every four hours** using US-topic relevance, headline freshness, source/category variety and near-duplicate-topic checks. US/world/business/sports stories need a clear US connection. It adds up to two topic-relevant hashtags from the headline.
-- **Important X policy:** automated harvesting/posting about *X's trending topics* or attaching unrelated trending hashtags to drive traffic is prohibited. This is editorial RSS cross-posting, not X trend-jacking.
-- `scripts/post_buffer_x.py` runs using `BUFFER_API_KEY` from GitHub Actions secrets; it verifies that the page exists publicly, picks the connected X channel, checks for duplicates, and submits **one** item to Buffer with `mode: shareNow`.
-- The URL includes `utm_source=x&utm_medium=social&utm_campaign=auto_news` so visitors from X can be counted in Google Analytics 4.
-- `social/buffer-history.json` tracks successful submissions (not credentials). If Buffer rejects a post or setup is missing, no post is reported as successful.
+The ChatGPT **NewsTrendus Google Trends Publisher** task runs every four hours, targets 4–5 factual, nonduplicate, US-relevant articles where sufficient sources exist, and must never claim an article published without an actual GitHub commit. RSS previews may still appear as source-linked discovery, but **generic RSS feed-to-article autoblogging is disabled**. The GitHub Actions `publish.yml` workflow is for catalogue regeneration, image policy and SEO checks, GA4 and GitHub Pages deployment.
 
-The workflow intentionally **does not** post while the Buffer API key or X authorization is missing. The initial setup cannot be done remotely without the X account owner's permission. The Buffer Free plan currently supports X and an API key, with a maximum of 10 queued posts per channel at a time; this workflow uses immediate posting and checks Buffer's actual response. Free plans, feature availability and API quotas are controlled by Buffer and can change.
+To configure GitHub Pages, select GitHub Actions under repository Settings → Pages and confirm the custom domain. Every push to `main` requests a deployment. Check **Actions** for policy or build failures; passing commits do not guarantee immediate live visibility, search indexing, AdSense approval or traffic.
 
-References:
-- https://buffer.com/pricing
-- https://developers.buffer.com/guides/your-first-post.html
-- https://developers.buffer.com/guides/rest-migration.html
-- https://support.buffer.com/en-us/articles/how-to-create-your-buffer-api-key-ShIgYVwM6j
+## Attribution and content quality
+
+Do not use unlicensed third-party reporting or photographs without permission. Keep original story links, accurate factual publication dates and representative-image disclosure. Avoid keyword stuffing, shallow paraphrases, misleading headlines or artificial click tactics. Strong SEO metadata is a technical baseline, not a guarantee of virality.
+
+## Optional social sharing
+
+An older Buffer/X integration exists in the repository but is not an active automatic hourly publishing source. Do not restore its schedule or collect X trending hashtags for automated promotion without separate authorization and platform-policy review. API keys must stay in GitHub Actions secrets, never source files.
