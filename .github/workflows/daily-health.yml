@@ -1,5 +1,9 @@
 name: Daily NewsTrendus health and SEO audit
 on:
+  push:
+    paths:
+      - '.github/workflows/daily-health.yml'
+      - 'scripts/daily_health.py'
   workflow_dispatch:
   schedule:
     - cron: '35 1 * * *'
