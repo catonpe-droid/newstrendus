@@ -23,7 +23,8 @@ NewsTrendus has an RSS generator and GitHub Actions automation that can publish 
 ### What is automated
 
 - The existing publishing workflow refreshes `https://newstrendus.com/x-feed.xml` and prepares a NewsTrendus article landing page with publisher attribution.
-- `scripts/build_x_feed.py` chooses **at most one fresh brief every four hours** and adds up to two *actually relevant* hashtags.
+- `scripts/build_x_feed.py` chooses **at most one fresh source-attributed brief every four hours** using US-topic relevance, headline freshness, source/category variety and near-duplicate-topic checks. US/world/business/sports stories need a clear US connection. It adds up to two topic-relevant hashtags from the headline.
+- **Important X policy:** automated harvesting/posting about *X's trending topics* or attaching unrelated trending hashtags to drive traffic is prohibited. This is editorial RSS cross-posting, not X trend-jacking.
 - `scripts/post_buffer_x.py` runs using `BUFFER_API_KEY` from GitHub Actions secrets; it verifies that the page exists publicly, picks the connected X channel, checks for duplicates, and submits **one** item to Buffer with `mode: shareNow`.
 - The URL includes `utm_source=x&utm_medium=social&utm_campaign=auto_news` so visitors from X can be counted in Google Analytics 4.
 - `social/buffer-history.json` tracks successful submissions (not credentials). If Buffer rejects a post or setup is missing, no post is reported as successful.
