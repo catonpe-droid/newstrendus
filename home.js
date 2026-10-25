@@ -54,6 +54,10 @@ $('#refreshed').textContent=d.updated?'Refreshed '+day(d.updated):'Updates pendi
 $('#tickerHeadline').textContent=articles.length?articles[0].title:'Latest headlines coming soon';
 $('#tickerHeadline').href=articles.length?link(articles[0]):'index.html';
 $('#countTotal').textContent=articles.length;
+const full=articles.filter(a=>a.full_html && ['NASA government release','KFF Health News licensed republication'].includes(a.license_type));
+const fullSpot=document.querySelector('#fullReads');
+if(fullSpot){fullSpot.innerHTML=full.length?full.slice(0,4).map(a=>card(a)).join(''):'<div class="empty">Full-length licensed reports from NASA and KFF Health News will appear here as they become available.</div>';}
+
 const trends=Array.isArray(d.trends)?d.trends.slice(0,10):[];
 $('#trendCount').textContent=trends.length;
 $('#trends').innerHTML=trends.length?trends.map((x,i)=>{
