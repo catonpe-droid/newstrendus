@@ -1,7 +1,7 @@
 'use strict';
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 const escapeHTML=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const cover=i=>'assets/'+(['US','Gaming','Technology','Business','Science','Entertainment','World','Sports'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
+const cover=i=>'assets/'+(['US','Gaming','Technology','Business','Science','Entertainment','World','Sports','Health'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
 const day=d=>{if(!d)return 'Latest';const x=new Date(d);return isNaN(x)?'Latest':x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})};
 const link=i=>'story.html?id='+encodeURIComponent(i.id||'');
 const shot=i=>window.NewsTrendusPhotos?.forStory(i)||null;
@@ -28,8 +28,10 @@ imageHTML(item,!small)+
 }
 function card(item){
 let preview=item.summary?'<p class="excerpt">'+escapeHTML(item.summary)+'</p>':'';
+let extraLabel=(item.full_html?'<span class="kicker" style="margin-left:10px;color:#08765a">Full article</span>':'')+
+                (item.trend_matches&&item.trend_matches.length?'<span class="kicker" style="margin-left:10px;color:#bc1734">US trending</span>':'');
 return '<article class="card"><a href="'+link(item)+'" aria-label="Read news brief: '+escapeHTML(item.title)+'">'+imageHTML(item)+'</a>'+
-'<div class="in">'+photoCredit(item)+'<span class="kicker">'+escapeHTML(item.category)+'</span><h3><a href="'+link(item)+'">'+escapeHTML(item.title)+'</a></h3>'+preview+
+'<div class="in">'+photoCredit(item)+'<span class="kicker">'+escapeHTML(item.category)+'</span>'+extraLabel+'<h3><a href="'+link(item)+'">'+escapeHTML(item.title)+'</a></h3>'+preview+
 '<div class="byline"><span>'+escapeHTML(item.source)+'</span><span>·</span><time>'+day(item.date)+'</time><span>·</span><span>Read on NewsTrendus</span></div></div></article>';
 }
 function render(){
