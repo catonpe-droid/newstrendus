@@ -10,7 +10,7 @@ FEEDS = {
     "US": ["https://feeds.npr.org/1001/rss.xml","https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"],
     "Technology": ["https://feeds.arstechnica.com/arstechnica/index","https://www.theverge.com/rss/index.xml"],
     "Gaming": ["https://www.ign.com/rss/v2/articles/feed","https://www.gamespot.com/feeds/mashup/"],
-    "Sports": ["https://www.cbssports.com/rss/headlines/"],
+    "Sports": ["https://www.cbssports.com/rss/headlines/","https://www.espn.com/espn/rss/nfl/news","https://www.espn.com/espn/rss/nba/news","https://feeds.bbci.co.uk/sport/rss.xml"],
     "Business": ["https://feeds.bbci.co.uk/news/business/rss.xml"],
     "Science": ["https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"],
     "Entertainment": ["https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"],
