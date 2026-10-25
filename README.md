@@ -8,28 +8,30 @@ This repository is maintained with ChatGPT assistance. The site credits original
 
 Once `.github/workflows/publish.yml` is present, open **Settings > Pages**, select **GitHub Actions** as the source, then run the workflow in **Actions**. Add `newstrendus.com` as a custom domain only after you control it and have set GitHub Pages DNS records.
 
-## X (Twitter) automatic sharing
+## X (Twitter) completely free automatic sharing
 
-**Site-side feed is ready; posting to an X account requires the owner's one-time authorization.**
+NewsTrendus has an RSS generator and GitHub Actions automation that can publish selected news to X through **Buffer Free**, with no paid IFTTT, no paid X developer API, and no server hosting cost. Personal setup of the connected social account is still required.
 
-The GitHub Pages workflow creates `https://newstrendus.com/x-feed.xml` with:
-- At most **one new, credited news brief every four hours**, avoiding posting all headlines indiscriminately.
-- A NewsTrendus article landing URL (not a misleading redirect) with `utm_source=x&utm_medium=social&utm_campaign=auto_news` for GA4 attribution.
-- Up to two relevant headline-based hashtags, already included in the feed item's **title**.
-- Stable RSS GUIDs to avoid repeatedly surfacing the same news item.
+### One-time account-owner setup (never paste an API key into chat or a GitHub file)
 
-### Connect an account (one-time, account-owner action)
+1. Create/login to a **Buffer Free** account at https://buffer.com/ and connect only the intended NewsTrendus **X (Twitter)** account at https://publish.buffer.com/settings/channels. Do not start a paid trial or enter billing details.
+2. Open https://publish.buffer.com/settings/api → **Personal Access** → **New Key**; give it a name such as `NewsTrendus GitHub`. Grant the minimum required scopes for organization/channel read, post read and post creation. Copy the generated key privately.
+3. Open https://github.com/catonpe-droid/newstrendus/settings/secrets/actions and create a **repository secret** named `BUFFER_API_KEY`. Paste the Buffer key as its value. Never add the key to a source file, commit, issue, or chat.
+4. If Buffer holds **more than one X channel**, set GitHub **Settings → Secrets and variables → Actions → Variables** `BUFFER_CHANNEL_ID` to the intended X channel ID. For exactly one X channel this is unnecessary.
+5. Open https://github.com/catonpe-droid/newstrendus/actions/workflows/post-x-free.yml and click **Run workflow** once. Inspect its logs and then verify the post directly on your X profile. The workflow also runs hourly, but only shares a *new eligible* article queued by the RSS generator.
 
-1. Open https://ifttt.com/applets/xxME6t3P-tweet-new-rss-feed-items-automatically-with-x-twitter or create an RSS Feed → X (Twitter) Applet on IFTTT. IFTTT may require a paid plan for the X posting action.
-2. Sign in to IFTTT, connect your own X account, and explicitly authorize posting.
-3. Set the RSS feed URL to `https://newstrendus.com/x-feed.xml`.
-4. In the X action text, insert the **EntryTitle** ingredient, a space, then **EntryUrl**. Example: `{{EntryTitle}} {{EntryUrl}}`. Do **not** paste a fixed headline or append extra generic hashtags: topic hashtags are included in EntryTitle already.
-5. Turn the Applet on, use its check/test features, and inspect the first published post for an accurate title, relevant hashtags, an accessible NewsTrendus brief and publisher attribution.
+### What is automated
 
-IFTTT schedules polling rather than instant posting. New feed items are only queued when fresh eligible source briefs are available. This feed does not directly post to X; there are no X account credentials stored in this GitHub repository.
+- The existing publishing workflow refreshes `https://newstrendus.com/x-feed.xml` and prepares a NewsTrendus article landing page with publisher attribution.
+- `scripts/build_x_feed.py` chooses **at most one fresh brief every four hours** and adds up to two *actually relevant* hashtags.
+- `scripts/post_buffer_x.py` runs using `BUFFER_API_KEY` from GitHub Actions secrets; it verifies that the page exists publicly, picks the connected X channel, checks for duplicates, and submits **one** item to Buffer with `mode: shareNow`.
+- The URL includes `utm_source=x&utm_medium=social&utm_campaign=auto_news` so visitors from X can be counted in Google Analytics 4.
+- `social/buffer-history.json` tracks successful submissions (not credentials). If Buffer rejects a post or setup is missing, no post is reported as successful.
 
-### Important policy notes
+The workflow intentionally **does not** post while the Buffer API key or X authorization is missing. The initial setup cannot be done remotely without the X account owner's permission. The Buffer Free plan currently supports X and an API key, with a maximum of 10 queued posts per channel at a time; this workflow uses immediate posting and checks Buffer's actual response. Free plans, feature availability and API quotas are controlled by Buffer and can change.
 
-- Follow X automation and anti-spam policies: no automated mass replies/mentions, no unrelated trending hashtags, no duplicate promotion.
-- Source news is attributed on the NewsTrendus page; do not imply NewsTrendus reported the original article firsthand.
-- If sharing is no longer desired, disconnect or disable the IFTTT Applet. Revoking third-party access in X settings also stops authorized posting.
+References:
+- https://buffer.com/pricing
+- https://developers.buffer.com/guides/your-first-post.html
+- https://developers.buffer.com/guides/rest-migration.html
+- https://support.buffer.com/en-us/articles/how-to-create-your-buffer-api-key-ShIgYVwM6j
