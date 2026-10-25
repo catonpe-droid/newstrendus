@@ -15,7 +15,6 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "editorial-news.json"
 CDN = "https://images.pexels.com/photos/"
-FALLBACK = CDN + "33535231/pexels-photo-33535231.jpeg?auto=compress&cs=tinysrgb&w=1200"
 
 
 def card(item, article_index=False):
@@ -29,13 +28,14 @@ def card(item, article_index=False):
     category = escape(item["category"])
     date = datetime.fromisoformat(item["date"].replace("Z", "+00:00")).strftime("%B %d, %Y").upper()
     alt = escape(item.get("image_alt", "Representative editorial photograph"))
+    fallback = img.split("?", 1)[0] + "?auto=compress&cs=tinysrgb&w=1200"
     artist = escape(item["photo_artist"])
     credit = escape(item["photo_credit_url"], quote=True)
     return (
         f'<article class="card"><a href="{escape(link, quote=True)}" aria-label="Read article: {title}">'
         f'<img loading="lazy" decoding="async" src="{escape(img, quote=True)}" '
         f'alt="{alt}" width="1600" height="900" '
-        f'onerror="this.onerror=null;this.src=\'{escape(FALLBACK, quote=True)}\'"></a>'
+        f'onerror="this.onerror=null;this.src=\'{escape(fallback, quote=True)}\'"></a>'
         f'<div class="in"><span class="photo-attribution">Representative photo (not of this event): '
         f'<a href="{credit}" target="_blank" rel="noopener noreferrer">{artist} / Pexels</a></span>'
         f'<span class="kicker">{category} · {date}</span>'
