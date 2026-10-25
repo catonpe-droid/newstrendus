@@ -1,7 +1,5 @@
 name: Share NewsTrendus on X (Buffer Free)
 on:
-  schedule:
-    - cron: '55 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
