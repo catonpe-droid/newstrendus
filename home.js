@@ -16,7 +16,7 @@ const shot=i=>i.is_editorial && i.image ? {
 const imageHTML=(i,priority=false)=>{
  const p=shot(i),alt=(i.is_editorial ? (i.image_alt||'Representative photo') : (p?'Representative '+p.description:'Editorial '+i.category+' illustration'));
  const url=p?p.src:cover(i);
- const fallback=cover(i);
+ const fallback=i.is_editorial&&p&&p.src.startsWith('https://images.pexels.com/') ? p.src.split('?')[0]+'?auto=compress&cs=tinysrgb&w=1200' : cover(i);
  return '<img loading="'+(priority?'eager':'lazy')+'" decoding="async" src="'+escapeHTML(url)+'" alt="'+escapeHTML(alt)+'" onerror="this.onerror=null;this.src=\''+fallback+'\'">';
 };
 const photoCredit=i=>{
