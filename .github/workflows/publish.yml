@@ -25,11 +25,13 @@ jobs:
           python-version: '3.12'
       - name: Refresh news and US trends
         run: python scripts/update.py
-      - name: Save headline snapshot to repository
+      - name: Prepare curated X-sharing RSS feed
+        run: python scripts/build_x_feed.py
+      - name: Save headline snapshot and optional X feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news.json
+          git add news.json x-feed.xml social/
           if ! git diff --cached --quiet; then
             git commit -m "chore: publish latest US headlines [skip ci]"
             git push origin HEAD:main
