@@ -1,0 +1,37 @@
+name: Share NewsTrendus on X (Buffer Free)
+on:
+  schedule:
+    - cron: '55 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: newstrendus-buffer-x
+  cancel-in-progress: false
+jobs:
+  buffer_x:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Share latest eligible news brief through free Buffer API
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_CHANNEL_ID: ${{ vars.BUFFER_CHANNEL_ID }}
+        run: python scripts/post_buffer_x.py
+      - name: Remember successfully submitted articles (no secrets)
+        run: |
+          if [ -f social/buffer-history.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add social/buffer-history.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: remember X Buffer submission [skip ci]"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
