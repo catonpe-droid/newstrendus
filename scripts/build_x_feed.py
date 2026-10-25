@@ -223,7 +223,10 @@ def social_html(story: dict) -> str:
 <h2>What the source reports</h2><p>{summary}</p>
 <p class="small">This excerpt is provided by the credited publisher's RSS feed. NewsTrendus has not independently verified the story. The source may have more recent updates and details.</p>
 <p><a class="btn" href="{original}" target="_blank" rel="noopener noreferrer">Read full reporting at {source}</a></p>
-<p><a href="../../index.html">Explore more US news and trends</a></p>
+<nav aria-label="More NewsTrendus articles" style="margin-top:24px;padding-top:18px;border-top:1px solid #e5e9f0">
+<p style="font-size:13px;font-weight:800;color:#354a61">Explore more on NewsTrendus</p>
+<p><a href="../../index.html#stories">Latest US headlines</a> · <a href="../../politics/elections.html">State &amp; local coverage</a> · <a href="../../cities/index.html">USA city guides</a></p>
+</nav>
 </div></article><p class="small">Original reporting remains with its credited publisher. NewsTrendus is an independent source-discovery service.</p></div></body></html>
 """
 
