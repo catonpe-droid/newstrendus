@@ -1,7 +1,7 @@
 'use strict';
 const byId=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const cover=i=>'assets/'+(['US','Gaming','Technology','Business','Science','Entertainment','World','Sports','Health'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
+const cover=i=>'assets/'+(i.category==='Health'?'science':i.category==='Trending'?'us':['US','Gaming','Technology','Business','Science','Entertainment','World','Sports'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
 const requested=new URLSearchParams(location.search).get('id');
 byId('date').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
 byId('year').textContent=new Date().getFullYear();
