@@ -23,6 +23,8 @@ jobs:
           python-version: '3.12'
       - name: Rebuild category-aware article catalogue
         run: python scripts/editorial_catalog.py
+      - name: Synchronize latest articles on home and archive
+        run: python scripts/sync_editorial_lists.py
       - name: Enforce external-photo-only policy on all news articles
         run: python scripts/validate_editorial_images.py
       - name: Validate and regenerate technical SEO sitemap (no RSS autoblogging)
