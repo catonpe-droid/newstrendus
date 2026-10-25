@@ -35,11 +35,13 @@ jobs:
         run: python scripts/elections.py
       - name: Prepare curated X-sharing RSS feed
         run: python scripts/build_x_feed.py
+      - name: Run automatic Search Console technical SEO checks
+        run: python scripts/seo_build.py
       - name: Save headline snapshot and optional X feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news.json elections.json x-feed.xml social/
+          git add news.json elections.json x-feed.xml social/ sitemap.xml robots.txt
           if ! git diff --cached --quiet; then
             git commit -m "chore: publish latest US headlines [skip ci]"
             git push origin HEAD:main
