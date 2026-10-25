@@ -21,6 +21,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Rebuild category-aware article catalogue
+        run: python scripts/editorial_catalog.py
       - name: Validate and regenerate technical SEO sitemap (no RSS autoblogging)
         run: python scripts/seo_build.py
       - name: Ensure GA4 is present on published article pages
@@ -29,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml robots.txt
+          git add sitemap.xml robots.txt editorial-news.json
           git add -u -- '*.html'
           if ! git diff --cached --quiet; then
             git commit -m "chore: sync SEO sitemap and GA4 [skip ci]"
