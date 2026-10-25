@@ -1,7 +1,12 @@
 'use strict';
 const byId=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const cover=i=>'assets/'+(i.category==='Health'?'science':i.category==='Trending'?'us':['US','Gaming','Technology','Business','Science','Entertainment','World','Sports'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
+// Image fallback is always a Pexels photograph, never an SVG news graphic.
+const cover=i=>{
+ const ids={US:'36077357',Trending:'36077357',Business:'36755611',Sports:'33535231',Technology:'34804003',Gaming:'7862378',Health:'4031693',Science:'4031693',Entertainment:'7991112',World:'7635240'};
+ const id=ids[i.category]||ids.US;
+ return 'https://images.pexels.com/photos/'+id+'/pexels-photo-'+id+'.jpeg?auto=compress&cs=tinysrgb&w=1200';
+};
 const requested=new URLSearchParams(location.search).get('id');
 byId('date').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
 byId('year').textContent=new Date().getFullYear();
@@ -100,7 +105,7 @@ fetch('news.json',{cache:'no-store'})
  const photoURL=photo?photo.src:cover(a);
  const caption=photo
  ? 'Representative photo (not of the reported event). Photo by <a href="'+esc(photo.url)+'" target="_blank" rel="noopener noreferrer">'+esc(photo.artist)+'</a> on Pexels · '+esc(photo.license)+'.'
- : 'Original NewsTrendus category illustration. Not a documentary photo of this event.';
+ : 'Representative category photograph. Not from this event.';
  const sourceLink='<a class="sourcebtn" href="'+esc(origin)+'" target="_blank" rel="noopener noreferrer">Read the full report at '+esc(a.source)+' ↗</a>';
  byId('reader').innerHTML=
  '<div class="article-inside"><span class="eyebrow">'+esc(a.category||'News')+' / Sourced news brief</span>'+
