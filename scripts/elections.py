@@ -76,7 +76,11 @@ def main():
     combined={a["id"]:a for a in saved if a.get("id") and a.get("url")}
     combined.update({a["id"]:a for a in fresh})
     entries=[a for a in combined.values() if a.get("date")
-             and now-datetime.fromisoformat(a["date"])<timedelta(days=7)]
+             and now-datetime.fromisoformat(a["date"])<timedelta(days=7)
+             and not (a.get("source","").casefold().endswith((".ca"," canada"))
+                      or "countylive.ca" in a.get("title","").casefold()
+                      or a.get("source","").casefold()=="multistate"
+                      or "canadian election" in a.get("title","").casefold())]
     entries.sort(key=lambda a:a["date"],reverse=True)
     # Preserve a useful cross-section of states, not just one large media market.
     chosen=[];per={}
