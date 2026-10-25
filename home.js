@@ -1,7 +1,12 @@
 'use strict';
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 const escapeHTML=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const cover=i=>'assets/'+(i.category==='Health'?'science':i.category==='Trending'?'us':['US','Gaming','Technology','Business','Science','Entertainment','World','Sports'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
+// A real-photo fallback rather than the old SVG news illustration.
+const cover=i=>{
+ const ids={US:'36077357',Trending:'36077357',Business:'36755611',Sports:'33535231',Technology:'34804003',Gaming:'7862378',Health:'4031693',Science:'4031693',Entertainment:'7991112',World:'7635240'};
+ const id=ids[i.category]||ids.US;
+ return 'https://images.pexels.com/photos/'+id+'/pexels-photo-'+id+'.jpeg?auto=compress&cs=tinysrgb&w=1200';
+};
 const day=d=>{if(!d)return 'Latest';const x=new Date(d);return isNaN(x)?'Latest':x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})};
 const link=i=>i.page_url ? i.page_url : 'story.html?id='+encodeURIComponent(i.id||'');
 const shot=i=>i.is_editorial && i.image ? {
@@ -25,7 +30,7 @@ function feature(item,small=false){
 if(!item)return '';
 return '<article class="'+(small?'feature-sm':'feature')+'">'+
 imageHTML(item,!small)+
-'<span class="artnote">Representative photo (not of this event)</span>'+
+'<span class="artnote">Representative photograph</span>'+
 '<div class="feature-inner"><span class="storytag">'+escapeHTML(item.category)+'</span><h2><a href="'+link(item)+'">'+escapeHTML(item.title)+'</a></h2>'+
 '<div class="byline"><span>'+escapeHTML(item.source)+'</span><span>·</span><span>'+day(item.date)+'</span></div>'+photoCredit(item)+'</div></article>';
 }
@@ -62,7 +67,7 @@ const feed=(Array.isArray(d.items)?d.items:[]).filter(x=>x&&x.title&&x.url&&x.id
 articles=[...editorial,...feed];
 if(!articles.length)throw Error('No published articles or source briefs');
 
-$('#refreshed').textContent=editorial.length?editorial.length+' recent NewsTrendus articles · source feeds available':'News updates available';
+$('#refreshed').textContent=editorial.length?editorial.length+' verified on-site articles':'News updates available';
 $('#tickerHeadline').textContent=articles.length?articles[0].title:'Latest headlines coming soon';
 $('#tickerHeadline').href=articles.length?link(articles[0]):'index.html';
 $('#countTotal').textContent=articles.length;
