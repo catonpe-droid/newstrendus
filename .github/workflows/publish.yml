@@ -23,6 +23,8 @@ jobs:
           python-version: '3.12'
       - name: Rebuild category-aware article catalogue
         run: python scripts/editorial_catalog.py
+      - name: Enforce external-photo-only policy on all news articles
+        run: python scripts/validate_editorial_images.py
       - name: Validate and regenerate technical SEO sitemap (no RSS autoblogging)
         run: python scripts/seo_build.py
       - name: Ensure GA4 is present on published article pages
