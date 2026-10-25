@@ -73,6 +73,20 @@ fetch('news.json',{cache:'no-store'})
  const origin=cleanSourceURL(a.url),ctx=context[a.category]||context.US;
  const summary=a.summary?.trim()?esc(a.summary.trim()):'This source feed did not provide a description for this headline. NewsTrendus does not add unverified details to fill the gap. Please consult the original reporting for the full account.';
  const date=timestamp(a.date);
+ const licensed=typeof a.full_html==='string' && a.full_html.length>1500 &&
+   ['NASA government release','KFF Health News licensed republication'].includes(a.license_type);
+ const publisherByline=a.license_type==='KFF Health News licensed republication'
+    ?'By '+esc(a.author||'KFF Health News')+' — KFF Health News'
+    :esc(a.author||'NASA news release');
+ const licensedFull=licensed?(
+    '<section class="syndicated-text"><p class="state"><strong>Full source article — '+esc(a.full_source||a.source)+'</strong> · Republishing rights verified for this source; the original publisher retains credit.</p>'+
+    '<div class="syndicated-byline">'+publisherByline+'</div>'+
+    '<div class="licensed-body">'+a.full_html+'</div>'+
+    (a.license_type==='KFF Health News licensed republication'
+       ?'<p><a href="https://kffhealthnews.org/" target="_blank" rel="noopener noreferrer">KFF Health News</a> is a national newsroom that produces in-depth journalism about health issues and is one of the core operating programs at <a href="https://www.kff.org/" target="_blank" rel="noopener noreferrer">KFF</a> — the independent source for health policy research, polling, and journalism.</p>'
+       :'<p class="state">Source: NASA. NASA does not endorse this website or its advertisers. Third-party images are excluded.</p>')+
+    '</section>'
+    ):'';
  const para=ctx.paragraphs.map(t=>'<p>'+esc(t)+'</p>').join('');
  const factlist=[
   '<li><strong>Story:</strong> '+esc(a.title)+'</li>',
@@ -94,12 +108,12 @@ fetch('news.json',{cache:'no-store'})
  '<img class="article-graphic" src="'+esc(photoURL)+'" alt="'+esc(photo?'Representative '+photo.description:'Original category illustration')+'" loading="eager" decoding="async" onerror="this.onerror=null;this.src=\''+cover(a)+'\'">'+
  '<div class="article-inside"><p class="article-caption">'+caption+'</p>'+
  '<div class="article-body">'+
- '<h2>News at a glance</h2><p>'+summary+'</p>'+
- '<div class="story-notice">This preview comes from publisher-supplied RSS text. It may be shorter than the full report and can omit important updates, quotes and context.</div>'+
+ (licensedFull?licensedFull:'<h2>News at a glance</h2><p>'+summary+'</p>')+
+ (licensedFull?'<div class="story-notice">This full source article is republished with source rights and attribution. Editorial background below is separate NewsTrendus content.</div>':'<div class="story-notice">This preview comes from publisher-supplied RSS text. It may be shorter than the full report and can omit important updates, quotes and context.</div>')+
  '<h2>Key details from the source listing</h2><ul class="source-facts">'+factlist+'</ul>'+
  '<h2>'+esc(ctx.title)+'</h2>'+para+
  '<div class="story-more"><h2>Related reading</h2><p>For practical advice on evaluating developments like this, see our original <a href="'+esc(ctx.guide)+'" style="color:#aa1c32;text-decoration:underline">'+esc(ctx.label)+'</a>.</p></div>'+
- '<h2>Where to verify the report</h2><p>NewsTrendus does not reproduce the publisher’s full article or claim its reporting as our own. Open the source for primary details, direct quotations and updates. The link below opens the original publication.</p>'+
+ '<h2>Original publisher and updates</h2><p>'+(licensedFull?'The full text above is credited to its original publisher and reproduced under the source’s republication terms. For future corrections and updated versions, consult the original page.':'This source preview is not the publisher’s entire report. Use the original page for direct quotations and complete evidence.')+'</p>'+
  sourceLink+
  '<p class="state">Source credit is visible by design. Context guidance is general and does not add facts to the specific event.</p>'+
  '</div></div>';
