@@ -1,7 +1,7 @@
 'use strict';
 const byId=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const cover=i=>'assets/'+(['US','Gaming','Technology','Business','Science','Entertainment','World','Sports'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
+const cover=i=>'assets/'+(['US','Gaming','Technology','Business','Science','Entertainment','World','Sports','Health'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
 const requested=new URLSearchParams(location.search).get('id');
 byId('date').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
 byId('year').textContent=new Date().getFullYear();
@@ -53,6 +53,7 @@ const context={
  'Entertainment stories frequently mix a confirmed event, an interview, an industry report and speculation about future projects. A popular online discussion does not make all claims official.',
  'For cast announcements, release schedules, awards or studio decisions, compare coverage with original statements from organizers, studios or verified participants. Check dates so that older material is not mistaken for new news.'
  ],guide:'guides/gaming-announcements-checklist.html',label:'Guide: official announcements versus speculation'},
+'Health':{title:'How to interpret health reporting',paragraphs:['Health headlines can summarize a policy announcement, a medical study or a personal account. The context often affects what can responsibly be concluded.','For health-related claims, use original medical or public health sources where possible and distinguish a research finding from clinical guidance. This page is educational and not medical advice.'],guide:'guides/verify-breaking-news.html',label:'Guide: trace claims to primary evidence'},
 'World':{
  title:'Understanding an international report',
  paragraphs:[
