@@ -140,7 +140,7 @@ def check_listing():
     for path in (ROOT / "index.html", ROOT / "articles" / "index.html"):
         text = path.read_text(encoding="utf-8")
         if path.name == "index.html" and path.parent == ROOT:
-            match = re.search(r'<section\s+id="latest-news-articles"\b[\s\S]*?</section>', text, re.I)
+            match = re.search(r'<section\s+id="latest-news-articles"(?=[\s>])[\s\S]*?</section>', text, re.I)
             if not match:
                 issue(path.name, "Latest News Articles section missing")
                 continue
