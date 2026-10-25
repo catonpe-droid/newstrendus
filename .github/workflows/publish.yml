@@ -37,11 +37,14 @@ jobs:
         run: python scripts/build_x_feed.py
       - name: Run automatic Search Console technical SEO checks
         run: python scripts/seo_build.py
+      - name: Add GA4 tracking to all HTML pages
+        run: python scripts/ga4_tag.py
       - name: Save headline snapshot and optional X feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add news.json elections.json x-feed.xml social/ sitemap.xml robots.txt
+          git add -u -- '*.html'
           if ! git diff --cached --quiet; then
             git commit -m "chore: publish latest US headlines [skip ci]"
             git push origin HEAD:main
