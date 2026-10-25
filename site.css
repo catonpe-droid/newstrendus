@@ -20,3 +20,14 @@
 .story-more h2{margin:10px 0}
 @media(max-width:800px){.guide-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:580px){.guide-row{grid-template-columns:1fr;gap:12px}.guide-link{min-height:auto;padding:18px}.brandmark{width:32px;height:32px;margin-right:5px}.article-main .article-inside{padding:20px}.source-facts li{font-size:14px}}
+
+/* Source-credited photographs are representative, never photos of the reported event */
+.photo-attribution{display:block;font-size:10px;line-height:1.5;margin-top:9px;color:#7d899a;font-weight:550}
+.photo-attribution a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.feature .photo-attribution,.feature-sm .photo-attribution{color:#e4e8f2;text-shadow:0 1px 2px #0009}
+.photo-attribution a:hover{color:#dc354e}
+.feature .artnote,.feature-sm .artnote{top:13px;right:13px;left:auto;max-width:65%;text-align:right}
+.card .photo-attribution{margin-bottom:10px}
+.article-caption a{color:#ad223c;text-decoration:underline;text-underline-offset:2px;font-weight:700}
+.card img,.feature img,.feature-sm img,.article-graphic{background:#18314d}
+@media(max-width:580px){.feature .artnote,.feature-sm .artnote{font-size:8px;max-width:76%}.photo-attribution{font-size:9px}}
