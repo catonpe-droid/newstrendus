@@ -118,6 +118,7 @@ def main():
         article["selection_score"]=quality_score(article,now)
         return True
     def choose(pool,limit):
+        if limit<=0:return 0
         n=0
         for item in pool:
             if take(item):
