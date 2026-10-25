@@ -15,7 +15,7 @@ const photoCredit=i=>{
  const p=shot(i);
  return p?'<span class="photo-attribution">Representative photo: <a href="'+escapeHTML(p.url)+'" target="_blank" rel="noopener noreferrer">'+escapeHTML(p.artist)+' / Pexels</a></span>':'<span class="photo-attribution">NewsTrendus editorial illustration</span>';
 };
-let articles=[],activeCat='All',search='',limit=16;
+let articles=[],activeCat=(new URLSearchParams(window.location.search).get('category')||'All'),search='',limit=16;
 const brandDate=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
 $('#date').textContent=brandDate;$('#year').textContent=new Date().getFullYear();
 function feature(item,small=false){
