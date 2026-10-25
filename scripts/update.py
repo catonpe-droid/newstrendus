@@ -9,7 +9,7 @@ BASE = pathlib.Path(__file__).resolve().parents[1]
 FEEDS = {
     "US": ["https://feeds.npr.org/1001/rss.xml","https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"],
     "Technology": ["https://feeds.arstechnica.com/arstechnica/index","https://www.theverge.com/rss/index.xml"],
-    "Gaming": ["https://www.ign.com/rss/v2/articles/feed","https://www.pcgamer.com/feeds.xml","https://www.gamespot.com/feeds/mashup/"],
+    "Gaming": ["https://www.ign.com/rss/v2/articles/feed","https://www.gamespot.com/feeds/mashup/"],
     "Sports": ["https://www.cbssports.com/rss/headlines/"],
     "Business": ["https://feeds.bbci.co.uk/news/business/rss.xml"],
     "Science": ["https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"],
@@ -84,5 +84,5 @@ try:
 except Exception as exc:
     print("US Trends unavailable:",exc)
     if (BASE/"news.json").exists(): trends=json.loads((BASE/"news.json").read_text()).get("trends",[])
-(BASE/"news.json").write_text(json.dumps({"updated":datetime.now(timezone.utc).isoformat(),"feeds_ok":successes,"items":items[:200],"trends":trends},ensure_ascii=False),encoding="utf-8")
+(BASE/"news.json").write_text(json.dumps({"updated":datetime.now(timezone.utc).isoformat(),"feeds_ok":successes,"items":items[:300],"trends":trends},ensure_ascii=False),encoding="utf-8")
 print("Headlines:",len(items),"Trends:",len(trends),"Feeds working:",successes)
