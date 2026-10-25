@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 from html import escape
 from pathlib import Path
+import re
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 
@@ -30,6 +31,66 @@ PHOTOS = {
     "Entertainment": ("7991112", "Tima Miroshnichenko", "https://www.pexels.com/photo/empty-seats-of-a-movie-theater-7991112/"),
     "World": ("7635240", "Marina Leonova", "https://www.pexels.com/photo/a-map-beside-a-globe-7635240/"),
 }
+
+
+# Tags must reflect the subject in the *actual headline*, not unrelated trends.
+# X discourages irrelevant/viral hashtags and duplicate promotional posts.
+DEFAULT_TAGS = {
+    "US": "#USNews", "Technology": "#TechNews", "Business": "#BusinessNews",
+    "Science": "#ScienceNews", "Gaming": "#GamingNews",
+    "Sports": "#SportsNews", "Entertainment": "#EntertainmentNews",
+    "World": "#WorldNews",
+}
+TOPIC_TAGS = (
+    (r"\b(gta\s*(?:6|vi)|grand theft auto)\b", "#GTA6"),
+    (r"\b(nfl|super bowl)\b", "#NFL"),
+    (r"\b(nba|basketball)\b", "#NBA"),
+    (r"\b(mlb|baseball|world series)\b", "#MLB"),
+    (r"\b(nasa|artemis)\b", "#NASA"),
+    (r"\b(artificial intelligence|ai-powered|openai)\b", "#AI"),
+    (r"\b(cybersecurity|data breach|ransomware)\b", "#Cybersecurity"),
+    (r"\b(oregon)\b", "#Oregon"),
+    (r"\b(texas)\b", "#Texas"),
+    (r"\b(california)\b", "#California"),
+    (r"\b(new york)\b", "#NewYork"),
+    (r"\b(flood|flooding)\b", "#Flooding"),
+    (r"\b(drought)\b", "#Drought"),
+    (r"\b(rancher|ranchers|farming|farmers|agriculture)\b", "#Agriculture"),
+    (r"\b(wildfire|wildfires)\b", "#Wildfires"),
+    (r"\b(inflation)\b", "#Inflation"),
+    (r"\b(federal reserve|fed rate)\b", "#FederalReserve"),
+    (r"\b(earnings)\b", "#Earnings"),
+    (r"\b(space|moon|mars|astronaut)\b", "#Space"),
+)
+
+def tweet_headline(item: dict) -> str:
+    """Headline plus at most two *related* hashtags; safe for 'EntryTitle EntryUrl'."""
+    headline = " ".join(str(item.get("title") or "").split())
+    tags = []
+    for pattern, tag in TOPIC_TAGS:
+        if re.search(pattern, headline, flags=re.I) and tag not in tags:
+            tags.append(tag)
+        if len(tags) == 2:
+            break
+    if len(tags) < 2:
+        generic = DEFAULT_TAGS.get(str(item.get("category") or ""), "#USNews")
+        if generic not in tags:
+            tags.append(generic)
+    suffix = "  " + " ".join(tags[:2])
+    # The URL consumes about 23 characters in X's weighted post length.
+    # Keep title + tags under 230, leaving breathing room for the article URL.
+    limit = max(60, 225 - len(suffix))
+    if len(headline) > limit:
+        clipped = headline[:limit - 1].rsplit(" ", 1)[0].rstrip(" ,.;:-")
+        headline = clipped + "…"
+    return headline + suffix
+
+def attributed_share_link(item: dict) -> str:
+    """UTM-tagged, same-site article URL, not a publisher's destination."""
+    url = str(item["share_url"])
+    if not url.startswith(SITE + "/social/stories/"):
+        raise ValueError("External or unexpected social link")
+    return url + "?utm_source=x&utm_medium=social&utm_campaign=auto_news"
 
 def when(value: str | None) -> datetime | None:
     try:
@@ -128,17 +189,18 @@ def build() -> None:
     for k, v in (
         ("title", "NewsTrendus — Source-credited USA news briefs"),
         ("link", SITE + "/"),
-        ("description", "Selected source-attributed US news and trending-topic summaries. Original reporting is credited."),
+        ("description", "Selected source-attributed news briefs; visit NewsTrendus for context and the publisher link. Original reporting is credited."),
         ("language", "en-us"),
     ):
         ET.SubElement(channel, k).text = v
+    ET.SubElement(channel, "ttl").text = "60"
     latest = when(selected[-1].get("shared_at")) if selected else now
     ET.SubElement(channel, "lastBuildDate").text = format_datetime(latest)
     for item in reversed(selected[-40:]):
         node = ET.SubElement(channel, "item")
         for k, v in (
-            ("title", str(item["title"])[:180]),
-            ("link", str(item["share_url"])),
+            ("title", tweet_headline(item)),
+            ("link", attributed_share_link(item)),
             ("description", f"Source: {item.get('source') or 'publisher'}. {str(item.get('summary') or '')[:280]}"),
             ("guid", "newstrendus:" + str(item["id"])),
             ("pubDate", format_datetime(when(item.get("shared_at")) or now)),
