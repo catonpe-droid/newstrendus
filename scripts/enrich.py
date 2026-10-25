@@ -15,7 +15,7 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlparse
 from xml.etree import ElementTree as ET
 import html as htmlmod
-import json, re
+import json, re, hashlib
 from bs4 import BeautifulSoup, Tag
 import bleach
 
@@ -109,6 +109,49 @@ def kff_attribution(article):
     author=article.get("author","").strip()
     return "By "+author+" — KFF Health News" if author else "KFF Health News"
 
+def collect_trend_coverage(items, trends):
+    """Bring source-linked news attached to Google's US Trends RSS onto our site.
+    These stay short attributed previews; never copy protected full articles.
+    """
+    ns="{https://trends.google.com/trending/rss}"
+    req=Request("https://trends.google.com/trending/rss?geo=US",
+                headers={"User-Agent":"Mozilla/5.0","Accept":"application/rss+xml"})
+    with urlopen(req,timeout=15) as response:
+        root=ET.fromstring(response.read(750_000))
+    byurl={x["url"].split("?")[0] for x in items}
+    byterm={x.get("title","").casefold():x for x in trends}
+    count=0
+    for trend in root.findall(".//item")[:10]:
+        term=(trend.findtext("title") or "").strip()
+        if not term:continue
+        row=byterm.get(term.casefold())
+        for news in trend.findall(ns+"news_item"):
+            url=(news.findtext(ns+"news_item_url") or "").strip()
+            headline=BeautifulSoup(news.findtext(ns+"news_item_title") or "","html.parser").get_text(" ",strip=True)
+            snippet=BeautifulSoup(news.findtext(ns+"news_item_snippet") or "","html.parser").get_text(" ",strip=True)
+            if len(headline)<15 or not url.startswith("https://"):continue
+            host=urlparse(url).hostname or ""
+            if host.endswith("google.com") or host.endswith("googleusercontent.com"):continue
+            canonical=url.split("?")[0]
+            if canonical in byurl:continue
+            item={
+                "id":hashlib.sha256(url.encode()).hexdigest()[:16],
+                "title":headline[:240],"url":url,"category":"Trending",
+                "source":host.replace("www.",""),
+                "summary":snippet[:320],
+                "date":datetime.now(timezone.utc).isoformat(),
+                "trend_seed":term,
+                "trend_matches":[term],
+            }
+            items.append(item);byurl.add(canonical);count+=1
+            if row:
+                row["related_title"]=headline[:170]
+                row["related_url"]=url
+                row["related_source"]=item["source"]
+            break
+        if count>=10:break
+    return count
+
 def article_score(article,trends):
     blob=((article.get("title") or "")+" "+(article.get("summary") or "")).lower()
     if not blob.strip():return 0
@@ -116,6 +159,9 @@ def article_score(article,trends):
     for t in trends:
         phrase=(t.get("title") or "").lower().strip()
         if len(phrase)>2 and phrase in blob:matches.append(t.get("title"))
+    seed=article.get("trend_seed")
+    if seed and seed not in matches:
+        matches.insert(0,seed)
     article["trend_matches"]=matches[:3]
     return 20*len(matches)
 
@@ -157,6 +203,11 @@ def main():
                         rights_notice="Original KFF Health News article republished intact with byline, original links and attribution. Photos excluded.")
             result["kff_added"]+=1
         except Exception as e:print("KFF item skipped:",str(e)[:120])
+    trend_coverage=0
+    try:
+        trend_coverage=collect_trend_coverage(items,d.get("trends",[]))
+    except Exception as exc:
+        print("US Trends related stories unavailable:",str(exc)[:150])
     for x in items:
         x["trend_score"]=article_score(x,d.get("trends",[]))
     # Use topical relevance and freshness, not made-up search-volume claims.
@@ -171,6 +222,7 @@ def main():
         return relevance+licensed+us+max(0,10-hours/12)
     d["items"]=sorted(items,key=rank,reverse=True)
     d["enrichment_updated"]=datetime.now(timezone.utc).isoformat()
+    result["trend_related_stories"]=trend_coverage
     d["enrichment_summary"]=result
     DATA.write_text(json.dumps(d,ensure_ascii=False),encoding="utf-8")
     print("LICENSED_FULL_TEXT_SUMMARY",json.dumps(result),
