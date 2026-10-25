@@ -27,7 +27,7 @@ def excerpt(node):
     if not value:
         return ""
     value = re.sub(r"<[^>]*>", " ", value)
-    value = re.sub(r"\\s+", " ", html.unescape(value)).strip()
+    value = re.sub(r"\s+", " ", html.unescape(value)).strip()
     # No wholesale RSS republication.
     return value[:320].rsplit(" ", 1)[0] if len(value) > 320 else value
 
@@ -93,7 +93,7 @@ if api_key and count < 3:
                 "present in the title and publisher excerpt. Never invent claims, quotations, context, "
                 "release dates, statistics, or quotes. Avoid paraphrasing the source sentence-by-sentence; "
                 "add clarity through structure, not through unsupported claims. If material is insufficient, "
-                "return {\\\"paragraphs\\\":[]}. Do not use copyright-protected wording or reproduce excerpts."
+                "if there are not enough facts, use an empty paragraphs array. Do not copy original source phrasing."
             ),
             "input": json.dumps({"headline":article["title"],"publisher":article["source"],
                                  "date":article["date"],"feed_excerpt":article["summary"]}),
