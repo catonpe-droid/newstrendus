@@ -1,0 +1,6 @@
+'use strict';(()=>{const host=document.getElementById('localPoliticsCards');if(!host)return;const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+fetch('elections.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('unavailable');return r.json()}).then(d=>{
+const selected=Array.isArray(d.items)?d.items.slice(0,6):[];
+host.innerHTML=selected.length?selected.map(x=>'<article class="card"><div class="in"><span class="kicker">'+esc(x.state_name||'USA')+' · Local Politics</span><h3><a target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">'+esc(x.title)+'</a></h3><p class="excerpt">Read the original publisher’s report for evidence, publication updates and complete election context.</p><div class="byline">'+esc(x.source)+' · '+(x.date?new Date(x.date).toLocaleDateString('en-US',{month:'short',day:'numeric'}):'Recent')+' · Source ↗</div></div></article>').join(''):'<div class="empty">Local coverage is being collected. Explore the <a href="politics/elections.html">50-state election news directory</a>.</div>';
+}).catch(()=>host.innerHTML='<div class="empty">Local headlines temporarily unavailable. <a href="politics/elections.html">Visit US Elections</a>.</div>');
+})();
