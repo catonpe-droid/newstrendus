@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 import json
 import re
 import sys
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 PHOTO_HOST = "images.pexels.com"
@@ -136,6 +137,27 @@ def check_local_media():
                 issue(f.relative_to(ROOT), "local media in editorial/article directories forbidden; use CDN URL only")
 
 
+
+def check_new_binary_media():
+    """Block ANY newly added image asset in the latest commit, anywhere in repo.
+
+    Existing brand/icon files are unchanged. Actions checkout uses fetch-depth 2
+    so HEAD^ is available. This does not download or open image files.
+    """
+    cmd = ["git", "diff", "--name-only", "--diff-filter=A", "HEAD^", "HEAD"]
+    try:
+        result = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, check=False)
+    except OSError:
+        return  # The repository may be validated outside git in a local checkout.
+    if result.returncode != 0:
+        print("Image addition check: parent commit unavailable; editorial directory scan still applies.")
+        return
+    for filename in result.stdout.splitlines():
+        if Path(filename).suffix.lower() in MEDIA_SUFFIXES:
+            issue(filename, "new image files are forbidden anywhere in the repository; use an external CDN photo URL only")
+
+
+
 def check_listing():
     for path in (ROOT / "index.html", ROOT / "articles" / "index.html"):
         text = path.read_text(encoding="utf-8")
@@ -181,6 +203,7 @@ def check_catalog():
 def main():
     articles = list((ROOT / "articles").glob("20*/*/*.html"))
     check_local_media()
+    check_new_binary_media()
     for path in articles:
         verify_article(path)
     check_listing()
