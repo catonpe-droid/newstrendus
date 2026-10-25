@@ -1,9 +1,7 @@
-name: Refresh USA news and publish
+name: Deploy NewsTrendus to GitHub Pages
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '11,41 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,33 +21,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install free HTML parser and sanitizer
-        run: python -m pip install --quiet beautifulsoup4 bleach
-      - name: Refresh news and US trends
-        run: python scripts/update.py
-      - name: Enrich explicitly licensed full-text articles and prioritize US search trends
-        run: python scripts/enrich.py
-      - name: Select only 45 strong US and trending headlines
-        run: python scripts/curate.py
-      - name: Refresh 50-state and DC local election reporting
-        run: python scripts/elections.py
-      - name: Prepare curated X-sharing RSS feed
-        run: python scripts/build_x_feed.py
-      - name: Run automatic Search Console technical SEO checks
+      - name: Validate and regenerate technical SEO sitemap (no RSS autoblogging)
         run: python scripts/seo_build.py
-      - name: Add GA4 tracking to all HTML pages
+      - name: Ensure GA4 is present on published article pages
         run: python scripts/ga4_tag.py
-      - name: Save headline snapshot and optional X feed
+      - name: Save site metadata
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news.json elections.json x-feed.xml social/ sitemap.xml robots.txt
+          git add sitemap.xml robots.txt
           git add -u -- '*.html'
           if ! git diff --cached --quiet; then
-            git commit -m "chore: publish latest US headlines [skip ci]"
+            git commit -m "chore: sync SEO sitemap and GA4 [skip ci]"
             git push origin HEAD:main
-          else
-            echo "News snapshot unchanged"
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
