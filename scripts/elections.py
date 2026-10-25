@@ -43,6 +43,9 @@ def get_items(query,state_name,state_code,limit=5):
             publisher=(src.text or "").strip() if src is not None else ""
             link=item.findtext("link") or ""
             if not valid_title(title) or not link.startswith("https://"):continue
+            if publisher.lower().endswith((".ca"," canada")) or "countylive.ca" in title.casefold():continue
+            if publisher.lower() in ("multistate",):continue
+            if "ontario election" in title.casefold() or "canadian election" in title.casefold():continue
             if state_code and not publisher:continue
             date=item.findtext("pubDate")
             try:iso=parsedate_to_datetime(date).astimezone(timezone.utc).isoformat()
@@ -68,7 +71,7 @@ def main():
         query='"'+name+'" ("local election" OR "school board election" OR "city council" OR "ballot measure" OR "governor race") when:7d'
         fresh.extend(get_items(query,name,code,5))
     # National reporting keeps election section broadly useful between rotations.
-    fresh.extend(get_items('"US midterm election" OR "state ballot measures" OR "municipal election" when:3d',
+    fresh.extend(get_items('"US midterm election" OR "2026 US state elections" OR "US school board elections" when:3d',
                            "United States","US",10))
     combined={a["id"]:a for a in saved if a.get("id") and a.get("url")}
     combined.update({a["id"]:a for a in fresh})
