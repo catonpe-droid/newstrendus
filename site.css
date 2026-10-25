@@ -31,3 +31,12 @@
 .article-caption a{color:#ad223c;text-decoration:underline;text-underline-offset:2px;font-weight:700}
 .card img,.feature img,.feature-sm img,.article-graphic{background:#18314d}
 @media(max-width:580px){.feature .artnote,.feature-sm .artnote{font-size:8px;max-width:76%}.photo-attribution{font-size:9px}}
+
+/* Full text from rights-eligible agency and nonprofit newsroom sources */
+.licensed-body{font:18px/1.82 Georgia,"Times New Roman",serif;color:#273244;overflow-wrap:anywhere}
+.licensed-body p{margin:14px 0 21px}.licensed-body h2,.licensed-body h3{font:750 22px/1.3 Inter,Arial,sans-serif;margin:30px 0 11px}
+.licensed-body a,.syndicated-text a{color:#a01a39;text-decoration:underline;text-underline-offset:3px}
+.licensed-body ul,.licensed-body ol{padding-left:25px}.licensed-body blockquote{margin:22px 0;padding:12px 18px;border-left:4px solid #bd2440;background:#f5f7fa}
+.syndicated-byline{font:700 14px/1.6 Inter,Arial,sans-serif;margin:13px 0 25px;padding-bottom:13px;border-bottom:1px solid #d6e0ed;color:#34445a}
+.syndicated-text{margin-bottom:25px}.syndicated-text>.state{border-top:3px solid #193657;background:#f2f6fa;padding:14px 17px}
+@media(max-width:580px){.licensed-body{font-size:17px;line-height:1.76}}
