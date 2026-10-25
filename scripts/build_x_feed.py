@@ -1,7 +1,8 @@
-"""Prepare a rate-limited, attribution-first RSS feed for X social sharing.
+"""Select fresh, US-relevant source-credited news for NewsTrendus X RSS.
 
-This does NOT post to X or use credentials. An account owner must link
-https://newstrendus.com/x-feed.xml to an authorized RSS-to-X service.
+Do not automatically target X trending topics, scrape X trends, or use unrelated
+viral hashtags. X permits helpful RSS cross-posting, not trend manipulation.
+The separately authorized Buffer workflow handles actual publication.
 """
 from __future__ import annotations
 
@@ -20,7 +21,32 @@ STATE = ROOT / "social" / "x-history.json"
 FEED = ROOT / "x-feed.xml"
 SITE = "https://newstrendus.com"
 INTERVAL = timedelta(hours=4)  # Max one new social brief every four hours.
-CATEGORIES = {"US", "Technology", "Business", "Science", "Gaming", "Sports", "Entertainment", "World"}
+CATEGORIES = {"US", "Technology", "Business", "Science", "Gaming", "Sports", "Entertainment", "Health", "World"}
+MAX_STORY_AGE = timedelta(hours=30)
+CATEGORY_WEIGHTS = {
+    "US": 95, "Technology": 70, "Sports": 66, "Gaming": 64,
+    "Business": 63, "Science": 60, "Health": 59,
+    "Entertainment": 48, "World": 15,
+}
+US_SIGNALS = re.compile(
+    r"\b(?:U\.?S\.?A?\.?|United States|Americans?|American|Washington|"
+    r"California|Texas|New York|Florida|Oregon|Chicago|Los Angeles|"
+    r"New Jersey|Colorado|Arizona|Nevada|Ohio|Pennsylvania|"
+    r"Michigan|Illinois|Georgia|Virginia|North Carolina|"
+    r"White House|Congress|Federal Reserve|Supreme Court|"
+    r"NASA|NFL|NBA|MLB|NHL|Super Bowl|World Series)\b",
+    flags=re.IGNORECASE,
+)
+UNSUITABLE = re.compile(
+    r"\b(?:sponsored by|advertisement|newsletter|weekly roundup|"
+    r"daily puzzle|horoscope|rumou?rs?|unconfirmed|spoiler)\b",
+    flags=re.IGNORECASE,
+)
+STOPWORDS = frozenset(
+    "a an and are at by for from in into is it of on or the to was were "
+    "with how why what when after amid says over under new latest today".split()
+)
+
 PHOTOS = {
     "US": ("36077357", "Mark Direen", "https://www.pexels.com/photo/iconic-view-of-the-us-capitol-building-at-dawn-36077357/"),
     "Technology": ("34804003", "Daniil Komov", "https://www.pexels.com/photo/modern-workspace-with-laptop-and-code-display-34804003/"),
@@ -92,6 +118,57 @@ def attributed_share_link(item: dict) -> str:
         raise ValueError("External or unexpected social link")
     return url + "?utm_source=x&utm_medium=social&utm_campaign=auto_news"
 
+def headline_tokens(title: str) -> set[str]:
+    """Normalized tokens to stop several near-identical RSS stories."""
+    return {
+        token for token in re.findall(r"[a-z0-9]{3,}", title.casefold())
+        if token not in STOPWORDS
+    }
+
+
+def is_duplicate_topic(title: str, recent: list[dict]) -> bool:
+    incoming = headline_tokens(title)
+    if len(incoming) < 4:
+        return False
+    for old in recent:
+        previous = headline_tokens(str(old.get("title") or ""))
+        if len(previous) < 4:
+            continue
+        overlap = len(incoming & previous)
+        similarity = overlap / len(incoming | previous)
+        if overlap >= 4 and similarity >= 0.62:
+            return True
+    return False
+
+
+def editorial_score(item: dict, now: datetime, recent: list[dict]) -> float:
+    """US-readership and freshness heuristic; not an X trends/rankings feed."""
+    category = str(item.get("category") or "")
+    title = str(item.get("title") or "")
+    summary = str(item.get("summary") or "")
+    date = when(item.get("date"))
+    age_hours = (now - date).total_seconds() / 3600 if date else 72
+    score = CATEGORY_WEIGHTS.get(category, 0)
+    score += max(0, 46 - age_hours * 2.3)
+    if US_SIGNALS.search(title):
+        score += 27
+    elif US_SIGNALS.search(summary):
+        score += 9
+    elif category == "World":
+        score -= 38  # Never prioritize unrelated overseas news for US readership.
+    if category == "US":
+        score += 8
+    if len(summary.strip()) >= 70:
+        score += 8
+    elif not summary.strip():
+        score -= 12
+    last_categories = [x.get("category") for x in recent[-3:]]
+    score -= 24 * last_categories.count(category)
+    if recent and recent[-1].get("source") == item.get("source"):
+        score -= 12
+    return score
+
+
 def when(value: str | None) -> datetime | None:
     try:
         parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
@@ -153,22 +230,37 @@ def build() -> None:
     all_ids = {str(x.get("id")) for x in selected}
     if previous is None or now - previous >= INTERVAL:
         choices = []
+        recent = [
+            s for s in selected[-30:]
+            if (when(s.get("shared_at")) or datetime.min.replace(tzinfo=timezone.utc))
+               >= now - timedelta(days=5)
+        ]
         for item in data.get("items", []):
             date = when(item.get("date"))
             url = str(item.get("url") or "")
             ident = str(item.get("id") or "")
+            title = " ".join(str(item.get("title") or "").split())
+            parsed_url = urlparse(url)
             if (
-                not ident or ident in all_ids or item.get("category") not in CATEGORIES
-                or not item.get("title") or not date or not (timedelta(0) <= now - date < timedelta(days=2))
-                or urlparse(url).scheme != "https"
+                not re.fullmatch(r"[a-f0-9]{16}", ident) or ident in all_ids
+                or item.get("category") not in CATEGORIES
+                or len(title) < 25 or not date
+                or not (timedelta(0) <= now - date < MAX_STORY_AGE)
+                or parsed_url.scheme != "https" or not parsed_url.netloc
+                or UNSUITABLE.search(title)
+                or is_duplicate_topic(title, recent)
             ):
                 continue
             choices.append(item)
-        # Favor verified-source US headlines, but mix topical news as it breaks.
-        choices.sort(key=lambda a: (
-            1 if a.get("category") == "US" else 0,
-            when(a.get("date")) or datetime.min.replace(tzinfo=timezone.utc),
-        ), reverse=True)
+        # Editorial selection only: freshness, US relevance and source diversity.
+        # X explicitly disallows automating posts about X trending topics.
+        choices.sort(
+            key=lambda a: (
+                editorial_score(a, now, recent),
+                when(a.get("date")) or datetime.min.replace(tzinfo=timezone.utc),
+            ),
+            reverse=True,
+        )
         if choices:
             a = choices[0]
             story = {k: a.get(k) for k in ("id", "title", "summary", "source", "category", "url", "date")}
@@ -178,7 +270,7 @@ def build() -> None:
             out = ROOT / "social" / "stories" / f"{a['id']}.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(social_html(story), encoding="utf-8")
-            print("Queued one source-credited post:", story["title"])
+            print("Queued one US-relevant source-credited post:", story["title"], "\\nCategory:", story["category"])
         else:
             print("No eligible fresh source headlines available.")
     STATE.parent.mkdir(exist_ok=True)
