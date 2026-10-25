@@ -80,14 +80,19 @@ fetch('news.json',{cache:'no-store'})
   '<li><strong>Publication date:</strong> '+esc(date)+'</li>',
   '<li><strong>Section:</strong> '+esc(a.category||'News')+'</li>'
  ].join('');
+ const photo=window.NewsTrendusPhotos?.forStory(a)||null;
+ const photoURL=photo?photo.src:cover(a);
+ const caption=photo
+ ? 'Representative photo (not of the reported event). Photo by <a href="'+esc(photo.url)+'" target="_blank" rel="noopener noreferrer">'+esc(photo.artist)+'</a> on Pexels · '+esc(photo.license)+'.'
+ : 'Original NewsTrendus category illustration. Not a documentary photo of this event.';
  const sourceLink='<a class="sourcebtn" href="'+esc(origin)+'" target="_blank" rel="noopener noreferrer">Read the full report at '+esc(a.source)+' ↗</a>';
  byId('reader').innerHTML=
  '<div class="article-inside"><span class="eyebrow">'+esc(a.category||'News')+' / Sourced news brief</span>'+
  '<h1 class="article-title">'+esc(a.title)+'</h1>'+
  '<div class="article-meta">Original publisher: <strong>'+esc(a.source)+'</strong> · '+esc(date)+' · RSS-based preview</div>'+
  '<div class="reader-tools"><button id="shareStory" type="button">Share this news brief</button><a href="index.html" style="font-size:13px;font-weight:700;color:#a9233d">← Back to US news</a></div></div>'+
- '<img class="article-graphic" src="'+cover(a)+'" alt="Original editorial illustration for '+esc(a.category)+' coverage" loading="eager">'+
- '<div class="article-inside"><p class="article-caption">Original NewsTrendus category illustration — not a documentary photo of this event.</p>'+
+ '<img class="article-graphic" src="'+esc(photoURL)+'" alt="'+esc(photo?'Representative '+photo.description:'Original category illustration')+'" loading="eager" decoding="async" onerror="this.onerror=null;this.src=\''+cover(a)+'\'">'+
+ '<div class="article-inside"><p class="article-caption">'+caption+'</p>'+
  '<div class="article-body">'+
  '<h2>News at a glance</h2><p>'+summary+'</p>'+
  '<div class="story-notice">This preview comes from publisher-supplied RSS text. It may be shorter than the full report and can omit important updates, quotes and context.</div>'+
