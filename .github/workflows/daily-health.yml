@@ -1,0 +1,29 @@
+name: Daily NewsTrendus health and SEO audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 1 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: newstrendus-daily-health
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit news freshness, licensed reports, SEO, analytics and reachability
+        run: python scripts/daily_health.py
+      - name: Save structured site-health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-site-health
+          path: reports/daily-health.json
+          retention-days: 14
+          if-no-files-found: warn
