@@ -8,7 +8,7 @@
 <link rel="alternate" type="application/rss+xml" title="NewsTrendus social news RSS" href="https://newstrendus.com/x-feed.xml">
 <meta name="google-adsense-account" content="ca-pub-2124953371207111">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2124953371207111" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="site.css"><link rel="icon" href="assets/us-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="calculators/tools.css"><link rel="icon" href="assets/us-mark.svg" type="image/svg+xml">
 <meta property="og:type" content="website"><meta property="og:title" content="NewsTrendus | US News & Trends"><meta property="og:description" content="Fresh US trends, gaming updates and source-credited news briefs.">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"NewsTrendus","url":"https://newstrendus.com/","inLanguage":"en-US","description":"Independent US-focused news discovery and sourced brief reading"}</script>
 </head><body>
@@ -18,14 +18,18 @@
 <div class="header-side"><strong>News, not noise.</strong>Smart summaries, credited sources<br><span id="refreshed">Updating headlines</span></div>
 </div></header>
 <div class="navshell"><nav class="container nav" aria-label="News sections">
-<button data-category="All" class="active">Top Stories</button><button data-category="US">US News</button><button data-category="World">World</button><button data-category="Technology">Technology</button><button data-category="Gaming">Gaming</button><button data-category="Business">Business</button><button data-category="Sports">Sports</button><button data-category="Health">Health</button><button data-category="Trending">Trending USA</button><button data-category="Science">NASA / Science</button><button data-category="Entertainment">Entertainment</button><a href="about.html">About</a><a href="contact.html">Contact</a><a href="guides/google-trends-us-explained.html">Guides</a><a href="privacy.html">Privacy</a>
+<button data-category="All" class="active">Top Stories</button><button data-category="Full Articles">Full Articles</button><a href="calculators/index.html">Free Calculators</a><button data-category="US">US News</button><button data-category="World">World</button><button data-category="Technology">Technology</button><button data-category="Gaming">Gaming</button><button data-category="Business">Business</button><button data-category="Sports">Sports</button><button data-category="Health">Health</button><button data-category="Trending">Trending USA</button><button data-category="Science">NASA / Science</button><button data-category="Entertainment">Entertainment</button><a href="about.html">About</a><a href="contact.html">Contact</a><a href="guides/google-trends-us-explained.html">Guides</a><a href="privacy.html">Privacy</a>
 </nav></div>
 <div class="ticker"><div class="container tickerin"><span class="breaking">● Latest</span><a class="tickertext" id="tickerHeadline" href="index.html">Latest headlines from our source feeds are loading…</a><small>Source-linked news digest</small></div></div>
 <main class="container main">
 <section aria-label="Top headlines"><div class="intro"><div><span class="eyebrow">In Focus / USA & Beyond</span><h1>Today's top stories.</h1></div><p>Fresh headlines, short on-site briefs and related coverage from credited sources. This is a curated news digest, not independent original reporting.</p></div>
 <div class="leadgrid"><div id="lead"><div class="empty">Loading today's top story…</div></div><div id="sideleads" class="sideleads"></div></div>
 </section>
-<section id="stories">
+<section id="fullreads" aria-label="Licensed full stories from original publishers">
+ <div class="sectionrow"><h2>Full Articles to Read Here</h2><a href="#stories" style="color:#ad1734;font-size:13px;font-weight:750">Browse more headlines</a></div>
+ <p class="state" style="margin-top:-5px;line-height:1.7">These full-length reports are available through permitted NASA or KFF Health News republication, with author and source credit. Other publishers' articles remain short attributed previews.</p>
+ <div class="feedgrid" id="fullReads"><div class="empty">Loading permitted full articles…</div></div></section>
+ <section id="stories">
 <div class="sectionrow"><h2 id="listTitle">Latest Stories</h2><div class="searcharea"><span class="count" id="count">Loading headlines…</span><input class="search" id="search" type="search" placeholder="Search US news, GTA 6…" aria-label="Search headlines"></div></div>
 <div class="contentgrid"><div><div class="feedgrid" id="feed"><div class="empty">Refreshing latest news…</div></div><div style="text-align:center;padding:24px 0"><button class="button" id="more" hidden>Load more headlines</button></div></div>
 <aside class="sidebar" aria-label="Trending topics and information">
@@ -34,6 +38,27 @@
 <div class="widget"><h3>About our briefs</h3><p class="state" style="line-height:1.8">Article pages display short source-fed previews and related stories on NewsTrendus. Images are original editorial illustrations—not photographs of the event. Publisher reporting is credited and linked.</p><p class="fine"><span id="countTotal">—</span> recent articles indexed in this feed snapshot.</p></div>
 </aside>
 </div></section>
+<section id="calc-preview" class="t-hub" aria-label="Free USA calculators">
+ <div class="sectionrow"><h2>🇺🇸 Free Calculators for US Readers</h2><a href="calculators/index.html" style="color:#b01c35;font-weight:750;font-size:13px">See all six tools</a></div>
+ <p style="color:#617287;margin-top:-5px;line-height:1.6">Instant results on mobile—mortgages, auto loans, tips, salary, credit-card payoff and rent budgeting. No sign-up or paid API.</p>
+ <div class="t-grid">
+ <a class="t-tile" href="calculators/mortgage.html"><span class="t-tile-icon">🏡</span><strong>Mortgage Payment</strong><span>Estimate principal, interest, taxes, insurance and HOA</span></a>
+ <a class="t-tile" href="calculators/auto-loan.html"><span class="t-tile-icon">🚗</span><strong>Auto Loan</strong><span>Compare financed amount, loan terms and interest</span></a>
+ <a class="t-tile" href="calculators/tip.html"><span class="t-tile-icon">🍽️</span><strong>Tip & Bill Split</strong><span>Restaurant tips and amounts per person</span></a>
+ <a class="t-tile" href="calculators/credit-card-payoff.html"><span class="t-tile-icon">💳</span><strong>Credit Card Payoff</strong><span>Understand repayment time and interest cost</span></a>
+ <a class="t-tile" href="calculators/salary.html"><span class="t-tile-icon">💼</span><strong>Salary Converter</strong><span>Convert hourly, weekly and annual gross pay</span></a>
+ <a class="t-tile" href="calculators/rent-affordability.html"><span class="t-tile-icon">🏙️</span><strong>Rent Budget</strong><span>Explore rent affordability using your own expenses</span></a>
+ </div>
+ <div class="t-section-head"><h2>Try Our US Tip Calculator</h2><a href="calculators/tip.html" style="color:#b51b34;font-weight:750">Open full tool</a></div>
+ <div class="t-demo" data-calculator="tip"><div class="t-form"><h2>Restaurant tip and split</h2><div class="t-fieldgrid">
+ <label class="t-field">Bill before tip ($)<input type="number" name="bill" min="0" step="any" value="84.50" inputmode="decimal"></label>
+ <label class="t-field">Tip percentage (%)<input type="number" name="tip" min="0" step="any" value="18" inputmode="decimal"></label>
+ <label class="t-field">Number of people<input type="number" name="people" min="1" step="1" value="3" inputmode="numeric"></label>
+ </div><p class="t-note">Calculated entirely on your device. Nothing is sent to a server.</p><button class="button" data-reset type="button">Reset</button></div>
+ <div class="t-result" aria-live="polite"><div data-results></div><p class="t-note">Equal split of bill plus tip. Always check service charges before tipping again.</p></div></div>
+ <div class="t-section-head"><h2>Plan for a US City</h2><a href="calculators/index.html" style="color:#af2037;font-size:13px;font-weight:750">Calculator guide</a></div>
+ <div class="t-citylinks"><a href="cities/new-york.html">New York City</a><a href="cities/los-angeles.html">Los Angeles</a><a href="cities/chicago.html">Chicago</a><a href="cities/houston.html">Houston</a><a href="cities/phoenix.html">Phoenix</a><a href="cities/dallas.html">Dallas</a></div>
+ </section>
 <section aria-label="Original free guides" style="margin:28px 0 8px"><div class="sectionrow"><h2>Understand the big stories</h2><span class="count">Original NewsTrendus guides</span></div><div class="feedgrid">
 <article class="card"><a href="guides/gta-6-source-check.html"><img loading="lazy" src="assets/gaming.svg" alt="Gaming editorial illustration"></a><div class="in"><span class="kicker">Gaming Guide</span><h3><a href="guides/gta-6-source-check.html">GTA VI: Official Updates vs. Rumors</a></h3><p class="excerpt">Learn to verify game announcements and trending gaming claims.</p></div></article>
 <article class="card"><a href="guides/google-trends-us-explained.html"><img loading="lazy" src="assets/us.svg" alt="United States editorial illustration"></a><div class="in"><span class="kicker">US Trends</span><h3><a href="guides/google-trends-us-explained.html">What Does Trending in America Really Mean?</a></h3><p class="excerpt">Why a search spike alone does not confirm a news report.</p></div></article></div>
@@ -43,5 +68,5 @@
 <a class="guide-link" href="guides/gaming-announcements-checklist.html"><span>Gaming Guide</span><strong>How to Check Release Announcements</strong><small>Dates, platforms and gameplay trailers</small></a>
 </div></section></main>
 <footer class="foot"><div class="container footin"><div><a class="brand" href="index.html" style="font-size:26px"><img src="assets/us-mark.svg" class="brandmark" width="34" height="34" alt="">News<span>Trendus</span></a><p>Independent news discovery • English (US) • RSS headlines are provided by their publishers. Full reporting, photography and context remain with the original publishers. Stories are automatically updated and may not be independently verified.</p><p>© <span id="year"></span> NewsTrendus. All rights reserved.</p></div><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="editorial.html">Editorial Standards</a><a href="photo-credits.html">Photo Credits</a><a href="privacy.html">Privacy Policy</a><a href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">US Trends</a></nav></div></footer>
-<script src="photos.js" defer></script><script src="home.js" defer></script>
+<script src="photos.js" defer></script><script src="home.js" defer></script><script src="calculators/tools.js" defer></script>
 </body></html>
