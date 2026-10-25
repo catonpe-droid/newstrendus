@@ -1,0 +1,23 @@
+name: Check X news automation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_x_feed.py'
+      - 'tests/test_x_feed.py'
+      - '.github/workflows/test-x-feed.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify syntax
+        run: python -m py_compile scripts/build_x_feed.py scripts/post_buffer_x.py
+      - name: Test US selection and hashtag safety
+        run: python -m unittest discover -s tests -p 'test_x_feed.py' -v
