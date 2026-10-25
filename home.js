@@ -56,6 +56,11 @@ $('#tickerHeadline').href=articles.length?link(articles[0]):'index.html';
 $('#countTotal').textContent=articles.length;
 const trends=Array.isArray(d.trends)?d.trends.slice(0,10):[];
 $('#trendCount').textContent=trends.length;
-$('#trends').innerHTML=trends.length?trends.map((x,i)=>'<div class="trendrow"><span class="trendnum">'+(i+1)+'</span><a href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">'+escapeHTML(x.title)+'</a></div>').join(''):'<p class="state">US search trends are temporarily unavailable.</p>';
+$('#trends').innerHTML=trends.length?trends.map((x,i)=>{
+ const local=x.related_id?'story.html?id='+encodeURIComponent(x.related_id):'https://trends.google.com/trending?geo=US';
+ const external=x.related_id?'':' target="_blank" rel="noopener noreferrer"';
+ const label=x.related_title?'<small class="state" style="display:block;margin-top:5px">Related: '+escapeHTML(x.related_title)+' · '+escapeHTML(x.related_source||'')+'</small>':'';
+ return '<div class="trendrow"><span class="trendnum">'+(i+1)+'</span><div><a href="'+local+'"'+external+'>'+escapeHTML(x.title)+'</a>'+label+'</div></div>';
+}).join(''):'<p class="state">US search trends are temporarily unavailable.</p>';
 render();
 }).catch(()=>{$('#lead').innerHTML='<div class="empty">Headlines temporarily unavailable. Please try again shortly.</div>';$('#feed').innerHTML='';$('#sideleads').innerHTML='';$('#trends').textContent='Trending topics temporarily unavailable.'});
