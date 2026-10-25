@@ -40,3 +40,18 @@
 .syndicated-byline{font:700 14px/1.6 Inter,Arial,sans-serif;margin:13px 0 25px;padding-bottom:13px;border-bottom:1px solid #d6e0ed;color:#34445a}
 .syndicated-text{margin-bottom:25px}.syndicated-text>.state{border-top:3px solid #193657;background:#f2f6fa;padding:14px 17px}
 @media(max-width:580px){.licensed-body{font-size:17px;line-height:1.76}}
+
+
+/* Uniform photo-led NewsTrendus article cards — no oversized SVG feature tiles */
+#latest-news-articles .feedgrid,.nt-list .feedgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+#latest-news-articles .card,.nt-list .card{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid #e3e9f1;border-radius:12px;box-shadow:0 3px 16px #14283b0b}
+#latest-news-articles .card>a,.nt-list .card>a{display:block;overflow:hidden;aspect-ratio:16/9;background:#edf1f5}
+#latest-news-articles .card img,.nt-list .card img{display:block;width:100%;height:100%;aspect-ratio:16/9;object-fit:cover;object-position:center;background:#edf1f5}
+#latest-news-articles .card .in,.nt-list .card .in{flex:1;display:flex;flex-direction:column;padding:16px 17px 18px}
+#latest-news-articles .card h3,.nt-list .card h3{font-size:18px;line-height:1.32;letter-spacing:-.025em;margin:9px 0;overflow-wrap:anywhere}
+#latest-news-articles .card .excerpt,.nt-list .card .excerpt{margin-bottom:12px;line-height:1.55}
+#latest-news-articles .card .byline,.nt-list .card .byline{margin-top:auto;font-size:11px;line-height:1.5}
+#latest-news-articles .sectionrow{margin-top:24px}
+.nt-list{padding-top:28px}
+@media(max-width:940px){#latest-news-articles .feedgrid,.nt-list .feedgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:590px){#latest-news-articles .feedgrid,.nt-list .feedgrid{grid-template-columns:minmax(0,1fr);gap:15px}#latest-news-articles .card h3,.nt-list .card h3{font-size:19px}#latest-news-articles .card .in,.nt-list .card .in{padding:16px}}
