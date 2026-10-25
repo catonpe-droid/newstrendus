@@ -4,21 +4,32 @@ const escapeHTML=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 const cover=i=>'assets/'+(['US','Gaming','Technology','Business','Science','Entertainment','World','Sports'].includes(i.category)?i.category.toLowerCase():'news')+'.svg';
 const day=d=>{if(!d)return 'Latest';const x=new Date(d);return isNaN(x)?'Latest':x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})};
 const link=i=>'story.html?id='+encodeURIComponent(i.id||'');
+const shot=i=>window.NewsTrendusPhotos?.forStory(i)||null;
+const imageHTML=(i,priority=false)=>{
+ const p=shot(i),alt=(p?'Representative '+p.description:'Editorial '+i.category+' illustration');
+ const url=p?p.src:cover(i);
+ const fallback=cover(i);
+ return '<img loading="'+(priority?'eager':'lazy')+'" decoding="async" src="'+escapeHTML(url)+'" alt="'+escapeHTML(alt)+'" onerror="this.onerror=null;this.src=\''+fallback+'\'">';
+};
+const photoCredit=i=>{
+ const p=shot(i);
+ return p?'<span class="photo-attribution">Representative photo: <a href="'+escapeHTML(p.url)+'" target="_blank" rel="noopener noreferrer">'+escapeHTML(p.artist)+' / Pexels</a></span>':'<span class="photo-attribution">NewsTrendus editorial illustration</span>';
+};
 let articles=[],activeCat='All',search='',limit=16;
 const brandDate=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
 $('#date').textContent=brandDate;$('#year').textContent=new Date().getFullYear();
 function feature(item,small=false){
 if(!item)return '';
 return '<article class="'+(small?'feature-sm':'feature')+'">'+
-'<img loading="'+(small?'lazy':'eager')+'" src="'+cover(item)+'" alt="'+escapeHTML(item.category)+' editorial illustration">'+
-'<span class="artnote">Editorial illustration</span>'+
+imageHTML(item,!small)+
+'<span class="artnote">Representative photo (not of this event)</span>'+
 '<div class="feature-inner"><span class="storytag">'+escapeHTML(item.category)+'</span><h2><a href="'+link(item)+'">'+escapeHTML(item.title)+'</a></h2>'+
-'<div class="byline"><span>'+escapeHTML(item.source)+'</span><span>·</span><span>'+day(item.date)+'</span></div></div></article>';
+'<div class="byline"><span>'+escapeHTML(item.source)+'</span><span>·</span><span>'+day(item.date)+'</span></div>'+photoCredit(item)+'</div></article>';
 }
 function card(item){
 let preview=item.summary?'<p class="excerpt">'+escapeHTML(item.summary)+'</p>':'';
-return '<article class="card"><a href="'+link(item)+'" aria-label="Read news brief: '+escapeHTML(item.title)+'"><img loading="lazy" src="'+cover(item)+'" alt="'+escapeHTML(item.category)+' editorial illustration"></a>'+
-'<div class="in"><span class="kicker">'+escapeHTML(item.category)+'</span><h3><a href="'+link(item)+'">'+escapeHTML(item.title)+'</a></h3>'+preview+
+return '<article class="card"><a href="'+link(item)+'" aria-label="Read news brief: '+escapeHTML(item.title)+'">'+imageHTML(item)+'</a>'+
+'<div class="in">'+photoCredit(item)+'<span class="kicker">'+escapeHTML(item.category)+'</span><h3><a href="'+link(item)+'">'+escapeHTML(item.title)+'</a></h3>'+preview+
 '<div class="byline"><span>'+escapeHTML(item.source)+'</span><span>·</span><time>'+day(item.date)+'</time><span>·</span><span>Read on NewsTrendus</span></div></div></article>';
 }
 function render(){
