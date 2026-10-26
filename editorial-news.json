@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T22:33:45.206943+00:00",
+  "generated_at": "2026-10-26T22:34:40.106074+00:00",
   "items": [
     {
       "id": "editorial-att-data-breach-settlement-payout-2026-when-checks-arrive",
@@ -17,6 +17,21 @@
       "is_editorial": true
     },
     {
+      "id": "editorial-chris-brown-suspended-sentence-london-nightclub-october-2026",
+      "title": "Chris Brown Sentenced in London: What an Eight-Month Suspended Term Means",
+      "url": "https://newstrendus.com/articles/2026/10/chris-brown-suspended-sentence-london-nightclub-october-2026.html",
+      "page_url": "articles/2026/10/chris-brown-suspended-sentence-london-nightclub-october-2026.html",
+      "category": "Entertainment",
+      "summary": "Chris Brown received an eight-month prison sentence suspended for 12 months over a 2023 London nightclub attack. What the court decided on October 26.",
+      "source": "NewsTrendus",
+      "date": "2026-10-26T22:30:00+00:00",
+      "image": "https://images.pexels.com/photos/6173841/pexels-photo-6173841.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+      "image_alt": "Representative photograph of a nightclub microphone and audience; not Chris Brown, the London court or the 2023 incident",
+      "photo_artist": "RDNE Stock project",
+      "photo_credit_url": "https://www.pexels.com/photo/microphone-on-stage-in-front-of-people-dancing-6173841/",
+      "is_editorial": true
+    },
+    {
       "id": "editorial-microsoft-voluntary-buyouts-60000-employees-2026-eligibility",
       "title": "Microsoft Buyouts 2026: About 60,000 Employees Eligible, Not Laid Off",
       "url": "https://newstrendus.com/articles/2026/10/microsoft-voluntary-buyouts-60000-employees-2026-eligibility.html",
@@ -29,6 +44,21 @@
       "image_alt": "Representative photograph of an office workstation and laptop; not a Microsoft employee, office or buyout meeting",
       "photo_artist": "Jakub Zerdzicki",
       "photo_credit_url": "https://www.pexels.com/photo/modern-office-desk-with-laptop-and-external-drives-28729682/",
+      "is_editorial": true
+    },
+    {
+      "id": "editorial-texas-roadhouse-steak-complaint-kenneth-card-filet-sirloin-2026",
+      "title": "Texas Roadhouse Steak Complaint: What Kenneth Card Claims and Chain Says",
+      "url": "https://newstrendus.com/articles/2026/10/texas-roadhouse-steak-complaint-kenneth-card-filet-sirloin-2026.html",
+      "page_url": "articles/2026/10/texas-roadhouse-steak-complaint-kenneth-card-filet-sirloin-2026.html",
+      "category": "Business",
+      "summary": "Kenneth Card says a Texas Roadhouse served sirloin instead of the filet he ordered. The restaurant chain disputes that repeated incidents are confirmed.",
+      "source": "NewsTrendus",
+      "date": "2026-10-26T22:30:00+00:00",
+      "image": "https://images.pexels.com/photos/17130434/pexels-photo-17130434.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+      "image_alt": "Representative photograph of a steak served at a restaurant; not a Texas Roadhouse meal or Kenneth Card's order",
+      "photo_artist": "Xuân Thống Trần",
+      "photo_credit_url": "https://www.pexels.com/photo/a-steak-served-in-a-restaurant-17130434/",
       "is_editorial": true
     },
     {
