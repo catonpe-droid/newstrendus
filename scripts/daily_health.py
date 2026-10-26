@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from collections import Counter
+import subprocess
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 from xml.etree import ElementTree as ET
@@ -64,15 +65,14 @@ def main():
     if not isinstance(items,list):items=[]
     count=len(items)
     fresh=age_hours(news.get("updated"))
-    check(40<=count<=45,"news",f"Curated news count {count} outside expected 40-45",True)
-    check(fresh is not None and fresh<=4,"news",f"News snapshot is {fresh} hours old (expected <=4h)",True)
+    # news.json is a legacy, read-only RSS discovery snapshot. RSS autoblogging is disabled.
+    # Do not fail health checks because the retired feed has stopped refreshing.
     unique=len({x.get("url") for x in items if isinstance(x,dict)})
     check(unique==count,"news",f"Only {unique} unique story URLs among {count} items")
     full=[x for x in items if isinstance(x,dict) and x.get("full_html")]
     invalid=[x.get("title","?")[:75] for x in full if x.get("license_type") not in FULL_RIGHTS]
     check(not invalid,"copyright","Full-text articles have unapproved source rights: "+str(invalid),True)
     trending=sum(bool(x.get("trend_seed")) for x in items if isinstance(x,dict))
-    if trending==0:check(False,"news","No US Trends-linked articles in today's shortlist")
     source_counts=Counter(x.get("source","unknown") for x in items if isinstance(x,dict))
     category_counts=Counter(x.get("category","unknown") for x in items if isinstance(x,dict))
     report["checks"]["news"]={"curated_count":count,"age_hours":fresh,"full_articles":len(full),
@@ -81,8 +81,7 @@ def main():
 
     elections=read_json("elections.json")
     election_age=age_hours(elections.get("updated"))
-    check(election_age is not None and election_age<=8,"elections",
-          f"Local-election feed age {election_age}h (expected <=8h)")
+    # Elections feed is not an active scheduled publisher; report its age, not an SLA.
     jurisdiction_count=len(elections.get("jurisdictions",[]))
     check(jurisdiction_count==51,"elections",f"Expected 50 states + DC; found {jurisdiction_count}")
     report["checks"]["elections"]={"count":len(elections.get("items",[])),
@@ -101,6 +100,39 @@ def main():
     robots=(ROOT/"robots.txt").read_text(encoding="utf-8")
     check("Sitemap: "+BASE+"/sitemap.xml" in robots,"seo","Robots sitemap declaration missing",True)
     check("Disallow: /" not in robots,"seo","Site-wide robots blocking Google",True)
+    # Four-hour Google Trends publisher creates original static articles, not RSS posts.
+    catalog=read_json("editorial-news.json")
+    editorial=catalog.get("items",[])
+    if not isinstance(editorial,list):
+        editorial=[]
+    article_urls=[x.get("url","") for x in editorial if isinstance(x,dict)]
+    categories=Counter(x.get("category","unknown") for x in editorial if isinstance(x,dict))
+    check(bool(editorial),"editorial","No published editorial article catalogue entries",True)
+    check(len(article_urls)==len(set(article_urls)),"editorial","Duplicate article URLs in editorial catalogue",True)
+    missing=[url for url in article_urls if url not in sitemap_urls]
+    check(not missing,"seo","Editorial article URLs missing from sitemap: "+", ".join(missing[:5]),True)
+    bad_categories=[x.get("page_url","?") for x in editorial if isinstance(x,dict)
+                    and x.get("category") not in {"US","World","Technology","Gaming","Business","Sports","Health","Trending","Science","Entertainment"}]
+    check(not bad_categories,"editorial","Unknown editorial categories: "+", ".join(bad_categories[:5]),True)
+    newest=max((x.get("date","") for x in editorial if isinstance(x,dict)),default="")
+    latest_age=age_hours(newest)
+    check(latest_age is not None and -1<=latest_age<=12,"editorial",
+          f"Latest original article is {latest_age}h old; verify four-hour Trends publisher")
+    css=(ROOT/"site.css").read_text(encoding="utf-8")
+    check("aspect-ratio:16/9" in css and "object-fit:cover" in css,
+          "editorial","16:9 cropped photo CSS missing",True)
+    try:
+        image_gate=subprocess.run([sys.executable,"scripts/validate_editorial_images.py"],
+                cwd=ROOT,capture_output=True,text=True,timeout=35,check=False)
+        image_gate_ok=image_gate.returncode==0
+        image_gate_detail=(image_gate.stdout+"\n"+image_gate.stderr).strip()[-900:]
+    except (OSError,subprocess.TimeoutExpired) as exc:
+        image_gate_ok=False
+        image_gate_detail=str(exc)
+    check(image_gate_ok,"editorial","External-photo / credit validation failed: "+image_gate_detail,True)
+    report["checks"]["editorial"]={"published_articles":len(editorial),
+        "latest_article_age_hours":latest_age,"categories":dict(categories),
+        "articles_missing_from_sitemap":len(missing),"photo_policy_pass":image_gate_ok}
 
     html_paths=[p for p in ROOT.rglob("*.html") if ".git" not in p.parts]
     untracked=[]
@@ -130,8 +162,8 @@ def main():
     REPORT.parent.mkdir(parents=True,exist_ok=True)
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("DAILY HEALTH SUMMARY",json.dumps({
-        "status":report["status"],"news":count,"news_age_hours":fresh,
-        "full_text":len(full),"trends":trending,"sitemap_urls":len(sitemap_urls),
+        "status":report["status"],"legacy_news":count,"legacy_news_age_hours":fresh,
+        "editorial_articles":len(editorial),"photo_policy_pass":image_gate_ok,"sitemap_urls":len(sitemap_urls),
         "html_pages":len(html_paths),"issues":len(issues)},ensure_ascii=False))
     for x in issues:print(f"{x['severity'].upper()}: [{x['category']}] {x['message']}")
     summary=os.environ.get("GITHUB_STEP_SUMMARY")
@@ -139,7 +171,7 @@ def main():
         with open(summary,"a",encoding="utf-8") as out:
             out.write("# NewsTrendus — Daily Site Health\n\n")
             out.write(f"**Status:** {report['status']} · **Checked UTC:** {TODAY.isoformat()}\n\n")
-            out.write(f"News: **{count}**, full text: **{len(full)}**, US trend matches: **{trending}**, sitemap URLs: **{len(sitemap_urls)}**, GA4 HTML pages: **{len(html_paths)}**\n\n")
+            out.write(f"Original articles: **{len(editorial)}**, latest age: **{latest_age}h**, photo gate: **{image_gate_ok}**, sitemap URLs: **{len(sitemap_urls)}**, GA4 HTML pages: **{len(html_paths)}**. Legacy RSS snapshot: **{count}** items (not auto-published).\n\n")
             if issues:
                 out.write("## Issues\n\n")
                 for x in issues:out.write(f"- **{x['severity']} / {x['category']}**: {x['message']}\n")
