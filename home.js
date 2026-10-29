@@ -63,7 +63,12 @@ Promise.allSettled([
 const d=results[0].status==='fulfilled'?results[0].value:{items:[],trends:[],updated:null};
 const ed=results[1].status==='fulfilled'?results[1].value:{items:[]};
 const editorial=(Array.isArray(ed.items)?ed.items:[]).filter(x=>x&&x.title&&x.page_url&&x.image&&x.is_editorial);
-const feed=(Array.isArray(d.items)?d.items:[]).filter(x=>x&&x.title&&x.url&&x.id);
+// news.json is a retired RSS-discovery snapshot, not an active news publisher.
+// Keep licensed historical reports below, but never present stale RSS briefs as current news.
+const legacyFeed=(Array.isArray(d.items)?d.items:[]).filter(x=>x&&x.title&&x.url&&x.id);
+const lastRSSUpdate=Date.parse(d.updated||'');
+const legacyFresh=Number.isFinite(lastRSSUpdate)&&lastRSSUpdate<=Date.now()&&Date.now()-lastRSSUpdate<36*60*60*1000;
+const feed=legacyFresh?legacyFeed:[];
 articles=[...editorial,...feed];
 if(!articles.length)throw Error('No published articles or source briefs');
 
@@ -71,17 +76,18 @@ $('#refreshed').textContent=editorial.length?editorial.length+' verified on-site
 $('#tickerHeadline').textContent=articles.length?articles[0].title:'Latest headlines coming soon';
 $('#tickerHeadline').href=articles.length?link(articles[0]):'index.html';
 $('#countTotal').textContent=articles.length;
-const full=feed.filter(a=>a.full_html && ['NASA government release','KFF Health News licensed republication'].includes(a.license_type));
+const full=legacyFeed.filter(a=>a.full_html && ['NASA government release','KFF Health News licensed republication'].includes(a.license_type));
 const fullSpot=document.querySelector('#fullReads');
 if(fullSpot){fullSpot.innerHTML=full.length?full.slice(0,4).map(a=>card(a)).join(''):'<div class="empty">Full-length licensed reports from NASA and KFF Health News will appear here as they become available.</div>';}
 
-const trends=Array.isArray(d.trends)?d.trends.slice(0,10):[];
+// Do not display a four-day-old Trends snapshot as if it were live US search demand.
+const trends=legacyFresh&&Array.isArray(d.trends)?d.trends.slice(0,10):[];
 $('#trendCount').textContent=trends.length;
 $('#trends').innerHTML=trends.length?trends.map((x,i)=>{
  const local=x.related_id?'story.html?id='+encodeURIComponent(x.related_id):'https://trends.google.com/trending?geo=US';
  const external=x.related_id?'':' target="_blank" rel="noopener noreferrer"';
  const label=x.related_title?'<small class="state" style="display:block;margin-top:5px">Related: '+escapeHTML(x.related_title)+' · '+escapeHTML(x.related_source||'')+'</small>':'';
  return '<div class="trendrow"><span class="trendnum">'+(i+1)+'</span><div><a href="'+local+'"'+external+'>'+escapeHTML(x.title)+'</a>'+label+'</div></div>';
-}).join(''):'<p class="state">US search trends are temporarily unavailable.</p>';
+}).join(''):'<p class="state">For current US search trends, visit <a href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">Google Trends USA</a>. Historical snapshots are not shown as live trends.</p>';
 render();
 }).catch(()=>{$('#lead').innerHTML='<div class="empty">Headlines temporarily unavailable. Please try again shortly.</div>';$('#feed').innerHTML='';$('#sideleads').innerHTML='';$('#trends').textContent='Trending topics temporarily unavailable.'});
