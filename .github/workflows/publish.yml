@@ -31,6 +31,10 @@ jobs:
         run: python scripts/validate_editorial_images.py
       - name: Validate and regenerate technical SEO sitemap (no RSS autoblogging)
         run: python scripts/seo_build.py
+      - name: Add sharing buttons and rich image previews to every original article
+        run: |
+          python scripts/enhance_article_sharing.py
+          python scripts/enhance_article_sharing.py --check
       - name: Ensure GA4 is present on published article pages
         run: python scripts/ga4_tag.py
       - name: Save site metadata
