@@ -121,14 +121,14 @@ def main():
     if len(news_rows)>1000:
         print("NEWS SITEMAP WARNING: over 1000 recent articles; retaining newest 1000")
         news_rows=news_rows[:1000]
-    news_xml='<?xml version="1.0" encoding="UTF-8"?>\\n'
-    news_xml+='<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\\n'
+    news_xml='<?xml version="1.0" encoding="UTF-8"?>\n'
+    news_xml+='<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n'
     for posted,url,title in news_rows:
-        news_xml+='  <url><loc>'+escape(url)+'</loc><news:news>\\n'
-        news_xml+='    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>\\n'
-        news_xml+='    <news:publication_date>'+posted.isoformat(timespec="seconds")+'</news:publication_date>\\n'
-        news_xml+='    <news:title>'+escape(title)+'</news:title></news:news></url>\\n'
-    news_xml+='</urlset>\\n'
+        news_xml+='  <url><loc>'+escape(url)+'</loc><news:news>\n'
+        news_xml+='    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>\n'
+        news_xml+='    <news:publication_date>'+posted.isoformat(timespec="seconds")+'</news:publication_date>\n'
+        news_xml+='    <news:title>'+escape(title)+'</news:title></news:news></url>\n'
+    news_xml+='</urlset>\n'
     (ROOT/"news-sitemap.xml").write_text(news_xml,encoding="utf-8")
     print(f"NEWS SITEMAP: {len(news_rows)} recent original articles (last 48 hours)")
     (ROOT/"robots.txt").write_text(
