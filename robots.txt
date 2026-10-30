@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://newstrendus.com/sitemap.xml
+Sitemap: https://newstrendus.com/news-sitemap.xml
