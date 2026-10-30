@@ -71,7 +71,7 @@ def main():
         r'[\s\S]*?(?P<close></div></main>)', re.I
     )
     update(ROOT / "index.html", home, items[:24])
-    update(ROOT / "articles" / "index.html", articles, items[:120], article_index=True)
+    update(ROOT / "articles" / "index.html", articles, items, article_index=True)
 
 
 if __name__ == "__main__":
