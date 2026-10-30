@@ -7,6 +7,8 @@ Print warnings for metadata quality and broken local HTML links, but never
 invent Google indexing or submit to Search Console without authorization.
 """
 from pathlib import Path
+from datetime import datetime, timezone, timedelta
+from html import unescape
 from html.parser import HTMLParser
 from xml.sax.saxutils import escape
 from urllib.parse import urlparse, unquote
@@ -92,8 +94,45 @@ def main():
     for _,u in pages:xml+='  <url><loc>'+escape(u)+'</loc></url>\n'
     xml+='</urlset>\n'
     (ROOT/"sitemap.xml").write_text(xml,encoding="utf-8")
+    # Google News sitemap: only genuine, canonical articles published within
+    # the previous two days; preserve their ORIGINAL publication timestamps.
+    # Do not use "last modified" as publication time or include RSS previews.
+    news_rows=[]
+    cutoff=datetime.now(timezone.utc)-timedelta(days=2)
+    now=datetime.now(timezone.utc)
+    for rel, url in pages:
+        if not rel.startswith("articles/") or rel=="articles/index.html":
+            continue
+        meta=read(ROOT/rel).meta
+        published=meta.get("article:published_time","")
+        title=unescape(meta.get("og:title","").strip())
+        if not (published and title):
+            continue
+        try:
+            posted=datetime.fromisoformat(published.replace("Z","+00:00"))
+            if posted.tzinfo is None:
+                continue
+            posted=posted.astimezone(timezone.utc)
+        except (ValueError,TypeError,OverflowError):
+            continue
+        if cutoff <= posted <= now:
+            news_rows.append((posted,url,title))
+    news_rows.sort(key=lambda row:row[0],reverse=True)
+    if len(news_rows)>1000:
+        print("NEWS SITEMAP WARNING: over 1000 recent articles; retaining newest 1000")
+        news_rows=news_rows[:1000]
+    news_xml='<?xml version="1.0" encoding="UTF-8"?>\\n'
+    news_xml+='<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\\n'
+    for posted,url,title in news_rows:
+        news_xml+='  <url><loc>'+escape(url)+'</loc><news:news>\\n'
+        news_xml+='    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>\\n'
+        news_xml+='    <news:publication_date>'+posted.isoformat(timespec="seconds")+'</news:publication_date>\\n'
+        news_xml+='    <news:title>'+escape(title)+'</news:title></news:news></url>\\n'
+    news_xml+='</urlset>\\n'
+    (ROOT/"news-sitemap.xml").write_text(news_xml,encoding="utf-8")
+    print(f"NEWS SITEMAP: {len(news_rows)} recent original articles (last 48 hours)")
     (ROOT/"robots.txt").write_text(
-        "User-agent: *\nAllow: /\n\nSitemap: "+DOMAIN+"/sitemap.xml\n",
+        "User-agent: *\nAllow: /\n\nSitemap: "+DOMAIN+"/sitemap.xml\nSitemap: "+DOMAIN+"/news-sitemap.xml\n",
         encoding="utf-8")
     print(f"SEO CHECK: {len(pages)} indexable static canonical pages in sitemap.xml")
     print(f"SEO CHECK: {len(warnings)} metadata warnings, {len(broken)} broken HTML links")
