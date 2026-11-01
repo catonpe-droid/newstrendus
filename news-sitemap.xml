@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/usc-ohio-state-30-18-october-31-2026-red-zone-analysis.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-01T06:35:00+00:00</news:publication_date>
+    <news:title>USC Beats No. 2 Ohio State 30-18: Why the Buckeyes' Red-Zone Drives Mattered</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/10/melissa-gilbert-michael-landon-90th-birthday-tribute-little-house.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-01T02:29:00+00:00</news:publication_date>
@@ -60,16 +64,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-10-30T10:25:00+00:00</news:publication_date>
     <news:title>Is In-N-Out Coming to Oklahoma, Arkansas or Mississippi? What the CEO Actually Said</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/10/christian-watson-broken-rib-hospital-return-packers-panthers-october-29-2026.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-10-30T06:32:14+00:00</news:publication_date>
-    <news:title>Christian Watson Injury Update: Broken Rib, Hospital Visit and Return vs. Panthers</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/10/red-baron-worker-walt-gofundme-prank-fundraiser-job-status-october-2026.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-10-30T06:32:14+00:00</news:publication_date>
-    <news:title>Red Baron Worker GoFundMe: What Happened, Donation Total and Job Status</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/10/rubin-2026-ed138-dwarf-planet-candidate-beyond-pluto-size-confirmation.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-10-30T06:32:14+00:00</news:publication_date>
-    <news:title>2026 ED138: New Dwarf Planet Candidate Found Beyond Pluto by Rubin Observatory</news:title></news:news></url>
 </urlset>
