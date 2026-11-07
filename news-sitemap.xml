@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/usda-ai-crop-report-checks-november-10-2026-corn-corrections.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-07T10:30:00+00:00</news:publication_date>
+    <news:title>USDA Adds AI Checks Before November 10 Crop Report</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/us-consumer-sentiment-november-2026-inflation-expectations.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-07T08:30:00+00:00</news:publication_date>
@@ -16,20 +20,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-07T04:38:43+00:00</news:publication_date>
     <news:title>Stephen Miller to Replace Susie Wiles on Nov. 9: What Changes at the White House</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/nasa-x70-fractal-experimental-aircraft-announced-2026-first-flight-specs.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-05T10:04:00+00:00</news:publication_date>
-    <news:title>NASA X-70 Fractal: Aircraft Specs, First-Flight Timeline and What the New X-Plane Will Test</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/antarctic-ozone-hole-2026-seventh-largest-noaa-nasa-recovery-explained.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-05T10:03:00+00:00</news:publication_date>
-    <news:title>Antarctic Ozone Hole 2026 Ranks Seventh Largest: Why NOAA and NASA Still See Recovery</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/starbucks-holiday-menu-2026-november-5-drinks-red-cup-dates.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-05T10:02:00+00:00</news:publication_date>
-    <news:title>Starbucks Holiday Menu 2026 Starts Nov. 5: New Drinks, Red Cup Day and Bearista Dates</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/mississippi-senate-2026-colom-hyde-smith-november-10-ballot-deadlines.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-05T10:01:00+00:00</news:publication_date>
-    <news:title>Mississippi Senate Race 2026: Why Colom–Hyde-Smith Is Uncalled and the November 10 Deadline Matters</news:title></news:news></url>
 </urlset>

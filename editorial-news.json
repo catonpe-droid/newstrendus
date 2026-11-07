@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-07T08:30:53.197796+00:00",
+  "generated_at": "2026-11-07T10:31:15.693879+00:00",
   "items": [
+    {
+      "id": "editorial-usda-ai-crop-report-checks-november-10-2026-corn-corrections",
+      "title": "USDA Adds AI Checks Before November 10 Crop Report",
+      "url": "https://newstrendus.com/articles/2026/11/usda-ai-crop-report-checks-november-10-2026-corn-corrections.html",
+      "page_url": "articles/2026/11/usda-ai-crop-report-checks-november-10-2026-corn-corrections.html",
+      "category": "Business",
+      "summary": "USDA plans AI-assisted checks for its Nov. 10 crop report after correcting Kansas and Nebraska corn estimates. See what changed and what to watch.",
+      "source": "NewsTrendus",
+      "date": "2026-11-07T10:30:00+00:00",
+      "image": "https://images.pexels.com/photos/9798866/pexels-photo-9798866.jpeg",
+      "image_alt": "Representative licensed photograph of a combine harvester working in a cornfield, not a USDA data collection or AI validation system",
+      "photo_artist": "Mark Stebnicki",
+      "photo_credit_url": "https://www.pexels.com/photo/harvester-collecting-crops-9798866/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-us-consumer-sentiment-november-2026-inflation-expectations",
       "title": "US Consumer Sentiment Rises to 51.0 in November: What Changed",
