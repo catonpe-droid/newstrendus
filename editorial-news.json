@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-07T06:32:27.453511+00:00",
+  "generated_at": "2026-11-07T08:30:53.197796+00:00",
   "items": [
+    {
+      "id": "editorial-us-consumer-sentiment-november-2026-inflation-expectations",
+      "title": "US Consumer Sentiment Rises to 51.0 in November: What Changed",
+      "url": "https://newstrendus.com/articles/2026/11/us-consumer-sentiment-november-2026-inflation-expectations.html",
+      "page_url": "articles/2026/11/us-consumer-sentiment-november-2026-inflation-expectations.html",
+      "category": "Business",
+      "summary": "US consumer sentiment rose to 51.0 in November 2026, but high prices still hurt. Compare inflation expectations and see what the preliminary survey means.",
+      "source": "NewsTrendus",
+      "date": "2026-11-07T08:30:00+00:00",
+      "image": "https://images.pexels.com/photos/5808355/pexels-photo-5808355.jpeg",
+      "image_alt": "Representative licensed photograph of coffee cups on a table illustrating everyday consumer spending, not a survey participant",
+      "photo_artist": "Erik Mclean",
+      "photo_credit_url": "https://www.pexels.com/photo/coffee-cups-on-a-wooden-table-5808355/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-ai-ceo-impersonation-fraud-129-million-doj-charges-2026",
       "title": "AI CEO Impersonation Scam: DOJ Alleges $129M Theft",
