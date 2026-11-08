@@ -37,8 +37,11 @@ jobs:
         run: |
           python scripts/enhance_article_sharing.py
           python scripts/enhance_article_sharing.py --check
-      - name: Ensure GA4 is present on published article pages
-        run: python scripts/ga4_tag.py
+      - name: Ensure GA4 and AdSense Auto Ads code on all eligible pages
+        run: |
+          python scripts/ga4_tag.py
+          python scripts/adsense_tag.py
+          python scripts/adsense_tag.py --check
       - name: Save site metadata
         run: |
           git config user.name "github-actions[bot]"
