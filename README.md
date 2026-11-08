@@ -20,6 +20,10 @@ The GitHub Actions deployment gate runs `scripts/editorial_catalog.py` and **`sc
 
 Only small HTML/CSS/JavaScript/JSON metadata and publisher-credit links are added to the repo. News-image bytes remain on Pexels or another explicitly authorized third-party photo host, not in the GitHub repo or user Library. This saves repository image storage; actual photo download bandwidth, third-party availability and caching still depend on the CDN and visitor browser.
 
+## Editorial SEO and monetization policy (November 2026)
+
+Every new or materially revised article follows [EDITORIAL_REVENUE_SEO.md](EDITORIAL_REVENUE_SEO.md): factual US reader search intent, a natural primary query with 2–5 closely related supporting queries, carefully sourced actionable detail, and commercial intent **only when the underlying news topic genuinely warrants it**. Never add unrelated finance, insurance, loan, lawyer or healthcare keywords to chase AdSense CPC. Search ranking, ad type and revenue are not guaranteed. Google Search ignores the meta keywords tag, so keyword lists are not injected into article HTML.
+
 ## Scheduling and deployment
 
 The ChatGPT **NewsTrendus Google Trends Publisher** task runs every four hours, targets 4–5 factual, nonduplicate, US-relevant articles where sufficient sources exist, and must never claim an article published without an actual GitHub commit. RSS previews may still appear as source-linked discovery, but **generic RSS feed-to-article autoblogging is disabled**. The GitHub Actions `publish.yml` workflow is for catalogue regeneration, image policy and SEO checks, GA4 and GitHub Pages deployment.
