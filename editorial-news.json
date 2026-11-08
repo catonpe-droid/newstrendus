@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-08T12:28:45.331323+00:00",
+  "generated_at": "2026-11-08T14:32:48.441450+00:00",
   "items": [
+    {
+      "id": "editorial-us-refrigeration-cyber-warning-cold-storage-security",
+      "title": "US Refrigeration Cyber Warning: Cold Storage Security Steps",
+      "url": "https://newstrendus.com/articles/2026/11/us-refrigeration-cyber-warning-cold-storage-security.html",
+      "page_url": "articles/2026/11/us-refrigeration-cyber-warning-cold-storage-security.html",
+      "category": "Technology",
+      "summary": "US agencies warn of cyberattacks on refrigeration controllers. Learn which cold-storage systems are exposed and practical security checks for operators.",
+      "source": "NewsTrendus",
+      "date": "2026-11-08T14:30:00+00:00",
+      "image": "https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg",
+      "image_alt": "Representative licensed photograph of a worker in cold storage, not a site involved in the reported cyber incidents",
+      "photo_artist": "Anna Shvets",
+      "photo_credit_url": "https://www.pexels.com/photo/a-worker-in-a-storage-room-5953713/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-x-vesolje-nursing-pillow-recall-np001-refund",
       "title": "X-VESOLJE Nursing Pillow Recall: NP001 Refund Steps",
