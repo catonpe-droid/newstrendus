@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-09T08:48:59.824548+00:00",
+  "generated_at": "2026-11-09T10:29:11.316871+00:00",
   "items": [
+    {
+      "id": "editorial-trump-ai-guardrails-60-minutes-what-changes",
+      "title": "Trump on AI Guardrails: What Changes After 60 Minutes?",
+      "url": "https://newstrendus.com/articles/2026/11/trump-ai-guardrails-60-minutes-what-changes.html",
+      "page_url": "articles/2026/11/trump-ai-guardrails-60-minutes-what-changes.html",
+      "category": "Technology",
+      "summary": "Trump said he is open to AI guardrails in a 60 Minutes interview. See what he proposed, what remains unchanged and what U.S. businesses should watch.",
+      "source": "NewsTrendus",
+      "date": "2026-11-09T10:30:00+00:00",
+      "image": "https://images.pexels.com/photos/34804004/pexels-photo-34804004.jpeg",
+      "image_alt": "Representative licensed photograph of computer code on a laptop, not a Trump interview or government policy announcement",
+      "photo_artist": "Daniil Komov",
+      "photo_credit_url": "https://www.pexels.com/photo/laptop-with-code-editor-on-wooden-desk-34804004/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-ai-data-center-used-gas-turbines-power-shortage-2026",
       "title": "Why AI Data Centers Are Buying Used Gas Turbines",
