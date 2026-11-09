@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 06:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 08:45:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why AI Data Centers Are Buying Used Gas Turbines</title>
+      <link>https://newstrendus.com/articles/2026/11/ai-data-center-used-gas-turbines-power-shortage-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ai-data-center-used-gas-turbines-power-shortage-2026.html</guid>
+      <pubDate>Mon, 09 Nov 2026 08:45:00 +0000</pubDate>
+      <description>AI data centers are seeking used gas turbines as new equipment faces long waits. See the supply bottleneck, risks and alternatives for U.S. projects.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Magnetopia Magnetic Blocks Recall: Models and Refund</title>
       <link>https://newstrendus.com/articles/2026/11/magnetopia-magnetic-blocks-recall-models-refund-2026.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/nyc-marathon-tracker-2026-runner-tracking-start-times-official-results.html</guid>
       <pubDate>Sun, 01 Nov 2026 14:30:00 +0000</pubDate>
       <description>Track NYC Marathon runners on November 1 with the official NYRR app. Find 2026 start waves, live leaderboards, TV coverage and verified results.</description>
-      <category>Sports</category>
-    </item>
-    <item>
-      <title>Miami Beats UNC 38-35: The Fourth-Down TD and Fumble That Saved No. 1</title>
-      <link>https://newstrendus.com/articles/2026/11/miami-unc-38-35-fumble-fourth-down-comeback-october-31-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/miami-unc-38-35-fumble-fourth-down-comeback-october-31-2026.html</guid>
-      <pubDate>Sun, 01 Nov 2026 10:31:00 +0000</pubDate>
-      <description>Miami escaped North Carolina 38-35 on October 31. See the decisive fourth-down touchdown, late strip-sack, verified stats and what comes next.</description>
       <category>Sports</category>
     </item>
   </channel>
