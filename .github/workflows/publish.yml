@@ -27,6 +27,8 @@ jobs:
         run: python scripts/editorial_catalog.py
       - name: Synchronize latest articles on home and archive
         run: python scripts/sync_editorial_lists.py
+      - name: Build canonical topic guides and internal search navigation
+        run: python scripts/traffic_hubs.py
       - name: Improve content quality, editorial transparency and non-indexable empty pages
         run: python scripts/content_quality.py
       - name: Enforce external-photo-only policy on all news articles
@@ -47,6 +49,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add sitemap.xml news-sitemap.xml robots.txt editorial-news.json
+          git add topics/*.html
           git add -u -- '*.html'
           if ! git diff --cached --quiet; then
             git commit -m "chore: sync SEO sitemap and GA4 [skip ci]"
