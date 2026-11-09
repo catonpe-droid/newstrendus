@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-09T18:31:51.337343+00:00",
+  "generated_at": "2026-11-09T20:32:12.151298+00:00",
   "items": [
+    {
+      "id": "editorial-us-stocks-november-9-2026-rally-oil-nvidia",
+      "title": "US Stocks Rally Nov. 9 as Oil Falls; Nvidia Lags",
+      "url": "https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html",
+      "page_url": "articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html",
+      "category": "Business",
+      "summary": "US stocks rallied November 9 as oil fell. See the Dow, S&P 500 and Nasdaq moves, why Nvidia diverged, and what investors watch next.",
+      "source": "NewsTrendus",
+      "date": "2026-11-09T20:30:00+00:00",
+      "image": "https://images.pexels.com/photos/8962448/pexels-photo-8962448.jpeg",
+      "image_alt": "Representative licensed photograph of financial documents, not a photo of November 9 trading or Nvidia shares",
+      "photo_artist": "Leeloo The First",
+      "photo_credit_url": "https://www.pexels.com/photo/a-documents-and-mobile-phone-on-the-table-8962448/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-ny-fed-october-2026-job-loss-inflation-expectations",
       "title": "NY Fed Survey: Job Worries Rise, Inflation Stays High",

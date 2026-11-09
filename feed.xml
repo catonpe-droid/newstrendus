@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 20:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Stocks Rally Nov. 9 as Oil Falls; Nvidia Lags</title>
+      <link>https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html</guid>
+      <pubDate>Mon, 09 Nov 2026 20:30:00 +0000</pubDate>
+      <description>US stocks rallied November 9 as oil fell. See the Dow, S&amp;P 500 and Nasdaq moves, why Nvidia diverged, and what investors watch next.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>NY Fed Survey: Job Worries Rise, Inflation Stays High</title>
       <link>https://newstrendus.com/articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/dow-jones-1569-point-rally-november-4-2026-oil-drop.html</guid>
       <pubDate>Thu, 05 Nov 2026 02:57:43 +0000</pubDate>
       <description>The Dow closed up 1,569.40 points on Nov. 4, 2026. See S&amp;P 500 and Nasdaq closes, falling oil prices and why investors reacted after the midterms.</description>
-      <category>Business</category>
-    </item>
-    <item>
-      <title>McDonald’s Q3 2026: US Same-Store Sales Slip as New Value Bundles Are Tested</title>
-      <link>https://newstrendus.com/articles/2026/11/mcdonalds-q3-2026-us-sales-value-bundles-2027.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/mcdonalds-q3-2026-us-sales-value-bundles-2027.html</guid>
-      <pubDate>Thu, 05 Nov 2026 02:57:43 +0000</pubDate>
-      <description>McDonald’s US comparable sales fell 0.2% in Q3 2026. What the earnings report says and what to know about possible value bundles in 2027.</description>
       <category>Business</category>
     </item>
   </channel>
