@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/google-tpu-8tx-8i-max-security-memory-explained.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-09T14:40:00+00:00</news:publication_date>
+    <news:title>Google TPU 8tx vs. 8i Max: Security and Memory Explained</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/2027-opportunity-zones-map-6576-tracts-rural.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-09T12:35:00+00:00</news:publication_date>
@@ -92,8 +96,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-07T16:30:00+00:00</news:publication_date>
     <news:title>Berkshire Q3 2026: $9.6B Buybacks, Lower Operating Profit</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/once-upon-a-farm-tractor-wheels-recall-2026-upc-refund.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-07T14:29:00+00:00</news:publication_date>
-    <news:title>Tractor Wheels Recall: Check Flavors, UPCs and Refunds</news:title></news:news></url>
 </urlset>
