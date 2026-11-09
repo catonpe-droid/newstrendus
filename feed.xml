@@ -5,8 +5,24 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 08:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 12:35:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2027 Opportunity Zones Map: 6,576 Tracts Designated</title>
+      <link>https://newstrendus.com/articles/2026/11/2027-opportunity-zones-map-6576-tracts-rural.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/2027-opportunity-zones-map-6576-tracts-rural.html</guid>
+      <pubDate>Mon, 09 Nov 2026 12:35:00 +0000</pubDate>
+      <description>The IRS designated 6,576 Opportunity Zone tracts for 2027, including 2,594 rural areas. Learn when the map takes effect and how to check a location.</description>
+      <category>Business</category>
+    </item>
+    <item>
+      <title>Trump on AI Guardrails: What Changes After 60 Minutes?</title>
+      <link>https://newstrendus.com/articles/2026/11/trump-ai-guardrails-60-minutes-what-changes.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/trump-ai-guardrails-60-minutes-what-changes.html</guid>
+      <pubDate>Mon, 09 Nov 2026 10:30:00 +0000</pubDate>
+      <description>Trump said he is open to AI guardrails in a 60 Minutes interview. See what he proposed, what remains unchanged and what U.S. businesses should watch.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>Why AI Data Centers Are Buying Used Gas Turbines</title>
       <link>https://newstrendus.com/articles/2026/11/ai-data-center-used-gas-turbines-power-shortage-2026.html</link>
@@ -310,22 +326,6 @@
       <pubDate>Mon, 02 Nov 2026 02:29:00 +0000</pubDate>
       <description>Native American Heritage Month runs November 1–30, 2026. See verified Smithsonian events, free online programs and what is known about the theme.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>Georgia Beats Florida 27-8: Four Turnovers and the Atlanta Rivalry Game Explained</title>
-      <link>https://newstrendus.com/articles/2026/11/georgia-florida-27-8-2026-four-turnovers-atlanta.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/georgia-florida-27-8-2026-four-turnovers-atlanta.html</guid>
-      <pubDate>Sun, 01 Nov 2026 22:20:00 +0000</pubDate>
-      <description>Georgia beat Florida 27-8 on October 31 in Atlanta. See the turnover breakdown, Chris Cole's 66-yard touchdown and verified team statistics.</description>
-      <category>Sports</category>
-    </item>
-    <item>
-      <title>NYC Marathon Tracker 2026: How to Follow Runners, Start Times and Official Results</title>
-      <link>https://newstrendus.com/articles/2026/11/nyc-marathon-tracker-2026-runner-tracking-start-times-official-results.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/nyc-marathon-tracker-2026-runner-tracking-start-times-official-results.html</guid>
-      <pubDate>Sun, 01 Nov 2026 14:30:00 +0000</pubDate>
-      <description>Track NYC Marathon runners on November 1 with the official NYRR app. Find 2026 start waves, live leaderboards, TV coverage and verified results.</description>
-      <category>Sports</category>
     </item>
   </channel>
 </rss>
