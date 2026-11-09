@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-09T16:32:45.688215+00:00",
+  "generated_at": "2026-11-09T18:31:51.337343+00:00",
   "items": [
+    {
+      "id": "editorial-ny-fed-october-2026-job-loss-inflation-expectations",
+      "title": "NY Fed Survey: Job Worries Rise, Inflation Stays High",
+      "url": "https://newstrendus.com/articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html",
+      "page_url": "articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html",
+      "category": "Business",
+      "summary": "New York Fed's October 2026 survey shows rising unemployment worries, 3.9% one-year inflation expectations and mixed job prospects. See the data.",
+      "source": "NewsTrendus",
+      "date": "2026-11-09T18:30:00+00:00",
+      "image": "https://images.pexels.com/photos/8067740/pexels-photo-8067740.jpeg",
+      "image_alt": "Representative licensed photograph of colleagues talking in an office, not participants in the New York Fed consumer survey",
+      "photo_artist": "Edmond Dantès",
+      "photo_credit_url": "https://www.pexels.com/photo/people-sitting-at-the-table-8067740/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-google-tpu-8tx-8i-max-security-memory-explained",
       "title": "Google TPU 8tx vs. 8i Max: Security and Memory Explained",

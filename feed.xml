@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 14:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 18:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NY Fed Survey: Job Worries Rise, Inflation Stays High</title>
+      <link>https://newstrendus.com/articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html</guid>
+      <pubDate>Mon, 09 Nov 2026 18:30:00 +0000</pubDate>
+      <description>New York Fed's October 2026 survey shows rising unemployment worries, 3.9% one-year inflation expectations and mixed job prospects. See the data.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Google TPU 8tx vs. 8i Max: Security and Memory Explained</title>
       <link>https://newstrendus.com/articles/2026/11/google-tpu-8tx-8i-max-security-memory-explained.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Thu, 05 Nov 2026 02:57:43 +0000</pubDate>
       <description>McDonald’s US comparable sales fell 0.2% in Q3 2026. What the earnings report says and what to know about possible value bundles in 2027.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>NASA Swift Observatory Reentered Earth’s Atmosphere: What Its 22-Year Mission Discovered</title>
-      <link>https://newstrendus.com/articles/2026/11/nasa-swift-observatory-reentry-november-4-2026-mission.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/nasa-swift-observatory-reentry-november-4-2026-mission.html</guid>
-      <pubDate>Thu, 05 Nov 2026 02:57:43 +0000</pubDate>
-      <description>NASA confirmed Swift reentered Earth’s atmosphere on November 4, 2026. Why the 22-year telescope fell, what it studied and what is known about debris.</description>
-      <category>Science</category>
     </item>
   </channel>
 </rss>
