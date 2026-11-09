@@ -25,6 +25,8 @@ jobs:
           python-version: '3.12'
       - name: Rebuild category-aware article catalogue
         run: python scripts/editorial_catalog.py
+      - name: Generate fresh original-article RSS feed
+        run: python scripts/editorial_rss.py
       - name: Synchronize latest articles on home and archive
         run: python scripts/sync_editorial_lists.py
       - name: Build canonical topic guides and internal search navigation
@@ -48,7 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml news-sitemap.xml robots.txt editorial-news.json
+          git add sitemap.xml news-sitemap.xml robots.txt editorial-news.json feed.xml
           git add topics/*.html
           git add -u -- '*.html'
           if ! git diff --cached --quiet; then
