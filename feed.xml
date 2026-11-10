@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 20:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 22:20:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jim Jordan Wins House GOP Leader Vote 106–73</title>
+      <link>https://newstrendus.com/articles/2026/11/jim-jordan-house-republican-leader-2026-vote.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/jim-jordan-house-republican-leader-2026-vote.html</guid>
+      <pubDate>Tue, 10 Nov 2026 22:20:00 +0000</pubDate>
+      <description>Jim Jordan beat Steve Scalise 106–73 to lead House Republicans in 2027. See what the vote changes, when leadership shifts and what comes next.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Honda Recalls 635,808 US Vehicles: How to Check Your VIN</title>
       <link>https://newstrendus.com/articles/2026/11/honda-635808-vehicle-steering-recall-vin-check-2026.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/once-upon-a-farm-tractor-wheels-recall-2026-upc-refund.html</guid>
       <pubDate>Sat, 07 Nov 2026 14:29:00 +0000</pubDate>
       <description>Once Upon a Farm recalled all Tractor Wheels toddler bars. Check affected flavors, UPCs, choking risk and how to get a refund.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Little Giant Ladder Recall: 11 Models and How to Check</title>
-      <link>https://newstrendus.com/articles/2026/11/little-giant-ladder-recall-2026-models-qc-sticker-refund.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/little-giant-ladder-recall-2026-models-qc-sticker-refund.html</guid>
-      <pubDate>Sat, 07 Nov 2026 12:30:00 +0000</pubDate>
-      <description>Little Giant recalled 3.66 million ladders. Check the 11 models, orange QC sticker, Rapid Locks, 19 injuries and free repair or refund steps.</description>
       <category>US</category>
     </item>
   </channel>
