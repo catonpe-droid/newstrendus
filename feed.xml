@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 18:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 20:25:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Honda Recalls 635,808 US Vehicles: How to Check Your VIN</title>
+      <link>https://newstrendus.com/articles/2026/11/honda-635808-vehicle-steering-recall-vin-check-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/honda-635808-vehicle-steering-recall-vin-check-2026.html</guid>
+      <pubDate>Tue, 10 Nov 2026 20:25:00 +0000</pubDate>
+      <description>Honda is recalling 635,808 US vehicles over power-steering assist software. Learn how to check your VIN and what details remain unconfirmed.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Hims &amp; Hers Q3 2026: Revenue Rises, Profit Outlook Falls</title>
       <link>https://newstrendus.com/articles/2026/11/hims-hers-q3-2026-results-profit-outlook-peptides.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sat, 07 Nov 2026 12:30:00 +0000</pubDate>
       <description>Little Giant recalled 3.66 million ladders. Check the 11 models, orange QC sticker, Rapid Locks, 19 injuries and free repair or refund steps.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>USDA Adds AI Checks Before November 10 Crop Report</title>
-      <link>https://newstrendus.com/articles/2026/11/usda-ai-crop-report-checks-november-10-2026-corn-corrections.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/usda-ai-crop-report-checks-november-10-2026-corn-corrections.html</guid>
-      <pubDate>Sat, 07 Nov 2026 10:30:00 +0000</pubDate>
-      <description>USDA plans AI-assisted checks for its Nov. 10 crop report after correcting Kansas and Nebraska corn estimates. See what changed and what to watch.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
