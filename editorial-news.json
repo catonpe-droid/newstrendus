@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-10T14:34:15.833929+00:00",
+  "generated_at": "2026-11-10T16:31:41.111730+00:00",
   "items": [
+    {
+      "id": "editorial-mars-2027-us-investment-factories-pet-hospitals",
+      "title": "Mars $1.4B US Investment: Factories and Pet Hospitals",
+      "url": "https://newstrendus.com/articles/2026/11/mars-2027-us-investment-factories-pet-hospitals.html",
+      "page_url": "articles/2026/11/mars-2027-us-investment-factories-pet-hospitals.html",
+      "category": "Business",
+      "summary": "Mars plans $1.4 billion in US investment for 2027. See confirmed hospital locations, manufacturing projects, jobs and what remains unannounced.",
+      "source": "NewsTrendus",
+      "date": "2026-11-10T16:30:00+00:00",
+      "image": "https://images.pexels.com/photos/14147300/pexels-photo-14147300.jpeg",
+      "image_alt": "Representative licensed photograph of assorted candy and chocolate bars, not a Mars factory, executive or 2027 investment project",
+      "photo_artist": "Terrance Barksdale",
+      "photo_credit_url": "https://www.pexels.com/photo/candies-and-chocolate-bars-on-black-surface-14147300/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-october-2026-cpi-report-grocery-gas-insurance-prices",
       "title": "October 2026 CPI: Grocery, Gas and Insurance Prices",

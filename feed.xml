@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 14:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 16:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mars $1.4B US Investment: Factories and Pet Hospitals</title>
+      <link>https://newstrendus.com/articles/2026/11/mars-2027-us-investment-factories-pet-hospitals.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/mars-2027-us-investment-factories-pet-hospitals.html</guid>
+      <pubDate>Tue, 10 Nov 2026 16:30:00 +0000</pubDate>
+      <description>Mars plans $1.4 billion in US investment for 2027. See confirmed hospital locations, manufacturing projects, jobs and what remains unannounced.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>October 2026 CPI: Grocery, Gas and Insurance Prices</title>
       <link>https://newstrendus.com/articles/2026/11/october-2026-cpi-report-grocery-gas-insurance-prices.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sat, 07 Nov 2026 08:30:00 +0000</pubDate>
       <description>US consumer sentiment rose to 51.0 in November 2026, but high prices still hurt. Compare inflation expectations and see what the preliminary survey means.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>AI CEO Impersonation Scam: DOJ Alleges $129M Theft</title>
-      <link>https://newstrendus.com/articles/2026/11/ai-ceo-impersonation-fraud-129-million-doj-charges-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ai-ceo-impersonation-fraud-129-million-doj-charges-2026.html</guid>
-      <pubDate>Sat, 07 Nov 2026 06:32:00 +0000</pubDate>
-      <description>DOJ charges three men in an alleged $129 million AI voice and video impersonation scheme. See how the fraud worked and safeguards for US finance teams.</description>
-      <category>Technology</category>
     </item>
   </channel>
 </rss>
