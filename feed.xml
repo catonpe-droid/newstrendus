@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 10:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 12:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft and the Proposed China Data-Center Optics Ban</title>
+      <link>https://newstrendus.com/articles/2026/11/microsoft-chinese-optical-transceiver-ban-ai-data-centers.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/microsoft-chinese-optical-transceiver-ban-ai-data-centers.html</guid>
+      <pubDate>Tue, 10 Nov 2026 12:30:00 +0000</pubDate>
+      <description>Microsoft reportedly opposes a proposed US ban on Chinese optical transceivers. Learn what the FCC is considering and why AI data centers could be affected.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>SoftBank's $7 Billion Loss: US Data-Center Costs Explained</title>
       <link>https://newstrendus.com/articles/2026/11/softbank-7-billion-loss-us-data-center-costs-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sat, 07 Nov 2026 04:39:43 +0000</pubDate>
       <description>Tesla says Cybertruck production at Gigafactory Texas will wind down around mid-2027 to expand Cybercab output. Here's what is confirmed and what remains unclear.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Stephen Miller to Replace Susie Wiles on Nov. 9: What Changes at the White House</title>
-      <link>https://newstrendus.com/articles/2026/11/stephen-miller-chief-of-staff-november-9-susie-wiles-white-house-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/stephen-miller-chief-of-staff-november-9-susie-wiles-white-house-2026.html</guid>
-      <pubDate>Sat, 07 Nov 2026 04:38:43 +0000</pubDate>
-      <description>Trump named Stephen Miller to succeed Susie Wiles as White House chief of staff on Nov. 9. Here's the timing, role and what is not yet known.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>

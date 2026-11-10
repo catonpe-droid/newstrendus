@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-10T10:29:23.925639+00:00",
+  "generated_at": "2026-11-10T12:33:36.236811+00:00",
   "items": [
+    {
+      "id": "editorial-microsoft-chinese-optical-transceiver-ban-ai-data-centers",
+      "title": "Microsoft and the Proposed China Data-Center Optics Ban",
+      "url": "https://newstrendus.com/articles/2026/11/microsoft-chinese-optical-transceiver-ban-ai-data-centers.html",
+      "page_url": "articles/2026/11/microsoft-chinese-optical-transceiver-ban-ai-data-centers.html",
+      "category": "Technology",
+      "summary": "Microsoft reportedly opposes a proposed US ban on Chinese optical transceivers. Learn what the FCC is considering and why AI data centers could be affected.",
+      "source": "NewsTrendus",
+      "date": "2026-11-10T12:30:00+00:00",
+      "image": "https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg",
+      "image_alt": "Representative licensed photograph of data-center server racks, not a Microsoft facility or Chinese optical transceiver",
+      "photo_artist": "Brett Sayles",
+      "photo_credit_url": "https://www.pexels.com/photo/server-racks-on-data-center-4508751/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-softbank-7-billion-loss-us-data-center-costs-2026",
       "title": "SoftBank's $7 Billion Loss: US Data-Center Costs Explained",
