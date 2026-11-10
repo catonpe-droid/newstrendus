@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 06:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:20:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Take-Two Earnings: GTA 6 Preorders, Revenue and Outlook</title>
+      <link>https://newstrendus.com/articles/2026/11/take-two-earnings-gta-6-preorders-fiscal-2027-outlook.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/take-two-earnings-gta-6-preorders-fiscal-2027-outlook.html</guid>
+      <pubDate>Tue, 10 Nov 2026 08:20:00 +0000</pubDate>
+      <description>Take-Two's November earnings show $1.60 billion in quarterly bookings, a narrower loss and a $8.0–$8.2 billion annual outlook ahead of GTA 6.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>US Counter-Drone Push: What the FAA Must Review</title>
       <link>https://newstrendus.com/articles/2026/11/us-counter-drone-systems-faa-aviation-safety-november-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Thu, 05 Nov 2026 10:04:00 +0000</pubDate>
       <description>NASA revealed its X-70 Fractal on November 4, 2026. See the Mach 0.75 design target, 45,000-foot ceiling, payload capacity and first-flight expectations.</description>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>Antarctic Ozone Hole 2026 Ranks Seventh Largest: Why NOAA and NASA Still See Recovery</title>
-      <link>https://newstrendus.com/articles/2026/11/antarctic-ozone-hole-2026-seventh-largest-noaa-nasa-recovery-explained.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/antarctic-ozone-hole-2026-seventh-largest-noaa-nasa-recovery-explained.html</guid>
-      <pubDate>Thu, 05 Nov 2026 10:03:00 +0000</pubDate>
-      <description>NOAA and NASA report the 2026 Antarctic ozone hole ranked seventh largest in 48 years. Understand the 9.6-million-square-mile average and recovery outlook.</description>
-      <category>Science</category>
     </item>
   </channel>
 </rss>

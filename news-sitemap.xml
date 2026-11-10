@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/take-two-earnings-gta-6-preorders-fiscal-2027-outlook.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-10T08:20:00+00:00</news:publication_date>
+    <news:title>Take-Two Earnings: GTA 6 Preorders, Revenue and Outlook</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/us-counter-drone-systems-faa-aviation-safety-november-2026.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-10T06:25:00+00:00</news:publication_date>
@@ -92,8 +96,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-08T08:35:00+00:00</news:publication_date>
     <news:title>Medicare Remote Monitoring Rule: 2027 Changes, 2029 Delay</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/irs-tax-pro-account-business-client-payments-2026.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-08T06:35:00+00:00</news:publication_date>
-    <news:title>IRS Tax Pro Account Now Lets Pros Pay Business Taxes</news:title></news:news></url>
 </urlset>
