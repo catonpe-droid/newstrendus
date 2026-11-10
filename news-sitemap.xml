@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/october-2026-cpi-report-grocery-gas-insurance-prices.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-10T14:30:00+00:00</news:publication_date>
+    <news:title>October 2026 CPI: Grocery, Gas and Insurance Prices</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/microsoft-chinese-optical-transceiver-ban-ai-data-centers.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-10T12:30:00+00:00</news:publication_date>
@@ -88,8 +92,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-08T16:25:00+00:00</news:publication_date>
     <news:title>Wise Wife Cinnamon Recall: UPC, 14 States and Refund</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/us-refrigeration-cyber-warning-cold-storage-security.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-08T14:30:00+00:00</news:publication_date>
-    <news:title>US Refrigeration Cyber Warning: Cold Storage Security Steps</news:title></news:news></url>
 </urlset>

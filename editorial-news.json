@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-10T12:33:36.236811+00:00",
+  "generated_at": "2026-11-10T14:34:15.833929+00:00",
   "items": [
+    {
+      "id": "editorial-october-2026-cpi-report-grocery-gas-insurance-prices",
+      "title": "October 2026 CPI: Grocery, Gas and Insurance Prices",
+      "url": "https://newstrendus.com/articles/2026/11/october-2026-cpi-report-grocery-gas-insurance-prices.html",
+      "page_url": "articles/2026/11/october-2026-cpi-report-grocery-gas-insurance-prices.html",
+      "category": "US",
+      "summary": "October 2026 CPI rose 0.4%. See what changed for groceries, gasoline, rent and car insurance, and why annual inflation is unavailable.",
+      "source": "NewsTrendus",
+      "date": "2026-11-10T14:30:00+00:00",
+      "image": "https://images.pexels.com/photos/8067740/pexels-photo-8067740.jpeg",
+      "image_alt": "Representative licensed photograph of people discussing paperwork, not the October 2026 CPI collection or BLS release",
+      "photo_artist": "Edmond Dantès",
+      "photo_credit_url": "https://www.pexels.com/photo/people-sitting-at-the-table-8067740/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-microsoft-chinese-optical-transceiver-ban-ai-data-centers",
       "title": "Microsoft and the Proposed China Data-Center Optics Ban",
