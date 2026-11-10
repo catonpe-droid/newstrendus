@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 16:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 18:35:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hims &amp; Hers Q3 2026: Revenue Rises, Profit Outlook Falls</title>
+      <link>https://newstrendus.com/articles/2026/11/hims-hers-q3-2026-results-profit-outlook-peptides.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/hims-hers-q3-2026-results-profit-outlook-peptides.html</guid>
+      <pubDate>Tue, 10 Nov 2026 18:35:00 +0000</pubDate>
+      <description>Hims &amp; Hers reported $890.4 million in Q3 revenue but a $33 million loss. See its revised 2026 outlook, margins and peptide plans.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Mars $1.4B US Investment: Factories and Pet Hospitals</title>
       <link>https://newstrendus.com/articles/2026/11/mars-2027-us-investment-factories-pet-hospitals.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/usda-ai-crop-report-checks-november-10-2026-corn-corrections.html</guid>
       <pubDate>Sat, 07 Nov 2026 10:30:00 +0000</pubDate>
       <description>USDA plans AI-assisted checks for its Nov. 10 crop report after correcting Kansas and Nebraska corn estimates. See what changed and what to watch.</description>
-      <category>Business</category>
-    </item>
-    <item>
-      <title>US Consumer Sentiment Rises to 51.0 in November: What Changed</title>
-      <link>https://newstrendus.com/articles/2026/11/us-consumer-sentiment-november-2026-inflation-expectations.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/us-consumer-sentiment-november-2026-inflation-expectations.html</guid>
-      <pubDate>Sat, 07 Nov 2026 08:30:00 +0000</pubDate>
-      <description>US consumer sentiment rose to 51.0 in November 2026, but high prices still hurt. Compare inflation expectations and see what the preliminary survey means.</description>
       <category>Business</category>
     </item>
   </channel>
