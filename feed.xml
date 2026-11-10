@@ -5,8 +5,24 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 20:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:20:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fed's Barkin Urges Caution on Rates as Inflation Persists</title>
+      <link>https://newstrendus.com/articles/2026/11/fed-barkin-november-2026-inflation-rates-ai-risks.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/fed-barkin-november-2026-inflation-rates-ai-risks.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:20:00 +0000</pubDate>
+      <description>Richmond Fed President Tom Barkin says inflation remains stubborn and AI creates two economic risks. What his November 9 speech means for rate watchers.</description>
+      <category>Business</category>
+    </item>
+    <item>
+      <title>Hegseth Impeachment: Massie Pushes for House Vote</title>
+      <link>https://newstrendus.com/articles/2026/11/thomas-massie-hegseth-impeachment-house-vote-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/thomas-massie-hegseth-impeachment-house-vote-2026.html</guid>
+      <pubDate>Mon, 09 Nov 2026 22:40:00 +0000</pubDate>
+      <description>Thomas Massie renewed an impeachment push against Pete Hegseth on Nov. 9. Here's what the House may vote on and why removal is a separate step.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>US Stocks Rally Nov. 9 as Oil Falls; Nvidia Lags</title>
       <link>https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html</link>
@@ -310,22 +326,6 @@
       <pubDate>Thu, 05 Nov 2026 02:57:43 +0000</pubDate>
       <description>Democrats won the House and Senate in the 2026 US midterms. What is confirmed, which races remain open and what changes when Congress convenes.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>Alaska Senate Election 2026: Why Peltola vs. Sullivan Is Still Undecided</title>
-      <link>https://newstrendus.com/articles/2026/11/alaska-senate-election-2026-peltola-sullivan-ranked-choice-timeline.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/alaska-senate-election-2026-peltola-sullivan-ranked-choice-timeline.html</guid>
-      <pubDate>Thu, 05 Nov 2026 02:57:43 +0000</pubDate>
-      <description>Mary Peltola led Dan Sullivan by 626 votes in a Nov. 4 count. Here is Alaska’s mail-ballot timetable, ranked-choice rules and what happens next.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Dow Jumps 1,569 Points on November 4: What Drove the US Stock Market Rally?</title>
-      <link>https://newstrendus.com/articles/2026/11/dow-jones-1569-point-rally-november-4-2026-oil-drop.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/dow-jones-1569-point-rally-november-4-2026-oil-drop.html</guid>
-      <pubDate>Thu, 05 Nov 2026 02:57:43 +0000</pubDate>
-      <description>The Dow closed up 1,569.40 points on Nov. 4, 2026. See S&amp;P 500 and Nasdaq closes, falling oil prices and why investors reacted after the midterms.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
