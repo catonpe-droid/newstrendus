@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 02:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 04:32:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disney and Adobe Expand AI Alliance: What Changes</title>
+      <link>https://newstrendus.com/articles/2026/11/disney-adobe-ai-alliance-firefly-foundry-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/disney-adobe-ai-alliance-firefly-foundry-2026.html</guid>
+      <pubDate>Tue, 10 Nov 2026 04:32:00 +0000</pubDate>
+      <description>Disney and Adobe announced a broader AI partnership on Nov. 9. See how Firefly Foundry may affect theme parks, studios and ESPN—and what is unconfirmed.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>Google Holiday 100 2026: Gift Trends and Smart Buying Tips</title>
       <link>https://newstrendus.com/articles/2026/11/google-holiday-100-2026-gift-trends-shopping-tips.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Thu, 05 Nov 2026 10:02:00 +0000</pubDate>
       <description>Starbucks' 2026 holiday drinks arrive November 5. Compare Tiramisu Velvet, Apple Pomegranate, returning favorites, Red Cup Day and Bearista release dates.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Mississippi Senate Race 2026: Why Colom–Hyde-Smith Is Uncalled and the November 10 Deadline Matters</title>
-      <link>https://newstrendus.com/articles/2026/11/mississippi-senate-2026-colom-hyde-smith-november-10-ballot-deadlines.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/mississippi-senate-2026-colom-hyde-smith-november-10-ballot-deadlines.html</guid>
-      <pubDate>Thu, 05 Nov 2026 10:01:00 +0000</pubDate>
-      <description>Scott Colom leads Cindy Hyde-Smith in uncalled Mississippi Senate returns. See the dated count, ballot deadlines, certification steps and recount rules.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
