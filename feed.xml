@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 16:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 18:25:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coachella 2027 Lineup, Dates and Ticket Sale Guide</title>
+      <link>https://newstrendus.com/articles/2026/11/coachella-2027-lineup-dates-tickets-dua-lipa-sza-tame-impala.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/coachella-2027-lineup-dates-tickets-dua-lipa-sza-tame-impala.html</guid>
+      <pubDate>Wed, 11 Nov 2026 18:25:00 +0000</pubDate>
+      <description>Coachella 2027 brings Dua Lipa, Tame Impala and SZA to Indio April 9–11 and 16–18. See ticket sale timing, pass availability and official details.</description>
+      <category>Entertainment</category>
+    </item>
     <item>
       <title>CoreWeave Earnings 2026: Revenue Soars, Debt Risk Remains</title>
       <link>https://newstrendus.com/articles/2026/11/coreweave-q3-2026-earnings-revenue-debt-ai-cloud.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 08:35:00 +0000</pubDate>
       <description>CMS finalized 2027 Medicare remote monitoring rules but delayed its outsourced staffing restriction until 2029. See what clinics and patients should know.</description>
       <category>Health</category>
-    </item>
-    <item>
-      <title>IRS Tax Pro Account Now Lets Pros Pay Business Taxes</title>
-      <link>https://newstrendus.com/articles/2026/11/irs-tax-pro-account-business-client-payments-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/irs-tax-pro-account-business-client-payments-2026.html</guid>
-      <pubDate>Sun, 08 Nov 2026 06:35:00 +0000</pubDate>
-      <description>IRS Tax Pro Account now lets authorized tax professionals pay business clients' balances, deposits and extensions. See which payments qualify.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
