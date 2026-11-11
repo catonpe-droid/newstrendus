@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 04:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 06:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FTC Hims &amp; Hers Lawsuit: Five More States Join</title>
+      <link>https://newstrendus.com/articles/2026/11/ftc-hims-hers-privacy-lawsuit-five-states-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-hims-hers-privacy-lawsuit-five-states-2026.html</guid>
+      <pubDate>Wed, 11 Nov 2026 06:30:00 +0000</pubDate>
+      <description>Five states joined the FTC's Hims &amp; Hers privacy and billing lawsuit. See the allegations, company's response and what customers can check.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>FDA GLP-1 Eye Warning: What Patients Should Know</title>
       <link>https://newstrendus.com/articles/2026/11/fda-glp1-eye-warning-2026-naion-ozempic-wegovy.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sat, 07 Nov 2026 22:32:00 +0000</pubDate>
       <description>US voters backed tighter data center rules in 2026 elections. Learn what local restrictions could mean for electricity bills, permits and projects.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>AI Helps Conservation Groups, but Data Center Costs Loom</title>
-      <link>https://newstrendus.com/articles/2026/11/ai-conservation-groups-data-center-energy-costs-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ai-conservation-groups-data-center-energy-costs-2026.html</guid>
-      <pubDate>Sat, 07 Nov 2026 20:30:00 +0000</pubDate>
-      <description>Conservation groups are using AI for wildlife research while questioning data center power and water use. See what new reporting and IEA data show.</description>
-      <category>Science</category>
     </item>
   </channel>
 </rss>
