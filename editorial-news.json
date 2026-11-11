@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-11T18:27:28.490242+00:00",
+  "generated_at": "2026-11-11T22:36:21.673629+00:00",
   "items": [
+    {
+      "id": "editorial-waymo-school-bus-safety-investigation-nhtsa-2026",
+      "title": "Waymo School Bus Investigation: What NHTSA Is Reviewing",
+      "url": "https://newstrendus.com/articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html",
+      "page_url": "articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html",
+      "category": "Technology",
+      "summary": "NHTSA is reviewing Waymo school-bus safety after a prior software recall. See what regulators are checking, what is known and what comes next.",
+      "source": "NewsTrendus",
+      "date": "2026-11-11T22:34:00+00:00",
+      "image": "https://images.pexels.com/photos/12765620/pexels-photo-12765620.jpeg",
+      "image_alt": "Representative licensed photograph of a vehicle interior, not a Waymo robotaxi or a school-bus incident",
+      "photo_artist": "Erik Mclean",
+      "photo_credit_url": "https://www.pexels.com/photo/car-interior-with-steering-wheel-12765620/",
+      "is_editorial": true
+    },
+    {
+      "id": "editorial-ftc-phantom-debt-collection-first-capital-group-2026",
+      "title": "FTC Phantom Debt Collection Case: How to Verify a Claim",
+      "url": "https://newstrendus.com/articles/2026/11/ftc-phantom-debt-collection-first-capital-group-2026.html",
+      "page_url": "articles/2026/11/ftc-phantom-debt-collection-first-capital-group-2026.html",
+      "category": "US",
+      "summary": "FTC says a phantom debt collection operation took over $20 million. Learn what the court ordered and how to verify a debt before paying.",
+      "source": "NewsTrendus",
+      "date": "2026-11-11T20:25:00+00:00",
+      "image": "https://images.pexels.com/photos/8962448/pexels-photo-8962448.jpeg",
+      "image_alt": "Representative licensed photograph of paperwork and a phone, not the FTC defendants, victims or court proceeding",
+      "photo_artist": "Leeloo The First",
+      "photo_credit_url": "https://www.pexels.com/photo/a-documents-and-mobile-phone-on-the-table-8962448/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-coachella-2027-lineup-dates-tickets-dua-lipa-sza-tame-impala",
       "title": "Coachella 2027 Lineup, Dates and Ticket Sale Guide",

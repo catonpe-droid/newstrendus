@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-11T22:34:00+00:00</news:publication_date>
+    <news:title>Waymo School Bus Investigation: What NHTSA Is Reviewing</news:title></news:news></url>
+  <url><loc>https://newstrendus.com/articles/2026/11/ftc-phantom-debt-collection-first-capital-group-2026.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-11T20:25:00+00:00</news:publication_date>
+    <news:title>FTC Phantom Debt Collection Case: How to Verify a Claim</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/coachella-2027-lineup-dates-tickets-dua-lipa-sza-tame-impala.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-11T18:25:00+00:00</news:publication_date>
@@ -88,12 +96,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-09T22:40:00+00:00</news:publication_date>
     <news:title>Hegseth Impeachment: Massie Pushes for House Vote</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-09T20:30:00+00:00</news:publication_date>
-    <news:title>US Stocks Rally Nov. 9 as Oil Falls; Nvidia Lags</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-09T18:30:00+00:00</news:publication_date>
-    <news:title>NY Fed Survey: Job Worries Rise, Inflation Stays High</news:title></news:news></url>
 </urlset>

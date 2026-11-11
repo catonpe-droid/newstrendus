@@ -5,8 +5,24 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 18:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 22:34:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Waymo School Bus Investigation: What NHTSA Is Reviewing</title>
+      <link>https://newstrendus.com/articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html</guid>
+      <pubDate>Wed, 11 Nov 2026 22:34:00 +0000</pubDate>
+      <description>NHTSA is reviewing Waymo school-bus safety after a prior software recall. See what regulators are checking, what is known and what comes next.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>FTC Phantom Debt Collection Case: How to Verify a Claim</title>
+      <link>https://newstrendus.com/articles/2026/11/ftc-phantom-debt-collection-first-capital-group-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-phantom-debt-collection-first-capital-group-2026.html</guid>
+      <pubDate>Wed, 11 Nov 2026 20:25:00 +0000</pubDate>
+      <description>FTC says a phantom debt collection operation took over $20 million. Learn what the court ordered and how to verify a debt before paying.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Coachella 2027 Lineup, Dates and Ticket Sale Guide</title>
       <link>https://newstrendus.com/articles/2026/11/coachella-2027-lineup-dates-tickets-dua-lipa-sza-tame-impala.html</link>
@@ -310,22 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 12:25:00 +0000</pubDate>
       <description>X-VESOLJE nursing pillows model NP001 were recalled for suffocation risk. Check three patterns, Amazon sale dates and how to request a refund.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>Bose S1 Pro Battery Recall: Serial Numbers and Free Fix</title>
-      <link>https://newstrendus.com/articles/2026/11/bose-s1-pro-battery-recall-2026-serial-number-replacement.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/bose-s1-pro-battery-recall-2026-serial-number-replacement.html</guid>
-      <pubDate>Sun, 08 Nov 2026 10:30:00 +0000</pubDate>
-      <description>Bose recalled 634,759 S1 Pro and S1 Pro+ battery packs. Check seven serial prefixes, request a free replacement and learn safe disposal steps.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Medicare Remote Monitoring Rule: 2027 Changes, 2029 Delay</title>
-      <link>https://newstrendus.com/articles/2026/11/medicare-remote-monitoring-2027-rule-2029-delay.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/medicare-remote-monitoring-2027-rule-2029-delay.html</guid>
-      <pubDate>Sun, 08 Nov 2026 08:35:00 +0000</pubDate>
-      <description>CMS finalized 2027 Medicare remote monitoring rules but delayed its outsourced staffing restriction until 2029. See what clinics and patients should know.</description>
-      <category>Health</category>
     </item>
   </channel>
 </rss>
