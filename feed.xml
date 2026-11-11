@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 14:34:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 16:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CoreWeave Earnings 2026: Revenue Soars, Debt Risk Remains</title>
+      <link>https://newstrendus.com/articles/2026/11/coreweave-q3-2026-earnings-revenue-debt-ai-cloud.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/coreweave-q3-2026-earnings-revenue-debt-ai-cloud.html</guid>
+      <pubDate>Wed, 11 Nov 2026 16:30:00 +0000</pubDate>
+      <description>CoreWeave Q3 2026 revenue reached $3.66 billion, but its $709 million net loss highlights the financing risks behind its AI data-center boom.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Veterans Day 2026: USPS, UPS and FedEx Delivery Hours</title>
       <link>https://newstrendus.com/articles/2026/11/veterans-day-2026-usps-ups-fedex-mail-delivery.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 06:35:00 +0000</pubDate>
       <description>IRS Tax Pro Account now lets authorized tax professionals pay business clients' balances, deposits and extensions. See which payments qualify.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Baby Brezza Recall: Check Models and Get a Free Replacement</title>
-      <link>https://newstrendus.com/articles/2026/11/baby-brezza-superfast-sterilizer-dryer-recall-models-replacement.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/baby-brezza-superfast-sterilizer-dryer-recall-models-replacement.html</guid>
-      <pubDate>Sun, 08 Nov 2026 04:30:00 +0000</pubDate>
-      <description>Baby Brezza recalled 29,000 SuperFast Sterilizer Dryers. Check models BRZ0083, BRZ0154 and BRZ0156 and learn how to request a free replacement.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
