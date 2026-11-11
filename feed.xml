@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 10:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 12:25:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Veterans Day 2026: Stock Market Open, Bonds Closed</title>
+      <link>https://newstrendus.com/articles/2026/11/veterans-day-2026-stock-market-open-bond-market-closed.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/veterans-day-2026-stock-market-open-bond-market-closed.html</guid>
+      <pubDate>Wed, 11 Nov 2026 12:25:00 +0000</pubDate>
+      <description>Is the stock market open on Veterans Day 2026? NYSE and Nasdaq trade normal hours November 11, while SIFMA recommends a bond-market closure.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>FTC Stream Auto Settlement: What Car Buyers Should Know</title>
       <link>https://newstrendus.com/articles/2026/11/ftc-stream-auto-outlet-car-pricing-settlement-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 02:40:00 +0000</pubDate>
       <description>Gourmia recalled 175,951 air fryer ovens after 40 burn reports. Check model GTF7530, date codes, Target sales and how to request a free repair kit.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>PCAST Meeting: What the November 13 Notice Actually Says</title>
-      <link>https://newstrendus.com/articles/2026/11/pcast-meeting-november-13-federal-register-ai-panel.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/pcast-meeting-november-13-federal-register-ai-panel.html</guid>
-      <pubDate>Sun, 08 Nov 2026 00:35:00 +0000</pubDate>
-      <description>A federal notice lists a November 13 PCAST meeting after a November 6 cancellation. Here's what is confirmed, what remains uncertain and how to check.</description>
-      <category>Technology</category>
     </item>
   </channel>
 </rss>
