@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 06:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 10:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FTC Stream Auto Settlement: What Car Buyers Should Know</title>
+      <link>https://newstrendus.com/articles/2026/11/ftc-stream-auto-outlet-car-pricing-settlement-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-stream-auto-outlet-car-pricing-settlement-2026.html</guid>
+      <pubDate>Wed, 11 Nov 2026 10:30:00 +0000</pubDate>
+      <description>FTC's Stream Auto Outlet settlement targets hidden car dealer fees. Learn what advertised prices should include and how buyers can check costs.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>FTC Hims &amp; Hers Lawsuit: Five More States Join</title>
       <link>https://newstrendus.com/articles/2026/11/ftc-hims-hers-privacy-lawsuit-five-states-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 00:35:00 +0000</pubDate>
       <description>A federal notice lists a November 13 PCAST meeting after a November 6 cancellation. Here's what is confirmed, what remains uncertain and how to check.</description>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>US Data Center Election Backlash: What Changes Next</title>
-      <link>https://newstrendus.com/articles/2026/11/us-data-center-election-restrictions-2026-local-voters.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/us-data-center-election-restrictions-2026-local-voters.html</guid>
-      <pubDate>Sat, 07 Nov 2026 22:32:00 +0000</pubDate>
-      <description>US voters backed tighter data center rules in 2026 elections. Learn what local restrictions could mean for electricity bills, permits and projects.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
