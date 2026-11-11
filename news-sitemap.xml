@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/veterans-day-2026-usps-ups-fedex-mail-delivery.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-11T14:34:00+00:00</news:publication_date>
+    <news:title>Veterans Day 2026: USPS, UPS and FedEx Delivery Hours</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/veterans-day-2026-stock-market-open-bond-market-closed.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-11T12:25:00+00:00</news:publication_date>
@@ -88,8 +92,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-09T14:40:00+00:00</news:publication_date>
     <news:title>Google TPU 8tx vs. 8i Max: Security and Memory Explained</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/2027-opportunity-zones-map-6576-tracts-rural.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-09T12:35:00+00:00</news:publication_date>
-    <news:title>2027 Opportunity Zones Map: 6,576 Tracts Designated</news:title></news:news></url>
 </urlset>

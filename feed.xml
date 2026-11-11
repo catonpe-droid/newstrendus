@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 12:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 14:34:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Veterans Day 2026: USPS, UPS and FedEx Delivery Hours</title>
+      <link>https://newstrendus.com/articles/2026/11/veterans-day-2026-usps-ups-fedex-mail-delivery.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/veterans-day-2026-usps-ups-fedex-mail-delivery.html</guid>
+      <pubDate>Wed, 11 Nov 2026 14:34:00 +0000</pubDate>
+      <description>Is USPS delivering on Veterans Day 2026? Compare USPS closures, UPS deliveries and FedEx modified service, with November 12 reopening details.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Veterans Day 2026: Stock Market Open, Bonds Closed</title>
       <link>https://newstrendus.com/articles/2026/11/veterans-day-2026-stock-market-open-bond-market-closed.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/baby-brezza-superfast-sterilizer-dryer-recall-models-replacement.html</guid>
       <pubDate>Sun, 08 Nov 2026 04:30:00 +0000</pubDate>
       <description>Baby Brezza recalled 29,000 SuperFast Sterilizer Dryers. Check models BRZ0083, BRZ0154 and BRZ0156 and learn how to request a free replacement.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Gourmia Air Fryer Recall: Check GTF7530 and Get a Repair</title>
-      <link>https://newstrendus.com/articles/2026/11/gourmia-air-fryer-oven-recall-gtf7530-target-repair.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/gourmia-air-fryer-oven-recall-gtf7530-target-repair.html</guid>
-      <pubDate>Sun, 08 Nov 2026 02:40:00 +0000</pubDate>
-      <description>Gourmia recalled 175,951 air fryer ovens after 40 burn reports. Check model GTF7530, date codes, Target sales and how to request a free repair kit.</description>
       <category>US</category>
     </item>
   </channel>
