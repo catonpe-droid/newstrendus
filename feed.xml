@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 02:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 04:35:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FDA GLP-1 Eye Warning: What Patients Should Know</title>
+      <link>https://newstrendus.com/articles/2026/11/fda-glp1-eye-warning-2026-naion-ozempic-wegovy.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/fda-glp1-eye-warning-2026-naion-ozempic-wegovy.html</guid>
+      <pubDate>Wed, 11 Nov 2026 04:35:00 +0000</pubDate>
+      <description>FDA orders new GLP-1 eye-risk warnings for Ozempic, Wegovy and related drugs. Learn NAION symptoms, the evidence and what patients should do.</description>
+      <category>Health</category>
+    </item>
     <item>
       <title>2026 Charity Tax Deduction: $1,000 or $2,000 Rules</title>
       <link>https://newstrendus.com/articles/2026/11/irs-2026-charitable-deduction-nonitemizers-1000-2000.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sat, 07 Nov 2026 20:30:00 +0000</pubDate>
       <description>Conservation groups are using AI for wildlife research while questioning data center power and water use. See what new reporting and IEA data show.</description>
       <category>Science</category>
-    </item>
-    <item>
-      <title>Nasdaq AI Stock Selloff: What Fell and What Rebounded</title>
-      <link>https://newstrendus.com/articles/2026/11/nasdaq-ai-stock-selloff-november-2026-correction-rebound.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/nasdaq-ai-stock-selloff-november-2026-correction-rebound.html</guid>
-      <pubDate>Sat, 07 Nov 2026 18:20:00 +0000</pubDate>
-      <description>The Nasdaq plunged 5.5% on Nov. 5 before a Friday rebound. See why Nvidia and AMD fell, what a correction means and the risks ahead.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
