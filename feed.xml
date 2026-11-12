@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 04:32:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 06:25:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Northeast Snow Forecast Nov. 12–13: Where It May Stick</title>
+      <link>https://newstrendus.com/articles/2026/11/northeast-snow-forecast-november-12-13-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/northeast-snow-forecast-november-12-13-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 06:25:00 +0000</pubDate>
+      <description>Northeast snow forecast for Nov. 12–13: see where mountain snow is possible, why major cities expect rain, and how to check local alerts.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Vevor BMX Bike Recall: Models and Free Chain Guard Fix</title>
       <link>https://newstrendus.com/articles/2026/11/vevor-bmx-bicycle-recall-chain-guard-2026.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/irs-2027-tax-brackets-standard-deduction-filing-guide.html</guid>
       <pubDate>Sun, 08 Nov 2026 20:35:00 +0000</pubDate>
       <description>See the official 2027 IRS tax brackets, standard deductions by filing status, child tax credit changes and when the new amounts apply.</description>
-      <category>Business</category>
-    </item>
-    <item>
-      <title>IRS FIRE Deadline Nov. 9: What Filers Must Check</title>
-      <link>https://newstrendus.com/articles/2026/11/irs-fire-november-9-tcc-deadline-iris-transition-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/irs-fire-november-9-tcc-deadline-iris-transition-2026.html</guid>
-      <pubDate>Sun, 08 Nov 2026 18:26:00 +0000</pubDate>
-      <description>IRS FIRE users have until Nov. 9 to edit existing TCC applications. See the Nov. 19 filing cutoff and how to prepare for IRIS in 2027.</description>
       <category>Business</category>
     </item>
   </channel>
