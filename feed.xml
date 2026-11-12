@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 10:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 12:34:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vanderhall Brawley Recall: Check VINs and Seat Belt Fix</title>
+      <link>https://newstrendus.com/articles/2026/11/vanderhall-brawley-gts-seat-belt-recall-vin-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/vanderhall-brawley-gts-seat-belt-recall-vin-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 12:34:00 +0000</pubDate>
+      <description>Vanderhall recalled 190 Brawley GTS off-road EVs for seat belts that may lock. Check 2024–2026 VIN ranges and how to arrange a free repair.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>HAIARA W5 PRO Power Bank Warning: Recall vs. Stop-Use</title>
       <link>https://newstrendus.com/articles/2026/11/haiara-w5-pro-power-bank-warning-recall-refund-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Mon, 09 Nov 2026 02:40:00 +0000</pubDate>
       <description>NASA picked eight companies for a $10 billion lunar delivery contract ceiling, not an award. See the firms, PROMISE rover funding and timelines.</description>
       <category>Science</category>
-    </item>
-    <item>
-      <title>Arlopu Slide Recall: Check Models and Get a Free Repair</title>
-      <link>https://newstrendus.com/articles/2026/11/arlopu-slide-playset-recall-kt-cs17-ly-31-repair.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/arlopu-slide-playset-recall-kt-cs17-ly-31-repair.html</guid>
-      <pubDate>Mon, 09 Nov 2026 00:35:00 +0000</pubDate>
-      <description>Arlopu recalled 10,318 slide playsets. Check KT-CS17 and LY-31 label locations, the reported injury and how to request a free repair kit.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>

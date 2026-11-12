@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/vanderhall-brawley-gts-seat-belt-recall-vin-2026.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-12T12:34:00+00:00</news:publication_date>
+    <news:title>Vanderhall Brawley Recall: Check VINs and Seat Belt Fix</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/haiara-w5-pro-power-bank-warning-recall-refund-2026.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-12T10:35:00+00:00</news:publication_date>
@@ -88,8 +92,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-10T14:30:00+00:00</news:publication_date>
     <news:title>October 2026 CPI: Grocery, Gas and Insurance Prices</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/microsoft-chinese-optical-transceiver-ban-ai-data-centers.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-10T12:30:00+00:00</news:publication_date>
-    <news:title>Microsoft and the Proposed China Data-Center Optics Ban</news:title></news:news></url>
 </urlset>
