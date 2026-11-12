@@ -5,8 +5,24 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 14:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 18:20:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SHEIN Baby Rattle Recall: SKU and Refund Steps</title>
+      <link>https://newstrendus.com/articles/2026/11/shein-baby-rattle-teether-recall-sku-refund-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/shein-baby-rattle-teether-recall-sku-refund-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 18:20:00 +0000</pubDate>
+      <description>SHEIN recalled 2,657 baby rattle and teether sets over detachable choking hazards. Check the exact SKU, sales dates and how to request a refund.</description>
+      <category>US</category>
+    </item>
+    <item>
+      <title>Sharper Image Fire Pit Recall: Refund and Models</title>
+      <link>https://newstrendus.com/articles/2026/11/sharper-image-fire-pit-recall-refund-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/sharper-image-fire-pit-recall-refund-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 16:30:00 +0000</pubDate>
+      <description>Sharper Image fire pit recall affects 265,000 units. Check the two styles, burn hazard, reported injuries and steps to request a full refund.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>C.A.M.P. Ice Axe Recall: Models, Batches and Repair</title>
       <link>https://newstrendus.com/articles/2026/11/camp-ice-axe-recall-models-batches-repair-2026.html</link>
@@ -310,22 +326,6 @@
       <pubDate>Mon, 09 Nov 2026 08:45:00 +0000</pubDate>
       <description>AI data centers are seeking used gas turbines as new equipment faces long waits. See the supply bottleneck, risks and alternatives for U.S. projects.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Magnetopia Magnetic Blocks Recall: Models and Refund</title>
-      <link>https://newstrendus.com/articles/2026/11/magnetopia-magnetic-blocks-recall-models-refund-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/magnetopia-magnetic-blocks-recall-models-refund-2026.html</guid>
-      <pubDate>Mon, 09 Nov 2026 06:25:00 +0000</pubDate>
-      <description>Magnetopia recalled 7,600 magnetic block sets. Check 15 model numbers, find the package label and learn how to request a prepaid return and full refund.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>DOJ Super Intelligence Task Force: What It Will Do</title>
-      <link>https://newstrendus.com/articles/2026/11/doj-super-intelligence-task-force-ai-enforcement.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/doj-super-intelligence-task-force-ai-enforcement.html</guid>
-      <pubDate>Mon, 09 Nov 2026 04:30:00 +0000</pubDate>
-      <description>The Justice Department launched an AI-focused Super Intelligence Task Force. See its enforcement remit, leaders and what remains unannounced.</description>
-      <category>Technology</category>
     </item>
   </channel>
 </rss>
