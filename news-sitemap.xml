@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/vevor-bmx-bicycle-recall-chain-guard-2026.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-12T04:32:00+00:00</news:publication_date>
+    <news:title>Vevor BMX Bike Recall: Models and Free Chain Guard Fix</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/ss-united-states-sinking-florida-artificial-reef-2026.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-12T02:25:00+00:00</news:publication_date>
@@ -88,8 +92,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-10T06:25:00+00:00</news:publication_date>
     <news:title>US Counter-Drone Push: What the FAA Must Review</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/disney-adobe-ai-alliance-firefly-foundry-2026.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-10T04:32:00+00:00</news:publication_date>
-    <news:title>Disney and Adobe Expand AI Alliance: What Changes</news:title></news:news></url>
 </urlset>

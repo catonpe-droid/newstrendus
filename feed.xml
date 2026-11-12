@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 02:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 04:32:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vevor BMX Bike Recall: Models and Free Chain Guard Fix</title>
+      <link>https://newstrendus.com/articles/2026/11/vevor-bmx-bicycle-recall-chain-guard-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/vevor-bmx-bicycle-recall-chain-guard-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 04:32:00 +0000</pubDate>
+      <description>Vevor recalled 20- and 24-inch BMX bikes over missing chain guards. Check model numbers SS24001 and SS24002 and request a free repair kit.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>SS United States Sinking: Florida Reef Location and Facts</title>
       <link>https://newstrendus.com/articles/2026/11/ss-united-states-sinking-florida-artificial-reef-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 18:26:00 +0000</pubDate>
       <description>IRS FIRE users have until Nov. 9 to edit existing TCC applications. See the Nov. 19 filing cutoff and how to prepare for IRIS in 2027.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Wise Wife Cinnamon Recall: UPC, 14 States and Refund</title>
-      <link>https://newstrendus.com/articles/2026/11/wise-wife-cinnamon-recall-2026-upc-14-states-refund.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/wise-wife-cinnamon-recall-2026-upc-14-states-refund.html</guid>
-      <pubDate>Sun, 08 Nov 2026 16:25:00 +0000</pubDate>
-      <description>Wise Wife cinnamon was recalled over lead concerns. Check UPC 0688474302754, the 14 affected states, best-before date and refund instructions.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
