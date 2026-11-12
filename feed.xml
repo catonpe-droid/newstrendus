@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 12:34:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 14:32:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X-VESOLJE Nursing Pillow Recall: NP001 Refund Steps</title>
+      <link>https://newstrendus.com/articles/2026/11/x-vesolje-nursing-pillow-recall-np001-refund-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/x-vesolje-nursing-pillow-recall-np001-refund-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 14:32:00 +0000</pubDate>
+      <description>X-VESOLJE nursing pillows model NP001 were recalled over infant suffocation risk. Check colors, Amazon sale dates and how to request a refund.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Vanderhall Brawley Recall: Check VINs and Seat Belt Fix</title>
       <link>https://newstrendus.com/articles/2026/11/vanderhall-brawley-gts-seat-belt-recall-vin-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Mon, 09 Nov 2026 04:30:00 +0000</pubDate>
       <description>The Justice Department launched an AI-focused Super Intelligence Task Force. See its enforcement remit, leaders and what remains unannounced.</description>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>NASA's $10 Billion Moon Contract: Who Can Compete?</title>
-      <link>https://newstrendus.com/articles/2026/11/nasa-clps-2-10-billion-moon-contract-eight-companies.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/nasa-clps-2-10-billion-moon-contract-eight-companies.html</guid>
-      <pubDate>Mon, 09 Nov 2026 02:40:00 +0000</pubDate>
-      <description>NASA picked eight companies for a $10 billion lunar delivery contract ceiling, not an award. See the firms, PROMISE rover funding and timelines.</description>
-      <category>Science</category>
     </item>
   </channel>
 </rss>
