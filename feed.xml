@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 18:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 21:00:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft Outlook Outage: What Happened on November 12</title>
+      <link>https://newstrendus.com/articles/2026/11/microsoft-outlook-365-outage-november-12-2026-status.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/microsoft-outlook-365-outage-november-12-2026-status.html</guid>
+      <pubDate>Thu, 12 Nov 2026 21:00:00 +0000</pubDate>
+      <description>Microsoft Outlook and 365 suffered widespread U.S. disruptions November 12. See confirmed symptoms, Microsoft's response and where to check service status.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>SHEIN Baby Rattle Recall: SKU and Refund Steps</title>
       <link>https://newstrendus.com/articles/2026/11/shein-baby-rattle-teether-recall-sku-refund-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Mon, 09 Nov 2026 10:30:00 +0000</pubDate>
       <description>Trump said he is open to AI guardrails in a 60 Minutes interview. See what he proposed, what remains unchanged and what U.S. businesses should watch.</description>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>Why AI Data Centers Are Buying Used Gas Turbines</title>
-      <link>https://newstrendus.com/articles/2026/11/ai-data-center-used-gas-turbines-power-shortage-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ai-data-center-used-gas-turbines-power-shortage-2026.html</guid>
-      <pubDate>Mon, 09 Nov 2026 08:45:00 +0000</pubDate>
-      <description>AI data centers are seeking used gas turbines as new equipment faces long waits. See the supply bottleneck, risks and alternatives for U.S. projects.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/microsoft-outlook-365-outage-november-12-2026-status.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-12T21:00:00+00:00</news:publication_date>
+    <news:title>Microsoft Outlook Outage: What Happened on November 12</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/shein-baby-rattle-teether-recall-sku-refund-2026.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-12T18:20:00+00:00</news:publication_date>
@@ -84,8 +88,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-11T00:40:00+00:00</news:publication_date>
     <news:title>Veterans Day 2026 Free Meals: ID, Hours and Restrictions</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/jim-jordan-house-republican-leader-2026-vote.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-10T22:20:00+00:00</news:publication_date>
-    <news:title>Jim Jordan Wins House GOP Leader Vote 106–73</news:title></news:news></url>
 </urlset>
