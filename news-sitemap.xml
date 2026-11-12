@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/family-farmstead-cheddar-recall-listeria-12-states-2026.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-12T08:30:00+00:00</news:publication_date>
+    <news:title>Family Farmstead Cheddar Recall: 12 States and Dates</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/northeast-snow-forecast-november-12-13-2026.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-12T06:25:00+00:00</news:publication_date>
@@ -88,8 +92,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-10T10:25:00+00:00</news:publication_date>
     <news:title>SoftBank's $7 Billion Loss: US Data-Center Costs Explained</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/take-two-earnings-gta-6-preorders-fiscal-2027-outlook.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-10T08:20:00+00:00</news:publication_date>
-    <news:title>Take-Two Earnings: GTA 6 Preorders, Revenue and Outlook</news:title></news:news></url>
 </urlset>

@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 06:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 08:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Family Farmstead Cheddar Recall: 12 States and Dates</title>
+      <link>https://newstrendus.com/articles/2026/11/family-farmstead-cheddar-recall-listeria-12-states-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/family-farmstead-cheddar-recall-listeria-12-states-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 08:30:00 +0000</pubDate>
+      <description>Family Farmstead raw cheddar recall covers 12 states over possible Listeria. Check mild and sharp cheese, best-by dates and return instructions.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Northeast Snow Forecast Nov. 12–13: Where It May Stick</title>
       <link>https://newstrendus.com/articles/2026/11/northeast-snow-forecast-november-12-13-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 22:27:00 +0000</pubDate>
       <description>Social Security's 2032 funding warning does not mean checks stop. See what the 22% projection means, who is affected and what Congress could change.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>2027 IRS Tax Brackets: Standard Deduction and Key Changes</title>
-      <link>https://newstrendus.com/articles/2026/11/irs-2027-tax-brackets-standard-deduction-filing-guide.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/irs-2027-tax-brackets-standard-deduction-filing-guide.html</guid>
-      <pubDate>Sun, 08 Nov 2026 20:35:00 +0000</pubDate>
-      <description>See the official 2027 IRS tax brackets, standard deductions by filing status, child tax credit changes and when the new amounts apply.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
