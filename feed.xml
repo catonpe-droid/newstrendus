@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 00:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 02:20:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Huffy Buzz E-Trike Recall: Model E4004 and Free Repair</title>
+      <link>https://newstrendus.com/articles/2026/11/huffy-buzz-cerana-t2-e-trike-recall-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/huffy-buzz-cerana-t2-e-trike-recall-2026.html</guid>
+      <pubDate>Fri, 13 Nov 2026 02:20:00 +0000</pubDate>
+      <description>Huffy recalls 286 Buzz Cerana T2 electric trikes after rear-wheel failures. Check model E4004, injury reports and how to get a free axle repair.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Fed's Barr Warns AI Could Disrupt US Jobs and Widen Inequality</title>
       <link>https://newstrendus.com/articles/2026/11/fed-barr-ai-job-disruption-inequality-november-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Mon, 09 Nov 2026 18:30:00 +0000</pubDate>
       <description>New York Fed's October 2026 survey shows rising unemployment worries, 3.9% one-year inflation expectations and mixed job prospects. See the data.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Google TPU 8tx vs. 8i Max: Security and Memory Explained</title>
-      <link>https://newstrendus.com/articles/2026/11/google-tpu-8tx-8i-max-security-memory-explained.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/google-tpu-8tx-8i-max-security-memory-explained.html</guid>
-      <pubDate>Mon, 09 Nov 2026 14:40:00 +0000</pubDate>
-      <description>Google unveiled TPU 8tx for confidential AI and 8i Max for long-context workloads. Compare their uses, claimed gains and what buyers still need to verify.</description>
-      <category>Technology</category>
     </item>
   </channel>
 </rss>
