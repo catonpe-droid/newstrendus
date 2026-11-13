@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 20:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 22:31:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAA Nationwide Ground Stop: Flight Status and Traveler Steps</title>
+      <link>https://newstrendus.com/articles/2026/11/faa-national-ground-stop-november-13-2026-flight-status.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/faa-national-ground-stop-november-13-2026-flight-status.html</guid>
+      <pubDate>Fri, 13 Nov 2026 22:31:00 +0000</pubDate>
+      <description>FAA halted U.S. departures November 13 after air traffic control communications failed. Here's what travelers can verify and how to handle delays.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>BMW Recall: 720,796 Vehicles, Park-Outside Warning</title>
       <link>https://newstrendus.com/articles/2026/11/bmw-720796-water-pump-recall-park-outside-vin-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Tue, 10 Nov 2026 02:20:00 +0000</pubDate>
       <description>Google's Holiday 100 for 2026 highlights trending gifts from roller skates to microphones. See the search data and how to shop without overpaying.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>Fed's Barkin Urges Caution on Rates as Inflation Persists</title>
-      <link>https://newstrendus.com/articles/2026/11/fed-barkin-november-2026-inflation-rates-ai-risks.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/fed-barkin-november-2026-inflation-rates-ai-risks.html</guid>
-      <pubDate>Tue, 10 Nov 2026 00:20:00 +0000</pubDate>
-      <description>Richmond Fed President Tom Barkin says inflation remains stubborn and AI creates two economic risks. What his November 9 speech means for rate watchers.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
