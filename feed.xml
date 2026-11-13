@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 12:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 16:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Costco Whipped Cream Recall: Check Lot Codes in 12 States</title>
+      <link>https://newstrendus.com/articles/2026/11/costco-kirkland-whipped-cream-recall-2026-lot-states.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/costco-kirkland-whipped-cream-recall-2026-lot-states.html</guid>
+      <pubDate>Fri, 13 Nov 2026 16:30:00 +0000</pubDate>
+      <description>Costco's Kirkland whipped cream recall covers one batch in 12 states. Check item 1777000, the April 2, 2027 date, can timestamps and refund steps.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>2027 401(k) Limit Rises to $25,500: IRA and Catch-Ups</title>
       <link>https://newstrendus.com/articles/2026/11/2027-401k-ira-contribution-limits-irs.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Mon, 09 Nov 2026 22:40:00 +0000</pubDate>
       <description>Thomas Massie renewed an impeachment push against Pete Hegseth on Nov. 9. Here's what the House may vote on and why removal is a separate step.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>US Stocks Rally Nov. 9 as Oil Falls; Nvidia Lags</title>
-      <link>https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html</guid>
-      <pubDate>Mon, 09 Nov 2026 20:30:00 +0000</pubDate>
-      <description>US stocks rallied November 9 as oil fell. See the Dow, S&amp;P 500 and Nasdaq moves, why Nvidia diverged, and what investors watch next.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
