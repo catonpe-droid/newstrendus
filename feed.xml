@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 16:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 20:35:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BMW Recall: 720,796 Vehicles, Park-Outside Warning</title>
+      <link>https://newstrendus.com/articles/2026/11/bmw-720796-water-pump-recall-park-outside-vin-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/bmw-720796-water-pump-recall-park-outside-vin-2026.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:35:00 +0000</pubDate>
+      <description>BMW recalls 720,796 U.S. vehicles over a water-pump connector fire risk. See affected model years, parking advice and how to check your VIN.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Costco Whipped Cream Recall: Check Lot Codes in 12 States</title>
       <link>https://newstrendus.com/articles/2026/11/costco-kirkland-whipped-cream-recall-2026-lot-states.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Tue, 10 Nov 2026 00:20:00 +0000</pubDate>
       <description>Richmond Fed President Tom Barkin says inflation remains stubborn and AI creates two economic risks. What his November 9 speech means for rate watchers.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Hegseth Impeachment: Massie Pushes for House Vote</title>
-      <link>https://newstrendus.com/articles/2026/11/thomas-massie-hegseth-impeachment-house-vote-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/thomas-massie-hegseth-impeachment-house-vote-2026.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:40:00 +0000</pubDate>
-      <description>Thomas Massie renewed an impeachment push against Pete Hegseth on Nov. 9. Here's what the House may vote on and why removal is a separate step.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
