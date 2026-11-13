@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 02:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2027 401(k) Limit Rises to $25,500: IRA and Catch-Ups</title>
+      <link>https://newstrendus.com/articles/2026/11/2027-401k-ira-contribution-limits-irs.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/2027-401k-ira-contribution-limits-irs.html</guid>
+      <pubDate>Fri, 13 Nov 2026 12:30:00 +0000</pubDate>
+      <description>The IRS raised the 2027 401(k) limit to $25,500. Compare catch-up amounts, the unchanged $7,500 IRA limit and Roth IRA income thresholds.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Huffy Buzz E-Trike Recall: Model E4004 and Free Repair</title>
       <link>https://newstrendus.com/articles/2026/11/huffy-buzz-cerana-t2-e-trike-recall-2026.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/us-stocks-november-9-2026-rally-oil-nvidia.html</guid>
       <pubDate>Mon, 09 Nov 2026 20:30:00 +0000</pubDate>
       <description>US stocks rallied November 9 as oil fell. See the Dow, S&amp;P 500 and Nasdaq moves, why Nvidia diverged, and what investors watch next.</description>
-      <category>Business</category>
-    </item>
-    <item>
-      <title>NY Fed Survey: Job Worries Rise, Inflation Stays High</title>
-      <link>https://newstrendus.com/articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ny-fed-october-2026-job-loss-inflation-expectations.html</guid>
-      <pubDate>Mon, 09 Nov 2026 18:30:00 +0000</pubDate>
-      <description>New York Fed's October 2026 survey shows rising unemployment worries, 3.9% one-year inflation expectations and mixed job prospects. See the data.</description>
       <category>Business</category>
     </item>
   </channel>
