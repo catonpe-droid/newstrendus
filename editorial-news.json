@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-12T22:30:19.828843+00:00",
+  "generated_at": "2026-11-13T00:29:37.699483+00:00",
   "items": [
+    {
+      "id": "editorial-fed-barr-ai-job-disruption-inequality-november-2026",
+      "title": "Fed's Barr Warns AI Could Disrupt US Jobs and Widen Inequality",
+      "url": "https://newstrendus.com/articles/2026/11/fed-barr-ai-job-disruption-inequality-november-2026.html",
+      "page_url": "articles/2026/11/fed-barr-ai-job-disruption-inequality-november-2026.html",
+      "category": "Business",
+      "summary": "Fed Governor Michael Barr warns AI could disrupt U.S. jobs and widen inequality. See what he said, what evidence shows and what remains uncertain.",
+      "source": "NewsTrendus",
+      "date": "2026-11-13T00:20:00+00:00",
+      "image": "https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg",
+      "image_alt": "Representative licensed photograph of generic computing servers, not a photograph of the Federal Reserve or its officials",
+      "photo_artist": "Brett Sayles",
+      "photo_credit_url": "https://www.pexels.com/photo/server-racks-on-data-center-4508751/",
+      "is_editorial": true
+    },
     {
       "id": "editorial-amd-psiquantum-quantum-computing-partnership-2026",
       "title": "AMD and PsiQuantum Expand Quantum Computing Partnership",

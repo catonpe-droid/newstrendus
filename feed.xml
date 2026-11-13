@@ -5,8 +5,24 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 21:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:20:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fed's Barr Warns AI Could Disrupt US Jobs and Widen Inequality</title>
+      <link>https://newstrendus.com/articles/2026/11/fed-barr-ai-job-disruption-inequality-november-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/fed-barr-ai-job-disruption-inequality-november-2026.html</guid>
+      <pubDate>Fri, 13 Nov 2026 00:20:00 +0000</pubDate>
+      <description>Fed Governor Michael Barr warns AI could disrupt U.S. jobs and widen inequality. See what he said, what evidence shows and what remains uncertain.</description>
+      <category>Business</category>
+    </item>
+    <item>
+      <title>AMD and PsiQuantum Expand Quantum Computing Partnership</title>
+      <link>https://newstrendus.com/articles/2026/11/amd-psiquantum-quantum-computing-partnership-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/amd-psiquantum-quantum-computing-partnership-2026.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:40:00 +0000</pubDate>
+      <description>AMD and PsiQuantum will co-design quantum computing infrastructure and hybrid AI systems. Here's what the deal includes and what remains unannounced.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>Microsoft Outlook Outage: What Happened on November 12</title>
       <link>https://newstrendus.com/articles/2026/11/microsoft-outlook-365-outage-november-12-2026-status.html</link>
@@ -309,22 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/google-tpu-8tx-8i-max-security-memory-explained.html</guid>
       <pubDate>Mon, 09 Nov 2026 14:40:00 +0000</pubDate>
       <description>Google unveiled TPU 8tx for confidential AI and 8i Max for long-context workloads. Compare their uses, claimed gains and what buyers still need to verify.</description>
-      <category>Technology</category>
-    </item>
-    <item>
-      <title>2027 Opportunity Zones Map: 6,576 Tracts Designated</title>
-      <link>https://newstrendus.com/articles/2026/11/2027-opportunity-zones-map-6576-tracts-rural.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/2027-opportunity-zones-map-6576-tracts-rural.html</guid>
-      <pubDate>Mon, 09 Nov 2026 12:35:00 +0000</pubDate>
-      <description>The IRS designated 6,576 Opportunity Zone tracts for 2027, including 2,594 rural areas. Learn when the map takes effect and how to check a location.</description>
-      <category>Business</category>
-    </item>
-    <item>
-      <title>Trump on AI Guardrails: What Changes After 60 Minutes?</title>
-      <link>https://newstrendus.com/articles/2026/11/trump-ai-guardrails-60-minutes-what-changes.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/trump-ai-guardrails-60-minutes-what-changes.html</guid>
-      <pubDate>Mon, 09 Nov 2026 10:30:00 +0000</pubDate>
-      <description>Trump said he is open to AI guardrails in a 60 Minutes interview. See what he proposed, what remains unchanged and what U.S. businesses should watch.</description>
       <category>Technology</category>
     </item>
   </channel>
