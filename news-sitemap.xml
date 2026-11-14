@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url><loc>https://newstrendus.com/articles/2026/11/workday-outage-november-2026-restored-hr-payroll.html</loc><news:news>
+    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-11-14T18:40:00+00:00</news:publication_date>
+    <news:title>Workday Outage: Service Restored After November 13 Disruption</news:title></news:news></url>
   <url><loc>https://newstrendus.com/articles/2026/11/kakgold-4wd-rc-car-toy-recall-refund-2026.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-14T16:30:00+00:00</news:publication_date>
@@ -43,5 +47,5 @@
   <url><loc>https://newstrendus.com/articles/2026/11/microsoft-outlook-365-outage-november-12-2026-status.html</loc><news:news>
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-12T21:00:00+00:00</news:publication_date>
-    <news:title>Microsoft Outlook Outage: What Happened on November 12</news:title></news:news></url>
+    <news:title>Microsoft 365 Outage Restored: Outlook and Teams Update</news:title></news:news></url>
 </urlset>

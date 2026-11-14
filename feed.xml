@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 16:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 18:40:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workday Outage: Service Restored After November 13 Disruption</title>
+      <link>https://newstrendus.com/articles/2026/11/workday-outage-november-2026-restored-hr-payroll.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/workday-outage-november-2026-restored-hr-payroll.html</guid>
+      <pubDate>Sat, 14 Nov 2026 18:40:00 +0000</pubDate>
+      <description>Workday says service returned November 14 after a major HR and payroll outage. See confirmed impact, employer guidance and what remains unclear.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>Kakgold RC Car Recall: Check the Toy and Get a Refund</title>
       <link>https://newstrendus.com/articles/2026/11/kakgold-4wd-rc-car-toy-recall-refund-2026.html</link>
@@ -88,11 +96,11 @@
       <category>Technology</category>
     </item>
     <item>
-      <title>Microsoft Outlook Outage: What Happened on November 12</title>
+      <title>Microsoft 365 Outage Restored: Outlook and Teams Update</title>
       <link>https://newstrendus.com/articles/2026/11/microsoft-outlook-365-outage-november-12-2026-status.html</link>
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/microsoft-outlook-365-outage-november-12-2026-status.html</guid>
       <pubDate>Thu, 12 Nov 2026 21:00:00 +0000</pubDate>
-      <description>Microsoft Outlook and 365 suffered widespread U.S. disruptions November 12. See confirmed symptoms, Microsoft's response and where to check service status.</description>
+      <description>Microsoft says its November 12–14 Outlook and Teams outage is resolved. See the reported cause, recovery timeline and what U.S. administrators should check.</description>
       <category>Technology</category>
     </item>
     <item>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/softbank-7-billion-loss-us-data-center-costs-2026.html</guid>
       <pubDate>Tue, 10 Nov 2026 10:25:00 +0000</pubDate>
       <description>SoftBank's $7 billion quarterly loss includes a US data-center equipment charge. Here's what the Ohio projects, rebates and debt figures mean.</description>
-      <category>Business</category>
-    </item>
-    <item>
-      <title>Take-Two Earnings: GTA 6 Preorders, Revenue and Outlook</title>
-      <link>https://newstrendus.com/articles/2026/11/take-two-earnings-gta-6-preorders-fiscal-2027-outlook.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/take-two-earnings-gta-6-preorders-fiscal-2027-outlook.html</guid>
-      <pubDate>Tue, 10 Nov 2026 08:20:00 +0000</pubDate>
-      <description>Take-Two's November earnings show $1.60 billion in quarterly bookings, a narrower loss and a $8.0–$8.2 billion annual outlook ahead of GTA 6.</description>
       <category>Business</category>
     </item>
   </channel>
