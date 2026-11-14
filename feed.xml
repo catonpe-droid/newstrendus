@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 22:31:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 04:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QIOMALA Pressure Washer Recall: HWT12P Refund Steps</title>
+      <link>https://newstrendus.com/articles/2026/11/qiomala-hwt12p-pressure-washer-recall-refund-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/qiomala-hwt12p-pressure-washer-recall-refund-2026.html</guid>
+      <pubDate>Sat, 14 Nov 2026 04:30:00 +0000</pubDate>
+      <description>QIOMALA recalled 80 HWT12P pressure washers over electric shock risks. Check the model label, Amazon sales dates and official refund instructions.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>FAA Nationwide Ground Stop: Flight Status and Traveler Steps</title>
       <link>https://newstrendus.com/articles/2026/11/faa-national-ground-stop-november-13-2026-flight-status.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Tue, 10 Nov 2026 04:32:00 +0000</pubDate>
       <description>Disney and Adobe announced a broader AI partnership on Nov. 9. See how Firefly Foundry may affect theme parks, studios and ESPN—and what is unconfirmed.</description>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>Google Holiday 100 2026: Gift Trends and Smart Buying Tips</title>
-      <link>https://newstrendus.com/articles/2026/11/google-holiday-100-2026-gift-trends-shopping-tips.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/google-holiday-100-2026-gift-trends-shopping-tips.html</guid>
-      <pubDate>Tue, 10 Nov 2026 02:20:00 +0000</pubDate>
-      <description>Google's Holiday 100 for 2026 highlights trending gifts from roller skates to microphones. See the search data and how to shop without overpaying.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
