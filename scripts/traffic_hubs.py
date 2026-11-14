@@ -17,13 +17,19 @@ SITE = "https://newstrendus.com"
 TOPICS = [
     {
         "slug": "product-recalls",
-        "title": "US Product Recalls: Safety Alerts, Model Numbers and Refund Guides",
+        "title": "US Product Recalls: How to Check Models and Refund Steps",
         "short": "Product recalls",
-        "description": "Find our latest source-linked US consumer product recall explainers, including affected models, hazards, refund and repair steps.",
-        "intro": "A recall announcement can be hard to interpret when you need to know whether a product in your home is affected. These independently written explainers point to official notices and distinguish the recalled model, safety issue and announced remedy. Always check the original notice for the most current instructions.",
+        "description": "Learn how to verify US recalls using model numbers, lot codes or VINs. Find official CPSC, FDA and NHTSA alerts plus practical refund and repair guides.",
+        "intro": "Check the exact product before acting on a headline: model, SKU, serial number, lot code or vehicle VIN can determine whether your item is affected. Use the official agency and manufacturer notice for the current safety instructions. The linked articles below explain specific recalls, but this page is a guide, not a live recall database.",
         "pattern": r"\brecall(?:s|ed)?\b|\bcpsc\b|\bfda safety\b",
         "category": None,
-        "sources": [("US Consumer Product Safety Commission recalls", "https://www.cpsc.gov/Recalls"), ("FDA recalls and safety alerts", "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts")],
+        "sources": [("CPSC household-product and toy recalls", "https://www.cpsc.gov/Recalls"), ("FDA food, drug and medical-product alerts", "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"), ("NHTSA vehicle and equipment recalls", "https://www.nhtsa.gov/recalls")],
+        "steps": [
+            ("Identify the exact item.", "Find the brand and model or SKU on the product label; check serial, UPC, lot or batch codes when the notice lists them. For a vehicle, locate its 17-character VIN."),
+            ("Search the correct official source.", "Use CPSC for many consumer goods and toys, FDA for regulated food and medical products, and NHTSA for vehicles. Compare all identifiers and dates with the actual agency notice."),
+            ("Follow the product-specific safety instruction.", "Some recalls advise stopping use immediately, disconnecting a product, parking a vehicle outdoors, or following food-disposal guidance. Never assume the remedy is the same for every recall."),
+            ("Request the stated remedy and retain records.", "Follow the official company's directions for a repair, replacement or refund. Keep the product-code photo, order record and any confirmation; contact the listed recall support channel if needed."),
+        ],
     },
     {
         "slug": "irs-taxes",
@@ -82,6 +88,19 @@ def hub_page(topic: dict, stories: list[dict]) -> str:
             f'<h2><a href="{escape(relative, quote=True)}">{escape(item["title"])}</a></h2>'
             f'<p>{escape(item["summary"])}</p></article>'
         )
+    steps = topic.get("steps", [])
+    checklist = (
+        '<section class="nt-recall-checklist" aria-label="Practical recall-checking steps">'
+        '<h2 style="font-size:24px;margin:0 0 12px">How to check if your product is recalled</h2>'
+        '<ol style="padding-left:23px;line-height:1.75">'
+        + "".join(
+            f'<li style="margin:0 0 11px"><strong>{escape(heading)}</strong> {escape(detail)}</li>'
+            for heading, detail in steps
+        )
+        + '</ol><p style="font-size:14px;color:#58687b;margin-bottom:0">'
+        'These steps are general guidance, not a substitute for a current government or manufacturer notice.'
+        '</p></section>'
+    ) if steps else ""
     sources = "".join(
         f'<li><a href="{escape(url_, quote=True)}" target="_blank" rel="noopener noreferrer">{escape(label)}</a></li>'
         for label, url_ in topic["sources"]
@@ -120,6 +139,8 @@ def hub_page(topic: dict, stories: list[dict]) -> str:
 .nt-hub-article h2 a:hover,.nt-hub-aside a:hover{{color:#b11b37;text-decoration:underline}}
 .nt-hub-article p{{color:#58687b;line-height:1.6;margin:5px 0}}
 .nt-hub-meta{{color:#64748b;font-size:12px;font-weight:700;text-transform:uppercase}}
+.nt-recall-checklist{{margin:24px 0 6px;padding:22px 25px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px}}
+.nt-recall-checklist li::marker{{color:#475569;font-weight:700}}
 .nt-hub-aside{{border:1px solid #e2e8f0;border-radius:12px;padding:19px;align-self:start;background:white}}
 .nt-hub-aside li{{margin:11px 0;line-height:1.5}}
 @media(max-width:760px){{.nt-hub-grid{{grid-template-columns:1fr}}.nt-hub-wrap{{margin-top:22px}}}}
@@ -132,6 +153,7 @@ def hub_page(topic: dict, stories: list[dict]) -> str:
 <span class="eyebrow">NewsTrendus · Reader topic guide</span>
 <h1>{title}</h1>
 <p class="nt-hub-intro">{escape(topic["intro"])}</p>
+{checklist}
 <div class="nt-hub-grid"><section aria-label="Related original articles">
 <p class="state">Latest related NewsTrendus articles, newest first. Each report links to its cited factual sources.</p>
 {''.join(rows)}
