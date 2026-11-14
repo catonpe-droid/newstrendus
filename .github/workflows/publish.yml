@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: read
   pages: write
   id-token: write
 concurrency:
@@ -72,5 +73,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .
+      - name: Wait for uploaded Pages artifact registration
+        run: sleep 12
       - id: deployment
         uses: actions/deploy-pages@v4
