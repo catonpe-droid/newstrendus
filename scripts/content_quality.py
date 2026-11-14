@@ -77,7 +77,9 @@ def revise_elections_page(text: str) -> str:
 
 
 def article_disclosure(text: str, prefix: str) -> str:
-    if STAMP in text:
+    # Existing hand-authored methodology notes count as disclosures too.
+    # Otherwise the deploy job can append a second notice to the same story.
+    if STAMP in text or 'class="nt-method-note"' in text or "class='nt-method-note'" in text:
         return text
     if "class=\"article-meta\"" not in text:
         return text
