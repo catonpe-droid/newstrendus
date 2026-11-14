@@ -55,7 +55,18 @@ jobs:
           git add -u -- '*.html'
           if ! git diff --cached --quiet; then
             git commit -m "chore: sync SEO sitemap and GA4 [skip ci]"
-            git push origin HEAD:main
+            # Editorial publishing may advance main while metadata builds.
+            # Never force-push; rebase the generated update onto the newest branch.
+            if ! git push origin HEAD:main; then
+              echo "::notice::Main advanced; reconciling metadata commit safely"
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort
+                echo "::error::Concurrent changes conflict; refusing to overwrite newer content"
+                exit 1
+              fi
+              git push origin HEAD:main
+            fi
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
