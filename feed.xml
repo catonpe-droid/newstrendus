@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 04:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 14:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cummins Generator Recall: P5000iDF Free Repair Steps</title>
+      <link>https://newstrendus.com/articles/2026/11/cummins-onan-p5000idf-generator-recall-free-repair-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/cummins-onan-p5000idf-generator-recall-free-repair-2026.html</guid>
+      <pubDate>Sat, 14 Nov 2026 14:30:00 +0000</pubDate>
+      <description>Cummins recalls 2,960 Onan P5000iDF generators over fuel-pressure hazards. Check the model and part number, incident reports and free repair steps.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>QIOMALA Pressure Washer Recall: HWT12P Refund Steps</title>
       <link>https://newstrendus.com/articles/2026/11/qiomala-hwt12p-pressure-washer-recall-refund-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Tue, 10 Nov 2026 06:25:00 +0000</pubDate>
       <description>US agencies plan faster counter-drone deployment. See what the FAA says about aviation safety, border risks and the next steps.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>Disney and Adobe Expand AI Alliance: What Changes</title>
-      <link>https://newstrendus.com/articles/2026/11/disney-adobe-ai-alliance-firefly-foundry-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/disney-adobe-ai-alliance-firefly-foundry-2026.html</guid>
-      <pubDate>Tue, 10 Nov 2026 04:32:00 +0000</pubDate>
-      <description>Disney and Adobe announced a broader AI partnership on Nov. 9. See how Firefly Foundry may affect theme parks, studios and ESPN—and what is unconfirmed.</description>
-      <category>Technology</category>
     </item>
   </channel>
 </rss>
