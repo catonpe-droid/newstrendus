@@ -72,8 +72,4 @@
     <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
     <news:publication_date>2026-11-12T00:42:00+00:00</news:publication_date>
     <news:title>Brooklyn Building Collapse: Flatbush Rescue and Road Closures</news:title></news:news></url>
-  <url><loc>https://newstrendus.com/articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html</loc><news:news>
-    <news:publication><news:name>NewsTrendus</news:name><news:language>en</news:language></news:publication>
-    <news:publication_date>2026-11-11T22:34:00+00:00</news:publication_date>
-    <news:title>Waymo School Bus Investigation: What NHTSA Is Reviewing</news:title></news:news></url>
 </urlset>
