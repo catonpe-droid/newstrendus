@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 18:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 06:29:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boshengya Rug Recall: Identify Rugs and Claim a Refund</title>
+      <link>https://newstrendus.com/articles/2026/11/boshengya-shag-rug-recall-fire-risk-refund-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/boshengya-shag-rug-recall-fire-risk-refund-2026.html</guid>
+      <pubDate>Mon, 16 Nov 2026 06:29:00 +0000</pubDate>
+      <description>Boshengya recalls 83 shag rugs sold on Amazon over a fire risk. Check pink and orange rugs, sizes, packaging labels and the official refund process.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>Workday Outage: Service Restored After November 13 Disruption</title>
       <link>https://newstrendus.com/articles/2026/11/workday-outage-november-2026-restored-hr-payroll.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Tue, 10 Nov 2026 12:30:00 +0000</pubDate>
       <description>Microsoft reportedly opposes a proposed US ban on Chinese optical transceivers. Learn what the FCC is considering and why AI data centers could be affected.</description>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>SoftBank's $7 Billion Loss: US Data-Center Costs Explained</title>
-      <link>https://newstrendus.com/articles/2026/11/softbank-7-billion-loss-us-data-center-costs-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/softbank-7-billion-loss-us-data-center-costs-2026.html</guid>
-      <pubDate>Tue, 10 Nov 2026 10:25:00 +0000</pubDate>
-      <description>SoftBank's $7 billion quarterly loss includes a US data-center equipment charge. Here's what the Ohio projects, rebates and debt figures mean.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
