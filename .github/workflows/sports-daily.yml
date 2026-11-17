@@ -5,6 +5,7 @@ on:
     - cron: '45 0 * * *'
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: newstrendus-sports-daily
   cancel-in-progress: false
@@ -33,3 +34,7 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Trigger site deployment after scheduled sports refresh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish.yml --repo "${{ github.repository }}" --ref main
