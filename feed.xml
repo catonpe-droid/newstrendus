@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 20:32:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 22:35:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chase Bank Outage: What Happened to Zelle Payments</title>
+      <link>https://newstrendus.com/articles/2026/11/chase-bank-outage-november-16-2026-zelle-delays.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/chase-bank-outage-november-16-2026-zelle-delays.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:35:00 +0000</pubDate>
+      <description>Chase's November 16 banking disruption delayed some transfers. Learn what Chase, Zelle and other banks confirmed and how to check a pending payment.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Family Dollar FTC Settlement: Refund Claims Not Open Yet</title>
       <link>https://newstrendus.com/articles/2026/11/family-dollar-ftc-settlement-refunds-claims-2026.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/irs-2026-charitable-deduction-nonitemizers-1000-2000.html</guid>
       <pubDate>Wed, 11 Nov 2026 02:25:00 +0000</pubDate>
       <description>IRS confirms the 2026 charitable deduction for non-itemizers: who qualifies for $1,000 or $2,000, eligible gifts, charity checks and records.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Veterans Day 2026 Free Meals: ID, Hours and Restrictions</title>
-      <link>https://newstrendus.com/articles/2026/11/veterans-day-2026-free-meals-id-hours-restrictions.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/veterans-day-2026-free-meals-id-hours-restrictions.html</guid>
-      <pubDate>Wed, 11 Nov 2026 00:40:00 +0000</pubDate>
-      <description>Veterans Day 2026 free meals: compare verified restaurant offers, ID rules, dine-in limits and hours for November 11 before visiting.</description>
       <category>US</category>
     </item>
   </channel>
