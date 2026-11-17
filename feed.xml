@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 14:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 16:35:40 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FEMA Emergency Alert Test: Why Phones Did Not Ring</title>
+      <link>https://newstrendus.com/articles/2026/11/fema-emergency-alert-test-november-17-2026-phones-tv-radio.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/fema-emergency-alert-test-november-17-2026-phones-tv-radio.html</guid>
+      <pubDate>Tue, 17 Nov 2026 16:35:40 +0000</pubDate>
+      <description>FEMA's Nov. 17 nationwide alert test targeted TV and radio, not cellphones. See the official schedule, what the message means and how to check alerts.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>US Retail Sales October 2026: Why 0.2% Growth Is Uncertain</title>
       <link>https://newstrendus.com/articles/2026/11/us-retail-sales-october-2026-census-report.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Wed, 11 Nov 2026 12:25:00 +0000</pubDate>
       <description>Is the stock market open on Veterans Day 2026? NYSE and Nasdaq trade normal hours November 11, while SIFMA recommends a bond-market closure.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>FTC Stream Auto Settlement: What Car Buyers Should Know</title>
-      <link>https://newstrendus.com/articles/2026/11/ftc-stream-auto-outlet-car-pricing-settlement-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-stream-auto-outlet-car-pricing-settlement-2026.html</guid>
-      <pubDate>Wed, 11 Nov 2026 10:30:00 +0000</pubDate>
-      <description>FTC's Stream Auto Outlet settlement targets hidden car dealer fees. Learn what advertised prices should include and how buyers can check costs.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
