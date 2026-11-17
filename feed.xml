@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 20:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 22:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US AI Chip Rule: New Cloud Access and Export Limits</title>
+      <link>https://newstrendus.com/articles/2026/11/us-ai-chip-remote-access-export-rule-november-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/us-ai-chip-remote-access-export-rule-november-2026.html</guid>
+      <pubDate>Tue, 17 Nov 2026 22:30:00 +0000</pubDate>
+      <description>New US AI chip export rules target overseas data centers and remote computing access. See which businesses face licensing and what remains uncertain.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>Apple App Store Outage: What Was Affected November 17</title>
       <link>https://newstrendus.com/articles/2026/11/apple-app-store-apple-music-icloud-outage-november-17-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Wed, 11 Nov 2026 16:30:00 +0000</pubDate>
       <description>CoreWeave Q3 2026 revenue reached $3.66 billion, but its $709 million net loss highlights the financing risks behind its AI data-center boom.</description>
       <category>Business</category>
-    </item>
-    <item>
-      <title>Veterans Day 2026: USPS, UPS and FedEx Delivery Hours</title>
-      <link>https://newstrendus.com/articles/2026/11/veterans-day-2026-usps-ups-fedex-mail-delivery.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/veterans-day-2026-usps-ups-fedex-mail-delivery.html</guid>
-      <pubDate>Wed, 11 Nov 2026 14:34:00 +0000</pubDate>
-      <description>Is USPS delivering on Veterans Day 2026? Compare USPS closures, UPS deliveries and FedEx modified service, with November 12 reopening details.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
