@@ -101,9 +101,9 @@ def collect(now):
                 if event_sport not in BY_API or BY_API[event_sport]!=slug:continue
                 raw_ts=(x.get("strTimestamp") or "").strip()
                 dt=stamp(raw_ts)
-                # Unspecified timezone is not silently interpreted as UTC.
-                exact=bool(re.search(r"(Z|[+-]\d\d:\d\d)$",raw_ts))
-                when=iso(dt) if dt and exact else ""
+                # TheSportsDB documents strTimestamp as UTC (ISO format without a Z suffix).
+                # Empty timestamps remain unconfirmed, never fabricate kickoff times.
+                when=iso(dt) if dt and raw_ts else ""
                 # Discard dates outside the requested short calendar window.
                 if date_event < today.isoformat() or date_event > (today+timedelta(days=5)).isoformat():continue
                 key=sid or slug+":"+date_event+":"+name_event
@@ -127,7 +127,7 @@ def load(now):
         except (ValueError,OSError):pass
     updated=stamp(previous.get("updated_at",""))
     force=os.environ.get("SPORTS_FORCE_REFRESH")=="1"
-    if updated and not force and (now-updated).total_seconds()<18*3600:
+    if previous.get("schema_version")==2 and updated and not force and (now-updated).total_seconds()<18*3600:
         print("SPORTS using recent verified cache")
         return previous
     try:
@@ -139,7 +139,7 @@ def load(now):
         # Do not falsely change 'last checked' or erase valid previously fetched fixtures.
         print("SPORTS WARNING: No successful source calls; retaining prior verified snapshot")
         return previous if previous.get("updated_at") else {"updated_at":"","events":[],"source":"TheSportsDB (limited free feed)"}
-    result={"updated_at":iso(now),"events":events,"source":"TheSportsDB (limited free feed)","source_url":"https://www.thesportsdb.com/","source_note":"Selected fixtures, not an exhaustive calendar or live scores; times may change."}
+    result={"schema_version":2,"updated_at":iso(now),"events":events,"source":"TheSportsDB (limited free feed)","source_url":"https://www.thesportsdb.com/","source_note":"Selected fixtures, not an exhaustive calendar or live scores; times may change."}
     cache.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("SPORTS updated",len(events),"fixtures from",count,"successful daily source calls")
     return result
