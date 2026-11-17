@@ -1,0 +1,48 @@
+:root{--sp-ink:#112037;--sp-red:#c61535;--sp-muted:#607085}
+.sport-edition{font-size:12px;letter-spacing:.16em;font-weight:800;color:var(--sp-muted)}
+.sport-hero{padding:62px 0 50px;background:radial-gradient(circle at 82% 12%,#263b5b 0,transparent 28%),linear-gradient(135deg,#0b1422,#182c47);color:white;border-bottom:5px solid var(--sp-red)}
+.sport-kicker{color:#e74763;text-transform:uppercase;font-size:12px;font-weight:900;letter-spacing:.16em}
+.sport-hero h1{font-size:clamp(34px,5vw,62px);line-height:1.07;letter-spacing:-.05em;margin:13px 0 19px;max-width:1050px}
+.sport-hero p{font-size:clamp(15px,1.7vw,19px);line-height:1.65;color:#d0d9e6;max-width:870px}
+.sport-metrics{display:flex;flex-wrap:wrap;gap:11px;margin-top:29px}
+.sport-metrics span{border:1px solid #53677e;background:#fff0;padding:10px 13px;border-radius:6px;font-size:12px;font-weight:700}
+.sport-main{padding-top:28px;padding-bottom:60px}
+.sport-pills{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 24px}
+.sport-pills a{background:#fff;border:1px solid #d9e2eb;border-radius:32px;padding:9px 13px;font-size:12px;font-weight:800;color:#31435b;transition:border-color .15s}
+.sport-pills a:hover{border-color:var(--sp-red);color:var(--sp-red)}
+.region-links{background:#edf2f6;border-radius:10px;padding:17px 20px;margin:15px 0 23px;line-height:2.1;font-size:13px}
+.region-links a{color:#173f6e;text-decoration:underline;text-underline-offset:3px;margin:0 2px}
+.sport-controls{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0}
+.sport-controls label{font-size:13px;color:#344054;font-weight:750;display:flex;flex-direction:column;gap:7px;min-width:min(100%,275px)}
+.sport-controls select,.sport-controls input{height:45px;border:1px solid #cbd5e1;border-radius:8px;padding:0 12px;background:#fff;color:#13243b;font-size:14px;max-width:100%}
+.sport-panel{padding:27px;background:white;border:1px solid #e1e6eb;border-radius:13px;margin:20px 0;box-shadow:0 3px 14px #11203708}
+.sport-panel h2{font-size:clamp(21px,3vw,29px);letter-spacing:-.03em;margin:0 0 16px}
+.sport-panel>p{line-height:1.65;color:#5f6f83}
+.sport-note{font-size:13px;color:#627287!important;max-width:950px}
+.fixture-list{display:grid;gap:10px;margin-top:22px}
+.fixture{display:grid;grid-template-columns:130px minmax(0,1fr) 210px;align-items:center;gap:16px;border:1px solid #e2e9f0;padding:17px 20px;border-radius:10px;background:#fafbfd}
+.fixture[hidden]{display:none}
+.fixture-badge{text-transform:uppercase;letter-spacing:.07em;color:#bf1435;font-size:11px;font-weight:900}
+.fixture-main h3{font-size:16px;line-height:1.35;margin:0 0 6px;color:#15243a}
+.fixture-main p{font-size:12px;color:#52647a;margin:0;line-height:1.5}
+.fixture-time{font-weight:800;font-size:13px;color:#1c3b5f;text-align:right}
+.sport-country{padding-left:7px;color:#a3213b}
+.sport-nomatch,.sport-empty{border:1px dashed #cbd5e1;background:#f8fafc;color:#526275;padding:20px;border-radius:8px;line-height:1.6}
+.sport-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.sport-grid article{background:#f8fafc;padding:20px;border:1px solid #e2e8f0;border-radius:9px}
+.sport-grid h3{font-size:17px;margin:0 0 9px}
+.sport-grid article p{color:#526175;font-size:13px;line-height:1.5;min-height:40px}
+.sport-grid a,.sport-official a{color:#b91b3b;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.sport-grid article>a{font-size:13px}
+.sport-faq h3{font-size:17px}
+.sport-faq p{color:#57677c;line-height:1.65}
+.breadcrumbs{font-size:13px;color:#617184;margin:4px 0 20px}
+.breadcrumbs a{text-decoration:underline}
+.sport-heading{padding:29px;background:linear-gradient(130deg,#fff,#f0f4f8);border:1px solid #e2e8f0;border-radius:12px}
+.sport-heading h1{font-size:clamp(27px,4vw,43px);letter-spacing:-.04em;margin:10px 0}
+.sport-heading p{font-size:15px;color:#526175;line-height:1.6}
+.sport-official{margin:22px 0 0}
+.sport-footer{background:#101a29;color:#bdc8d8;font-size:13px;line-height:1.8;padding:34px 0}
+.sport-footer a{color:#fff;text-decoration:underline}
+@media(max-width:900px){.sport-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fixture{grid-template-columns:1fr;gap:7px}.fixture-time{text-align:left}.sport-hero{padding:42px 0}}
+@media(max-width:560px){.sport-grid{grid-template-columns:1fr}.sport-panel{padding:18px}.sport-metrics span{font-size:11px}}
