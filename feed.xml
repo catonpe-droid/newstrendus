@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 22:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 02:45:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FTC Covetrus-MWI Lawsuit: What Pet Owners Should Know</title>
+      <link>https://newstrendus.com/articles/2026/11/ftc-covetrus-mwi-merger-lawsuit-vet-prices-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-covetrus-mwi-merger-lawsuit-vet-prices-2026.html</guid>
+      <pubDate>Tue, 17 Nov 2026 02:45:00 +0000</pubDate>
+      <description>The FTC sued to block Covetrus's $3.5 billion MWI deal. Learn what regulators allege, why vet supply prices matter and what happens next.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Chase Bank Outage: What Happened to Zelle Payments</title>
       <link>https://newstrendus.com/articles/2026/11/chase-bank-outage-november-16-2026-zelle-delays.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Wed, 11 Nov 2026 04:35:00 +0000</pubDate>
       <description>FDA orders new GLP-1 eye-risk warnings for Ozempic, Wegovy and related drugs. Learn NAION symptoms, the evidence and what patients should do.</description>
       <category>Health</category>
-    </item>
-    <item>
-      <title>2026 Charity Tax Deduction: $1,000 or $2,000 Rules</title>
-      <link>https://newstrendus.com/articles/2026/11/irs-2026-charitable-deduction-nonitemizers-1000-2000.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/irs-2026-charitable-deduction-nonitemizers-1000-2000.html</guid>
-      <pubDate>Wed, 11 Nov 2026 02:25:00 +0000</pubDate>
-      <description>IRS confirms the 2026 charitable deduction for non-itemizers: who qualifies for $1,000 or $2,000, eligible gifts, charity checks and records.</description>
-      <category>US</category>
     </item>
   </channel>
 </rss>
