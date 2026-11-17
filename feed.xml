@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 14:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Retail Sales October 2026: Why 0.2% Growth Is Uncertain</title>
+      <link>https://newstrendus.com/articles/2026/11/us-retail-sales-october-2026-census-report.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/us-retail-sales-october-2026-census-report.html</guid>
+      <pubDate>Tue, 17 Nov 2026 14:30:00 +0000</pubDate>
+      <description>October 2026 US retail sales rose an estimated 0.2%, but the Census Bureau says the change may be zero. See the figures and next release date.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Qing Song Snorkel Mask Warning: No Recall or Refund</title>
       <link>https://newstrendus.com/articles/2026/11/qing-song-snorkel-mask-cpsc-warning-no-recall-2026.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-stream-auto-outlet-car-pricing-settlement-2026.html</guid>
       <pubDate>Wed, 11 Nov 2026 10:30:00 +0000</pubDate>
       <description>FTC's Stream Auto Outlet settlement targets hidden car dealer fees. Learn what advertised prices should include and how buyers can check costs.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>FTC Hims &amp; Hers Lawsuit: Five More States Join</title>
-      <link>https://newstrendus.com/articles/2026/11/ftc-hims-hers-privacy-lawsuit-five-states-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-hims-hers-privacy-lawsuit-five-states-2026.html</guid>
-      <pubDate>Wed, 11 Nov 2026 06:30:00 +0000</pubDate>
-      <description>Five states joined the FTC's Hims &amp; Hers privacy and billing lawsuit. See the allegations, company's response and what customers can check.</description>
       <category>US</category>
     </item>
   </channel>
