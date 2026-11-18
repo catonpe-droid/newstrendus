@@ -57,7 +57,7 @@ TOPICS = [
         "short": "AI and cybersecurity",
         "description": "Explore US-focused reporting on AI policy, technology, cybersecurity warnings, data centers and verified government actions.",
         "intro": "AI product announcements, cybersecurity advisories and government proposals can have different legal and practical effects. These explainers separate confirmed decisions from early plans and link to underlying documents or credible coverage.",
-        "pattern": r"\bai\b|\bartificial intelligence\b|\bcyber(?:security|attack|crime)?\b|\bdata cent(?:er|re)s?\b|\bopenai\b",
+        "pattern": r"\bai\b|\bartificial intelligence\b|\bcyber(?:security|attack|crime)?\b|\bdata cent(?:er|re)s?\b|\bopenai\b|\banthropic\b|\bclaude\b",
         "category": None,
         "sources": [("CISA cybersecurity alerts", "https://www.cisa.gov/news-events/cybersecurity-advisories"), ("NIST AI Risk Management Framework", "https://www.nist.gov/itl/ai-risk-management-framework")],
     },
