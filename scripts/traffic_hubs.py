@@ -81,10 +81,15 @@ def hub_page(topic: dict, stories: list[dict]) -> str:
         relative = "../" + item["page_url"]
         published = datetime.fromisoformat(item["date"].replace("Z", "+00:00"))
         stamp = published.strftime("%B %d, %Y")
+        updated = datetime.fromisoformat(item.get("updated_at", item["date"]).replace("Z", "+00:00"))
+        update_note = (
+            " · Updated " + updated.strftime("%B %d, %Y")
+            if updated.date() > published.date() else ""
+        )
         rows.append(
             '<article class="nt-hub-article">'
             f'<div class="nt-hub-meta">{escape(item["category"])} · '
-            f'<time datetime="{escape(item["date"])}">{stamp}</time></div>'
+            f'<time datetime="{escape(item["date"])}">{stamp}</time>{update_note}</div>'
             f'<h2><a href="{escape(relative, quote=True)}">{escape(item["title"])}</a></h2>'
             f'<p>{escape(item["summary"])}</p></article>'
         )
@@ -199,7 +204,7 @@ def main():
     for topic in TOPICS:
         matching = sorted(
             (i for i in items if match(i, topic)),
-            key=lambda i: i["date"], reverse=True
+            key=lambda i: i.get("updated_at") or i["date"], reverse=True
         )
         if not matching:
             raise SystemExit(f"No real articles available for hub: {topic['slug']}")
