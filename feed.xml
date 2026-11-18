@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 06:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 10:45:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GTA 6 Launches November 19: PS5, Xbox and Preload Checklist</title>
+      <link>https://newstrendus.com/articles/2026/11/gta-6-november-19-2026-launch-ps5-xbox-preload-guide.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/gta-6-november-19-2026-launch-ps5-xbox-preload-guide.html</guid>
+      <pubDate>Wed, 18 Nov 2026 10:45:00 +0000</pubDate>
+      <description>GTA 6 launches November 19, 2026 on PS5 and Xbox Series X|S. Here is how to prepare your console, check updates and avoid launch-time rumors.</description>
+      <category>Gaming</category>
+    </item>
     <item>
       <title>FDA Food Color Chemical Rules: What Changes January 11</title>
       <link>https://newstrendus.com/articles/2026/11/fda-food-color-chemical-authorizations-january-2027.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Thu, 12 Nov 2026 00:42:00 +0000</pubDate>
       <description>A Brooklyn building collapse killed at least one person and injured 10. See the Flatbush location, confirmed rescue details and what remains unknown.</description>
       <category>US</category>
-    </item>
-    <item>
-      <title>Waymo School Bus Investigation: What NHTSA Is Reviewing</title>
-      <link>https://newstrendus.com/articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/waymo-school-bus-safety-investigation-nhtsa-2026.html</guid>
-      <pubDate>Wed, 11 Nov 2026 22:34:00 +0000</pubDate>
-      <description>NHTSA is reviewing Waymo school-bus safety after a prior software recall. See what regulators are checking, what is known and what comes next.</description>
-      <category>Technology</category>
     </item>
   </channel>
 </rss>
