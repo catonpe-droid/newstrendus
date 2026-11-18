@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 10:48:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:40:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2027 Medicare Part B Premium: $209.40 and Deductible Changes</title>
+      <link>https://newstrendus.com/articles/2026/11/medicare-part-b-premium-2027-209-40-deductible-292.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/medicare-part-b-premium-2027-209-40-deductible-292.html</guid>
+      <pubDate>Wed, 18 Nov 2026 14:40:00 +0000</pubDate>
+      <description>The 2027 Medicare Part B premium rises to $209.40 and the deductible to $292. Compare 2026 costs, income surcharges and enrollment steps.</description>
+      <category>Health</category>
+    </item>
     <item>
       <title>GTA 6 Online Release Date: Is 2027 Confirmed by Rockstar?</title>
       <link>https://newstrendus.com/articles/2026/11/gta-6-online-release-date-2027-unconfirmed-rockstar-facts.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/family-farmstead-cheddar-recall-listeria-12-states-2026.html</guid>
       <pubDate>Thu, 12 Nov 2026 08:30:00 +0000</pubDate>
       <description>Family Farmstead raw cheddar recall covers 12 states over possible Listeria. Check mild and sharp cheese, best-by dates and return instructions.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Northeast Snow Forecast Nov. 12–13: Where It May Stick</title>
-      <link>https://newstrendus.com/articles/2026/11/northeast-snow-forecast-november-12-13-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/northeast-snow-forecast-november-12-13-2026.html</guid>
-      <pubDate>Thu, 12 Nov 2026 06:25:00 +0000</pubDate>
-      <description>Northeast snow forecast for Nov. 12–13: see where mountain snow is possible, why major cities expect rain, and how to check local alerts.</description>
       <category>US</category>
     </item>
   </channel>
