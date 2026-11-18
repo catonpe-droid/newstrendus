@@ -32,7 +32,8 @@ ROBOT_META_RE = re.compile(r'<meta\b[^>]*name=["\']robots["\'][^>]*>', re.IGNORE
 def is_eligible(path: Path, html: str) -> bool:
     relative = path.relative_to(ROOT).as_posix()
     content_path = relative == "index.html" or relative.startswith(
-        ("articles/", "calculators/", "cities/", "guides/", "politics/")
+        ("articles/", "calculators/", "cities/", "guides/", "politics/",
+         "sports/", "topics/")
     )
     if not content_path or relative.endswith("/404.html"):
         return False
