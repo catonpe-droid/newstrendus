@@ -5,8 +5,24 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 06:25:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FDA Food Color Chemical Rules: What Changes January 11</title>
+      <link>https://newstrendus.com/articles/2026/11/fda-food-color-chemical-authorizations-january-2027.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/fda-food-color-chemical-authorizations-january-2027.html</guid>
+      <pubDate>Wed, 18 Nov 2026 06:25:00 +0000</pubDate>
+      <description>FDA revokes certain chemical authorizations for produce-marking ink and food color production on January 11, 2027. Learn what changes and what does not.</description>
+      <category>US</category>
+    </item>
+    <item>
+      <title>McDonald's Home Alone Meal: Dec. 1 Menu and Socks</title>
+      <link>https://newstrendus.com/articles/2026/11/mcdonalds-home-alone-meal-december-2026-menu-socks.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/mcdonalds-home-alone-meal-december-2026-menu-socks.html</guid>
+      <pubDate>Wed, 18 Nov 2026 04:35:00 +0000</pubDate>
+      <description>McDonald's Home Alone Meal starts Dec. 1, 2026. See breakfast options, pizza fries, collectible socks, McFlurry details and what prices remain unknown.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>Homebuilder Confidence Hits 25: What Buyers Should Know</title>
       <link>https://newstrendus.com/articles/2026/11/november-2026-homebuilder-confidence-price-cuts-buyers.html</link>
@@ -310,22 +326,6 @@
       <pubDate>Wed, 11 Nov 2026 22:34:00 +0000</pubDate>
       <description>NHTSA is reviewing Waymo school-bus safety after a prior software recall. See what regulators are checking, what is known and what comes next.</description>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>FTC Phantom Debt Collection Case: How to Verify a Claim</title>
-      <link>https://newstrendus.com/articles/2026/11/ftc-phantom-debt-collection-first-capital-group-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/ftc-phantom-debt-collection-first-capital-group-2026.html</guid>
-      <pubDate>Wed, 11 Nov 2026 20:25:00 +0000</pubDate>
-      <description>FTC says a phantom debt collection operation took over $20 million. Learn what the court ordered and how to verify a debt before paying.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Coachella 2027 Lineup, Dates and Ticket Sale Guide</title>
-      <link>https://newstrendus.com/articles/2026/11/coachella-2027-lineup-dates-tickets-dua-lipa-sza-tame-impala.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/coachella-2027-lineup-dates-tickets-dua-lipa-sza-tame-impala.html</guid>
-      <pubDate>Wed, 11 Nov 2026 18:25:00 +0000</pubDate>
-      <description>Coachella 2027 brings Dua Lipa, Tame Impala and SZA to Indio April 9–11 and 16–18. See ticket sale timing, pass availability and official details.</description>
-      <category>Entertainment</category>
     </item>
   </channel>
 </rss>
