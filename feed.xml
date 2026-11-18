@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 22:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 00:30:00 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homebuilder Confidence Hits 25: What Buyers Should Know</title>
+      <link>https://newstrendus.com/articles/2026/11/november-2026-homebuilder-confidence-price-cuts-buyers.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/november-2026-homebuilder-confidence-price-cuts-buyers.html</guid>
+      <pubDate>Wed, 18 Nov 2026 00:30:00 +0000</pubDate>
+      <description>November 2026 builder confidence fell to 25 as 46% of builders cut prices. See what the survey means for new-home shoppers and incentives.</description>
+      <category>Business</category>
+    </item>
     <item>
       <title>US AI Chip Rule: New Cloud Access and Export Limits</title>
       <link>https://newstrendus.com/articles/2026/11/us-ai-chip-remote-access-export-rule-november-2026.html</link>
@@ -318,14 +326,6 @@
       <pubDate>Wed, 11 Nov 2026 18:25:00 +0000</pubDate>
       <description>Coachella 2027 brings Dua Lipa, Tame Impala and SZA to Indio April 9–11 and 16–18. See ticket sale timing, pass availability and official details.</description>
       <category>Entertainment</category>
-    </item>
-    <item>
-      <title>CoreWeave Earnings 2026: Revenue Soars, Debt Risk Remains</title>
-      <link>https://newstrendus.com/articles/2026/11/coreweave-q3-2026-earnings-revenue-debt-ai-cloud.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/coreweave-q3-2026-earnings-revenue-debt-ai-cloud.html</guid>
-      <pubDate>Wed, 11 Nov 2026 16:30:00 +0000</pubDate>
-      <description>CoreWeave Q3 2026 revenue reached $3.66 billion, but its $709 million net loss highlights the financing risks behind its AI data-center boom.</description>
-      <category>Business</category>
     </item>
   </channel>
 </rss>
