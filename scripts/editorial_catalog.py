@@ -76,6 +76,16 @@ def catalog():
             if parsed.tzinfo is None: parsed = parsed.replace(tzinfo=timezone.utc)
             published = parsed.astimezone(timezone.utc).isoformat()
         except ValueError: continue
+        # Keep the original publication date; track materially updated articles
+        # in a separate field used for topic discovery and reader navigation.
+        updated_raw = head.meta.get("article:modified_time") or article.get("dateModified") or date
+        try:
+            updated_dt = datetime.fromisoformat(str(updated_raw).replace("Z", "+00:00"))
+            if updated_dt.tzinfo is None:
+                updated_dt = updated_dt.replace(tzinfo=timezone.utc)
+            updated_at = max(updated_dt.astimezone(timezone.utc).isoformat(), published)
+        except (TypeError, ValueError):
+            updated_at = published
         image = head.meta.get("og:image") or (head.hero or {}).get("src") or ""
         if image.startswith("/"): image = "https://newstrendus.com" + image
         if not image.startswith("https://"): continue
@@ -90,6 +100,7 @@ def catalog():
             "summary": description,
             "source": "NewsTrendus",
             "date": published,
+            "updated_at": updated_at,
             "image": image,
             "image_alt": (head.hero or {}).get("alt") or "Representative photo illustrating the article topic",
             "photo_artist": photographer,
