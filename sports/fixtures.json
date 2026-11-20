@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-20T01:54:02Z",
+  "updated_at": "2026-11-20T20:27:38Z",
   "events": [
     {
       "id": "2555663",
@@ -63,7 +63,7 @@
       "name": "Houston Texans vs Indianapolis Colts",
       "league": "NFL",
       "country": "United States",
-      "venue": "Reliant Stadium",
+      "venue": "NRG Stadium",
       "date": "2026-11-20",
       "utc": "2026-11-20T01:15:00Z",
       "source": "TheSportsDB"
