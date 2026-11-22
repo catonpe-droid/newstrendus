@@ -5,8 +5,16 @@
     <link>https://newstrendus.com/</link>
     <description>Independent US-focused news explainers with attributed original sources and practical reader context.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 14:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 03:19:53 +0000</lastBuildDate>
     <atom:link href="https://newstrendus.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dollar General FTC Lawsuit: 30 States and Checkout Prices</title>
+      <link>https://newstrendus.com/articles/2026/11/dollar-general-ftc-lawsuit-30-states-overcharges-november-2026.html</link>
+      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/dollar-general-ftc-lawsuit-30-states-overcharges-november-2026.html</guid>
+      <pubDate>Sun, 22 Nov 2026 03:19:53 +0000</pubDate>
+      <description>Ten more states joined the FTC's Dollar General pricing lawsuit, bringing the total to 30. See the states, allegations and shoppers' next steps.</description>
+      <category>US</category>
+    </item>
     <item>
       <title>2027 Medicare Part B Premium: $209.40 and Deductible Changes</title>
       <link>https://newstrendus.com/articles/2026/11/medicare-part-b-premium-2027-209-40-deductible-292.html</link>
@@ -317,14 +325,6 @@
       <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/haiara-w5-pro-power-bank-warning-recall-refund-2026.html</guid>
       <pubDate>Thu, 12 Nov 2026 10:35:00 +0000</pubDate>
       <description>HAIARA W5 PRO power bank warning covers 210,000 units. Check the model, why only some buyers get refunds, and safe battery disposal steps.</description>
-      <category>US</category>
-    </item>
-    <item>
-      <title>Family Farmstead Cheddar Recall: 12 States and Dates</title>
-      <link>https://newstrendus.com/articles/2026/11/family-farmstead-cheddar-recall-listeria-12-states-2026.html</link>
-      <guid isPermaLink="true">https://newstrendus.com/articles/2026/11/family-farmstead-cheddar-recall-listeria-12-states-2026.html</guid>
-      <pubDate>Thu, 12 Nov 2026 08:30:00 +0000</pubDate>
-      <description>Family Farmstead raw cheddar recall covers 12 states over possible Listeria. Check mild and sharp cheese, best-by dates and return instructions.</description>
       <category>US</category>
     </item>
   </channel>
